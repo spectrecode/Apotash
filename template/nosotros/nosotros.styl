@@ -1,0 +1,161 @@
+section#nosotros
+    .activeNosotros
+        background verdeOscuro
+        color blanco
+        font-family fuente_active
+    .container-fluid    
+        .row
+            .nosotros
+                background-image url("../image/banner2.jpg")
+    ul
+        margin:50px auto
+        display flex
+        justify-content center
+        padding 0
+        a
+            &:hover
+                text-decoration none
+            li
+                cursor pointer
+                color grisoscuro
+                list-style none
+                width 200px
+                padding 20px
+                transition all ease-in-out .2s
+                font-size 21px
+                &:hover        
+                    background: verdeOscuro
+                    color blanco
+                    font-family fuente_active
+    .contenedorNosotros
+        background: blanco
+        padding 20px 40px 70px
+        margin-bottom 20%
+        box-shadow 2px 1px 5px 0px grisoscuro
+        .box-somos
+            h2
+                position:relative
+                height: 50px
+                font-size 28px
+                font-family fuente_tituloH2Nos
+                justify-content: center
+                color verdeOscuro
+        .row
+            .duoBtn
+                display flex
+                justify-content center
+                width: 500px
+                margin: 50px auto
+                background: white
+                border: 2px solid green
+                border-radius: 35px
+                padding: 6px
+                .am, .gr
+                    display flex
+                    justify-content center
+                    align-items center
+                    height 100px
+                    width 250px
+                    text-align center
+                    img
+                        width 80%
+                .gr
+                    background verdeOscuro
+                    position relative
+                    border-radius 30px 0 0 30px
+                    z-index 2
+                    &:before
+                        content ""
+                        position absolute
+                        right -80px
+                        border-width 0 25px 52px
+                        border-style solid
+                        border-color verdeOscuro transparent verdeOscuro verdeOscuro
+                        -moz-transform rotate(90deg)
+                        -o-transform rotate(90deg)
+                        -ms-transform rotate(90deg)
+                        bottom -1px
+                        right -25px
+                        transform rotatex(160deg)
+                        z-index -1
+                    &:after
+                        content ""
+                        position absolute
+                        right -80px
+                        border-width 0 25px 52px
+                        border-style solid
+                        border-color verdeOscuro transparent verdeOscuro verdeOscuro
+                        -moz-transform rotate(90deg)
+                        -o-transform rotate(90deg)
+                        -ms-transform rotate(90deg)
+                        bottom 47px
+                        right -25px
+                        z-index -1
+                .am
+                    background verde
+                    border-radius 0 30px 30px 0
+        .row:last-child
+            > div
+                display flex
+                height 240px
+        .row
+            .circleMax,.circleMin
+                padding 10px
+                border 2px solid verdeOscuro
+                border-radius 100%
+                display: flex
+                justify-content: center
+                > div
+                    height 220px
+                    width 220px
+                    border-radius 100%
+                    background grisclaro
+                    display flex
+                    align-items center
+                    .circle
+                        padding 30px
+                        h2
+                            font-family fuente_tituloH2Nos
+                            color olivo
+                            line-height 0.8
+                            margin-top 0
+                            span
+                                color verdeOscuro
+                        p
+                            line-height 1
+                            font-family fuente_descripcion
+                            font-size 19
+            .circleMin
+                padding 8px
+                width 200px
+                margin auto
+                > div  
+                    height 180px
+                    width 180px
+                    display flex
+                    justify-content: center
+                    .circle
+                        h2
+                            font-size 27px
+            .circleMax
+                .circle
+                    h2
+                        font-size 32px
+                        span
+                            font-size 25px
+            .circleMax
+                .circle
+                    h2.max
+                        font-size 60px
+                        span
+                            font-size 30px
+    // .directores
+    //     margin: 5% auto
+    //     margin-bottom: 10%
+    //     h2
+    //         margin-bottom: 20px
+    //     ul.sliderDirectores
+    //         display: flex
+    //         justify-content: space-around
+    //         list-style:none
+    //         padding:0

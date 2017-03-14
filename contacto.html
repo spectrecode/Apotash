@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Ohemedical">
+  <head>
+    <title>Americas Potash</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./resources/assets/css/lightslider.css">
+    <link href="./resources/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./resources/assets/css/app.css" rel="stylesheet">
+    <link href="./resources/assets/css/formulario.css" rel="stylesheet">
+    <script src="./resources/assets/js/jquery-3.1.1.min.js"></script>
+    <script src="./resources/assets/js/jquery.validate.min.js"></script>
+    <script src="./resources/assets/js/lightslider.min.js"></script>
+    <script src="./resources/assets/js/validacion.js"></script>
+    <script src="./resources/assets/js/init.js"></script>
+  </head>
+  <body ng-view>
+    <header class="header" ng-controller="headerCrtl">
+      <div class="container">
+        <div class="logo-max hidden-md hidden-lg"><a href="#"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a><a class="line-burguer"></a></div>
+        <div class="row">
+          <div class="col-sm-8 idiomas hidden-md hidden-lg hidden-sm hidden-xs"><a href="#"> Inglés</a></div>
+          <div class="col-lg-2 col-md-2 logo-header hidden-sm hidden-xs"><a href="#"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a></div>
+          <div class="col-lg-9 col-md-9 visible-md visible-lg-inline-block">
+            <nav class="menu-header">
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="subNos"><a href="#">Nosotros<span> &#9660;</span></a>
+                  <ul class="submenu-header">
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Misión y Visión</a></li>
+                    <li><a href="#">Valores</a></li>
+                    <li><a href="#">Talento</a></li>
+                  </ul>
+                </li>
+                <li class="subProy"><a href="javascript:void(0)">Proyectos<span> &#9660;</span></a>
+                  <ul class="submenu-header">
+                    <li><a href="#">Fosfatos</a></li>
+                    <li><a href="#">Salmueras</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Sostenibilidad</a></li>
+                <li><a href="#">Comunicación Corporativa</a></li>
+                <li><a href="#">Contáctenos</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 visible-md visible-lg-inline-block">
+            <div class="box-search" id="box-search">
+              <div><a class="active" href="#">Español</a><span> /</span><a href="#">Inglés</a></div><img src="./resources/assets/image/lupa.png" width="40px" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="contacto">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="bannerPrincipal misionNos">
+            <div class="letrero-banner">
+              <div>
+                <h2>What is Lorem ipsum</h2>
+                <div class="rectangle">Proyectos e iniciativas para el desarrollo e iniciativas para el desarrollo.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row fondo-blanco">
+        <div class="container">
+          <div class="content-contact">
+            <div class="row">
+              <div class="contacto-titulo text-center">
+                <h2> <b>CONTACTO</b></h2>
+                <p>Nos encantaría saber sobre tus comentarios y/o sugerencias</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="box-contact">
+                  <div><i class="icon-envelope-o"></i><a href="#">
+                       informes@americas-potash.com</a><br><br></div>
+                  <div><i class="icon-mobile"></i><a href="#">999 888 765</a><br><br></div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <form method="post" action="" novalidate="novalidate">
+                  <input type="text" placeholder="Nombre" name="name" id="name" required>
+                  <label for="name"></label>
+                  <input type="text" placeholder="Dirección" name="adress" id="adress" required>
+                  <label for="adress"></label>
+                  <div class="duo-input">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div class="row">
+                        <input type="text" placeholder="E-mail" name="mail" id="mail" required>
+                        <label for="mail"></label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div class="row">
+                        <input type="text" placeholder="Teléfono" name="telf" maxlength="9" id="telf" required>
+                        <label for="telf"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <textarea type="text" placeholder="Comentario" name="comment" rows="6" id="comment"></textarea>
+                  <button type="submit" id="btn-form"><b>Enviar</b></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row trabajo">
+        <div class="container">
+          <div class="cvForm">
+            <div class="row">
+              <div class="datosTrabajador text-center">
+                <h2> <b>TRABAJA CON NOSOTROS</b></h2>
+                <h3>DATOS PERSONALES</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <form method="post" action="" novalidate="novalidate">
+                  <input type="text" placeholder="Nombre" name="name" id="name" required>
+                  <label for="name"></label>
+                  <input type="text" placeholder="Dirección" name="adress" id="adress" required>
+                  <label for="adress"></label>
+                  <div class="trio-input">
+                    <input type="text" placeholder="E-mail" name="mail" id="mail" required>
+                    <label for="mail"></label>
+                    <input type="text" placeholder="Teléfono" name="telf" maxlength="9" id="telf" required>
+                    <label for="telf"></label>
+                    <input type="text" placeholder="DNI" name="dni" maxlength="9" id="dni" required>
+                    <label for="dni"></label>
+                  </div>
+                  <textarea type="text" placeholder="Comentario" name="comment" rows="6" id="comment"></textarea>
+                  <h3 class="text-center">ADJUNTAR CV</h3>
+                  <P class="text-center">Tamaño máximo de 500kb. Extensión o formatos válidos: pdf, doc, docx</P>
+                  <input type="file">
+                  <button type="submit" id="btn-form"><b>Enviar</b></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mapa">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="oficinas"><a class="lima" href="#">Lima</a><a class="piura" href="#">Piura</a></div>
+          <div class="floatDirecc"><img src="./resources/assets/image/dialogo.png">
+            <div class="direccion"><i class="icon-location"></i>
+              <p> <b>Av. Lorem Ipsum </b>is simply dummy text of the printing and<br><b>Telf: 01 566 - 2198</b></p>
+            </div>
+          </div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.755758095809!2d-77.00227321601514!3d-12.128856735087853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x38ff1205ffa42525!2s%C3%93valo+Higuereta!5e0!3m2!1ses!2spe!4v1485386182435" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="btnGoUp"><i class="icon-chevron-up"></i></div>
+      <div class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 box-footer">
+              <div class="row box-logos">
+                <div><img src="./resources/assets/image/logo-potash-footer.png" alt="" width="100%"></div>
+                <div><a href="http://www.growmaxcorp.com/" target="_blank"><img src="./resources/assets/image/logo-growmax-footer.png" alt="" width="100%"></a></div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 box-footer">
+              <div class="row">
+                <div class="footer-enlaces"><a href="#">Inicio</a><a href="#">Nosotros</a><a href="#">Proyectos</a><a href="#">Sostenibilidad</a><a href="#">Comunicación Corporativa</a><a href="#">Contáctenos</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center">Powered by <span>MEDIA IMPACT</span></p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+// mapa
+section#mapa
+	margin:0
+	padding:0
+	position relative
+	.container-fluid
+		.row
+			.oficinas
+				position absolute
+				a
+					padding 10px 50px
+					font-size 22px
+					display inline-block
+					background-color amarilloLimon
+					color blanco
+					font-family fuente_tituloBanner
+					transition background-color ease-in-out 200ms
+					&:hover
+						background-color amarilloOscuro
+						text-decoration none
+						transition background-color ease-in-out 200ms
+					&.piura
+						background-color grisoscuro
+						&:hover
+							background-color grafito
+			.floatDirecc
+				position absolute
+				top 40%
+				bottom 30%
+				left 7%
+				display flex
+				img
+					width 85%
+				.direccion
+					color blanco
+					width 79%
+					height 100%
+					display flex
+					position absolute
+					padding 20px 25px
+					i
+						font-size 55px
+						display flex
+						align-items center
+					p
+						padding 11px 18px
+						font-size 18px
+						margin 0
+						padding-right 0
+					
+						

@@ -1,0 +1,73 @@
+footer
+    position: relative;
+    .footer    
+        background: #4a4a4a
+        padding: 3% 3% 0.5%
+        color: #c5c5c5
+        height: 100%
+        font-family: fuente_footer-bold
+        .row
+            @media (max-width: 425px)
+                display: flex
+                flex-direction: column-reverse
+            .box-footer
+                border: 1px solid #c5c5c5
+                .footer-enlaces
+                .box-logos
+                    height: 75px
+                    @media (max-width: 425px)
+                        height: 100%
+        p
+            @media (max-width: 425px)
+                font-size: 12px
+        .box-logos
+            display: flex
+            align-items: center
+            justify-content: center
+            @media (max-width: 425px)
+                flex-direction: row
+                padding: 15px 10px
+        .footer-enlaces
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            flex: 1 0 auto
+            padding: 15px 10px
+            @media (max-width: 920px)
+                flex-direction: column
+            @media (max-width: 425px)
+                line-height: 1.8
+            a
+                justify-content: center
+                color: #c5c5c5
+                align-items: center
+                display: flex
+                padding: 0 5px
+                font-size 14px
+                font-family fuente_MenuFooter
+    .footer    
+        p 
+            margin-top: 10px
+            font-size 12px
+            margin-bottom: 0
+            font-family fuente_MenuFooter
+            span
+                font-family: fuente_footerbold
+        @media (min-width: 992px)
+            .box-logos
+                img
+                    padding: 15px
+    .btnGoUp
+        height: 70px
+        position: absolute
+        right: 100px
+        width: 75px
+        top: -69px
+        z-index: 100
+        background: verdeOscuro
+        cursor: pointer
+        i
+            font-size: 55px
+            display: flex
+            justify-content: center
+            color: blanco

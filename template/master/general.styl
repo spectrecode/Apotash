@@ -1,0 +1,213 @@
+/***
+	Autor 	: Carlos Espinoza
+	Email 	: c.augusto.espinoza@gmail.com
+***/
+
+/***
+	Descripcion: Prefijos
+***/
+
+/***
+	Descripcion: Se definen los colores que se usaran durante
+	todo el desarrollo del site
+***/
+azul 			= #4983d8
+blanco 			= #fff
+negro 			= #000
+rojo 			= #DD0000
+verde     		= #00ac64
+verclaro        = #5e8800
+verdeOscuro 	= #006c4b
+olivo 			= #002b12
+gris            = #888
+grafito 		= #292929
+grisoscuro      = #666
+grisclaro       = #f3f3f3
+celeste 		= #00AFCB
+amarilloOscuro  = #97a712
+amarilloLimon 	= #c7de00
+morado 			= #a078b0
+/***
+	Descripcion: Se definen las fuentes que se usaran durante
+	todo el desarrollo del site
+***/
+
+fuente_cuerpo 				= "alegreya_sansregular"
+fuente_Menu 				= "open_sansregular"
+fuente_tituloBanner 		= "alegreya_sansbold"
+fuente_tituloNoticias		= "alegreya_sansblack"
+fuente_tituloContacto 		= "alegreya_sansblack"
+fuente_tituloH3				= "alegreya_sansbold"
+fuente_tituloH2				= "alegreya_sansbold"
+fuente_tituloH2Nos 			= "alegreya_sansblack"
+fuente_gruesa 				= "alegreya_sansblack"
+fuente_contenidoContacto	= "alegreya_sansbold"
+fuente_active 				= "alegreya_sansbold"
+fuente_itemsSubmenu			= "alegreya_sansbold"
+fuente_MenuFooter			= "open_sansregular"
+fuente_descripcion 			= "alegreya_sansmedium"
+fuente_botonContacto 		= "open_sansbold"
+fuente_footerbold 			= "open_sansbold"
+
+/***
+	Descripcion: Se definen los tamaños aprox
+***/
+entero_cien 		= 100% 
+/***
+	Descripcion: Se definen las funciones mixtas
+	que emplearemos 
+***/
+html
+	overflow auto
+body
+	font-size 16px
+	font-family fuente_cuerpo
+    // background-color: #f5f4f4
+h1, h2
+	font-family fuente_tituloH2
+// banner
+.container-fluid	
+		.row
+			.bannerPrincipal
+				background-size cover
+				height 524px
+				position relative
+.letrero-banner
+	height: 100%
+	width: 45%
+	position: absolute
+	bottom: 0
+	display: flex
+	@media (max-width 992px) and (min-width 768px)
+		width: 50%
+	@media (max-width 767px)
+		width: 100%
+	> div
+		width: 79%
+		height: 85px
+		position: absolute
+		top: 40%
+		right: 0
+		color: white
+		font-size: 37px
+		text-shadow: 5px 3px 6px black
+		font-family: fuente_titulo
+		justify-content: center
+		display: flex
+		flex-direction: column
+		@media (max-width: 1200px)
+			font-size: 25px
+		@media (max-width: 992px)
+			font-size: 24px
+		@media (max-width: 767px)
+			right: initial
+			display: flex
+			align-items: center
+			width: 100%
+			font-size: 35px
+		@media (max-width: 589px)
+			font-size: 30px
+		@media (max-width: 521px)
+			font-size: 26px
+		@media (max-width: 375px)
+			font-size: 18px
+		h2
+			font-family fuente_tituloBanner
+		.rectangle
+			background: rgba(0,108,76,0.78)
+			font-size: 18px
+			border-radius: 0 0 70px
+			border-left: 7px solid rgba(255,215,0,0.74);
+			padding: 20px
+			text-shadow: 0 0 0
+			font-family fuente_descripcion
+			line-height: 30px
+			// transform: translate(50px 0)
+			@media (max-width: 1200px)
+				font-size: 17px
+			@media (max-width: 992px)
+				padding: 15px
+			@media (max-width: 767px)
+				border-radius: 0px
+				width: 60%
+			@media (max-width: 569px)
+				width: 75%
+			@media (max-width: 375px)
+				font-size: 15px
+				text-align: center
+				border-left-width: 10px
+// fin banner
+	
+// proyectos
+.row
+	ul.submenu
+		margin:50px auto
+		display flex
+		justify-content center
+		padding 0
+		a
+			&:hover
+				text-decoration none
+			li
+				cursor pointer
+				color grisoscuro
+				list-style none
+				width 200px
+				padding 20px
+				transition all ease-in-out .2s
+				font-size 21px
+				&.active
+					background verdeOscuro
+					color blanco
+					font-family fuente_active
+				&:hover        
+					background: verdeOscuro
+					color blanco
+					font-family fuente_active
+// slide galerias
+.galerias
+	margin-bottom 20%
+	margin-top 3%
+ul
+	&.sliderGaleria
+		li
+			cursor: -webkit-zoom-in
+.modal-img
+	width: 100%
+	height: 100%
+	background: rgba(1, 6, 0, 0.8)
+	top: 0
+	display: none
+	// padding-top: 100px
+	z-index: 10 
+	position: fixed
+	left:0
+	animation: fadeModal .3s
+	.imageZoom
+		margin auto
+		width 80%
+		max-width 550px
+		top 0
+		bottom 0
+		position absolute
+		left 0
+		right 0
+	.btn-cerrar-img
+		position absolute
+		color blanco
+		right 80px
+		padding 0px 11px
+		font-family fuente_gruesa
+		font-size 30px
+		cursor pointer
+		// line-height 1.5
+		transition all ease .2s
+		text-shadow -0.5px -1.5px 0.5px blanco
+		height 45px
+		&:hover
+			color: grisoscuro
+			background: blanco
+			transition: all ease-out .3s
+		&:active
+			background: grisoscuro
+// fin proyectos

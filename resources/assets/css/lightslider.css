@@ -1,0 +1,306 @@
+
+/*! lightslider - v1.1.6 - 2016-10-25
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2016 Sachin N; Licensed MIT */
+/*! lightslider - v1.1.3 - 2015-04-14
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2015 Sachin N; Licensed MIT */
+/** /!!! core css Should not edit !!!/**/ 
+
+/*SLIDER BANNER*/
+.contenedor-banner .lSSlideOuter{
+    margin: 0;
+    position: relative;
+}
+@media (max-width: 768px){
+    .contenedor-banner .lSSlideOuter > div{
+        height: 450px;
+    }
+}
+.lSSlideOuter ul {
+    display: flex;
+    justify-content: space-around;
+    list-style:none;
+    padding:0;
+}
+@media (min-width: 1024px){
+    .contenedor-banner .lSSlideOuter img{
+        width: 100%;
+    }
+}
+.contenedor-banner .lSSlideOuter .lSSlideWrapper{
+    position: relative;
+}
+.contenedor-banner .lSSlideOuter .lSAction > .lSPrev:before{
+    content: "\1f598";
+    color: white;
+}
+.contenedor-banner .lSSlideOuter .lSAction > .lSNext:before{
+    content: "\1f599";
+    color: white;
+}
+.contenedor-banner .lSSlideOuter .lSAction > .lSPrev {
+    left: 30px;
+}
+.contenedor-banner .lSSlideOuter .lSAction > .lSNext {
+    right: 30px;
+}
+.contenedor-banner .lSSlideOuter .lSAction > a {
+    margin-top: -15px;
+}
+@media (max-width: 767px){
+    .contenedor-banner .lSSlideOuter .lSAction{
+        display: none!important;
+    }
+}
+@media (max-width: 768px){
+    .contenedor-banner .lSSlideOuter .lSAction > a {
+        margin-top: -20px;
+        top: 50%;
+    }
+}
+/*END SLIDER BANNERS*/
+
+/*lightSlider general*/
+.lSSlideOuter {
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: auto 15px;
+}
+@media (max-width: 425px){
+    .lSSlideOuter {
+        margin: 0;
+    }
+}
+.lightSlider:before, .lightSlider:after {
+    content: " ";
+    display: table;
+}
+.lightSlider {
+    overflow: hidden;
+    margin: 0;
+    height: inherit!important;
+}
+.lightSlider li {
+    position: relative;
+    overflow: hidden;
+}
+/*efecto hover imagenes carrusel*/
+.lightSlider li .caja-hover-galeria{
+    background-color: rgba(8, 16, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.lightSlider li .caja-hover-galeria i{
+    font-size: 50px;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0
+}
+.img-txt{
+    position: absolute;
+    background: white;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    transition: ease-in-out 2s, transform .2s;
+}
+.lightSlider li:hover .caja-hover-galeria{
+    display: block;
+    animation: suavizado .2s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+@keyframes suavizado {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+/*FIN efecto hover imagenes carrusel*/
+.lSSlideWrapper {
+    max-width: 100%;
+    overflow: hidden;
+    /*position: relative;*/
+}
+@media (max-width: 767px){
+    .lSSlideWrapper {
+        position: relative;
+    }
+}
+.lSSlideWrapper > .lightSlider:after {
+    clear: both;
+}
+.lSSlideWrapper .lSSlide {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition: all 1s;
+    -webkit-transition-property: -webkit-transform,height;
+    -moz-transition-property: -moz-transform,height;
+    transition-property: transform,height;
+    -webkit-transition-duration: inherit !important;
+    transition-duration: inherit !important;
+    -webkit-transition-timing-function: inherit !important;
+    transition-timing-function: inherit !important;
+}
+.lSSlideWrapper .lSFade {
+    position: relative;
+}
+.lSSlideWrapper .lSFade > * {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    margin-right: 0;
+    width: 100%;
+}
+.lSSlideWrapper.usingCss .lSFade > * {
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-duration: inherit !important;
+    transition-duration: inherit !important;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: inherit !important;
+    transition-timing-function: inherit !important;
+}
+.lSSlideWrapper .lSFade > *.active {
+    z-index: 10;
+}
+.lSSlideWrapper.usingCss .lSFade > *.active {
+    opacity: 1;
+}
+/** /!!! End of core css Should not edit !!!/**/
+/* Pager */
+.lSSlideOuter .lSPager.lSpg {
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 10px;
+}
+.lSSlideOuter .lSPager.lSpg > li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 10px;
+}
+.lSSlideOuter .lSPager.lSpg > li a {
+    background-color: white;
+    border-radius: 30px;
+    display: inline-block;
+    height: 12px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 12px;
+    position: relative;
+    z-index: 99;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+}
+.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+    background-color: rgba(255, 215, 0, 0.49);
+}
+.lSSlideOuter .media {
+    opacity: 0.8;
+}
+.lSSlideOuter .media.active {
+    opacity: 1;
+}
+/* End of pager */
+
+/* slider actions */
+.lSAction > a {
+    top: 50%;
+    cursor: pointer;
+    position: absolute;
+    /*margin-top: -10px;*/
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+}
+@media (max-width: 767px) and (min-width: 573px){
+    .lSAction > a {
+        top: 30%;
+    }
+}
+@media (max-width: 572px) and (min-width: 530px){
+    .lSAction > a {
+        top: 29%;
+    }
+}
+@media (max-width: 529px) and (min-width: 425px){
+    .lSAction > a {
+        top: 24%;
+    }
+}
+@media (max-width: 425px){
+    .lSAction > a {
+        top: 20%;
+    }
+}
+/*slider galeria responsive*/
+@media (max-width: 425px){
+    .sliderGaleria + .lSAction > a {
+        top: 41%;
+    }
+}
+/* fin slider galeria responsive */
+.lSAction > .lSPrev:before{
+    content: "\f0d9";
+    color: #eadb06;
+    font-size: 50px;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.lSAction > .lSNext:before{
+    content: "\1f59b";
+    color: #eadb06;
+    font-size: 50px;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 425px){
+    .lSAction > .lSNext:before{
+        font-size: 40px;
+    }
+    .lSAction > .lSNext:before{
+        font-size: 40px;
+    }
+}
+.lSAction > a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+.lSAction > .lSPrev {
+    left: 7px;
+}
+.lSAction > .lSNext {
+    right: 7px;
+}
+

@@ -1,0 +1,55 @@
+header.header(ng-controller="headerCrtl")
+	.container
+		div.logo-max.hidden-md.hidden-lg
+			a(href="#")
+				img(src="./resources/assets/image/logo-potash-header.gif", alt="",width="100%")
+			a.line-burguer
+		.row
+			//- .idiomas.hidden-sm.hidden-xs
+				//- a(href="#") Español 
+				//- span /
+			.col-sm-8.idiomas.hidden-md.hidden-lg.hidden-sm.hidden-xs
+				//- a(href="#") Español 
+				//- span /
+				a(href="#")  Inglés
+			.col-lg-2.col-md-2.logo-header.hidden-sm.hidden-xs
+				a(href="#")
+					img(src="./resources/assets/image/logo-potash-header.gif", alt="",width="100%")
+			.col-lg-9.col-md-9.visible-md.visible-lg-inline-block
+				nav.menu-header
+					ul
+						li
+							a(href="#") Inicio
+						li.subNos
+							a(href="#") Nosotros
+								span  &#9660;
+							ul.submenu-header
+								li
+									a(href="#") Quienes somos
+								li
+									a(href="#") Misión y Visión
+								li
+									a(href="#") Valores
+								li
+									a(href="#") Talento
+						li.subProy
+							a(href="javascript:void(0)") Proyectos
+								span  &#9660;
+							ul.submenu-header
+								li
+									a(href="#") Fosfatos
+								li
+									a(href="#") Salmueras
+						li
+							a(href="#") Sostenibilidad
+						li
+							a(href="#") Comunicación Corporativa
+						li
+							a(href="#") Contáctenos
+			.col-lg-1.col-md-1.col-sm-1.col-xs-1.visible-md.visible-lg-inline-block
+				.box-search#box-search
+					div
+						a.active(href="#") Español
+						span  /
+						a(href="#") Inglés
+					img(src="./resources/assets/image/lupa.png",width="40px", alt="")

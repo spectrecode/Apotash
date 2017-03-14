@@ -1,0 +1,139 @@
+header.header
+    background: #f8f8f8
+    font-family: fuente_Menu
+    .container
+        .logo-max
+            display: flex
+            justify-content: space-between
+            align-items: center
+            > a
+                @media (max-width: 425px)
+                    display: flex
+                    align-items: center
+                    justify-content:center
+                    width: 100%
+                img
+                    width: 70%
+                    @media (max-width: 425px)
+                        width: 60%
+            a.line-burguer
+                display: block
+                height: 35px
+                width: 33px
+                &:before
+                    content: ""
+                    position: absolute
+                    border-top: 0.875em double verdeOscuro
+                    border-bottom: 0.333em solid verdeOscuro
+                    width: 2em
+                    height: 1.45em
+        > .row
+            position: relative
+            .logo-header
+                height: 120px
+                display: flex
+                align-items: center
+                @media (max-width: 768px)
+                    width: 70%
+                    margin: auto
+            .idiomas
+                position: absolute
+                color: #666
+                right: 4%
+                width: 100%
+                text-align: right
+                a
+                    text-decoration: none
+                    color: grisoscuro
+                    &:active
+                        font-weight: 700
+    nav.menu-header
+        ul    
+            height: 120px
+            display: flex
+            align-items: center
+            margin-bottom: 0
+            justify-content: space-around
+            padding: 0
+            li
+                list-style: none
+                font-size: 20px
+                @media (max-width: 1200px)
+                    padding: inherit   
+                a
+                    color: #00A7D8
+                    transition: all .2s
+                    position: relative
+                    font-family fuente_Menu
+                    font-size 17px
+                    text-decoration: none
+                    z-index: 5
+                    transition: all .2s
+                    &:hover
+                        color: verdeOscuro
+                        font-weight bold
+                &.subProy
+                    a    
+                        &:hover span
+                            visibility visible
+                        span
+                            font-size 13px
+                            visibility hidden
+                    .submenu-header
+                        display none
+                        list-style none
+                        position absolute
+                        background verdeOscuro
+                        z-index 5
+                        height auto
+                        li
+                            padding 10px 13px
+                            background verdeOscuro
+                            a
+                                color blanco
+                                font-size 13px
+                    &:hover .submenu-header
+                        display block
+                &.subNos
+                    a    
+                        &:hover span
+                            visibility visible
+                        span
+                            font-size 13px
+                            visibility hidden
+                    .submenu-header
+                        display none
+                        list-style none
+                        position absolute
+                        background verdeOscuro
+                        z-index 5
+                        li
+                            padding 7px 13px
+                            background verdeOscuro
+                            a
+                                color blanco
+                                font-size 13px
+                    &:hover .submenu-header
+                        display block
+                        
+    .box-search
+        display: flex
+        flex-direction column
+        height 90px
+        justify-content space-around
+        div
+            display flex
+            width 110px
+            right 66px
+            position relative
+            a
+                text-decoration: none
+                transition: all .2s
+                color gris
+                &:active
+                    font-family fuente_botonContacto
+                    transition: all .2s
+            span
+                padding 0 5px
+        img
+            cursor: pointer

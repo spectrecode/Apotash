@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icomoon/icomoon.eot?rtii3l');
+  src:  url('../font/icomoon/icomoon.eot?rtii3l#iefix') format('embedded-opentype'),
+    url('../font/icomoon/icomoon.ttf?rtii3l') format('truetype'),
+    url('../font/icomoon/icomoon.woff?rtii3l') format('woff'),
+    url('../font/icomoon/icomoon.svg?rtii3l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icomoon/icomoon1.eot?v9j69c');
+  src:  url('../font/icomoon/icomoon1.eot?v9j69c#iefix') format('embedded-opentype'),
+    url('../font/icomoon/icomoon1.ttf?v9j69c') format('truetype'),
+    url('../font/icomoon/icomoon1.woff?v9j69c') format('woff'),
+    url('../font/icomoon/icomoon1.svg?v9j69c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'alegreya_sansblack';
+    src: url('../font/alegreyasans-black_0-webfont.eot');
+    src: url('../font/alegreyasans-black_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/alegreyasans-black_0-webfont.woff2') format('woff2'),
+         url('../font/alegreyasans-black_0-webfont.woff') format('woff'),
+         url('../font/alegreyasans-black_0-webfont.ttf') format('truetype'),
+         url('../font/alegreyasans-black_0-webfont.svg#alegreya_sansblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya_sansbold';
+    src: url('../font/alegreyasans-bold_0-webfont.eot');
+    src: url('../font/alegreyasans-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/alegreyasans-bold_0-webfont.woff2') format('woff2'),
+         url('../font/alegreyasans-bold_0-webfont.woff') format('woff'),
+         url('../font/alegreyasans-bold_0-webfont.ttf') format('truetype'),
+         url('../font/alegreyasans-bold_0-webfont.svg#alegreya_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya_sansmedium';
+    src: url('../font/alegreyasans-medium_0-webfont.eot');
+    src: url('../font/alegreyasans-medium_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/alegreyasans-medium_0-webfont.woff2') format('woff2'),
+         url('../font/alegreyasans-medium_0-webfont.woff') format('woff'),
+         url('../font/alegreyasans-medium_0-webfont.ttf') format('truetype'),
+         url('../font/alegreyasans-medium_0-webfont.svg#alegreya_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya_sansregular';
+    src: url('../font/alegreyasans-regular_0-webfont.eot');
+    src: url('../font/alegreyasans-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/alegreyasans-regular_0-webfont.woff2') format('woff2'),
+         url('../font/alegreyasans-regular_0-webfont.woff') format('woff'),
+         url('../font/alegreyasans-regular_0-webfont.ttf') format('truetype'),
+         url('../font/alegreyasans-regular_0-webfont.svg#alegreya_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../font/opensans-bold-webfont.eot');
+    src: url('../font/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-bold-webfont.woff2') format('woff2'),
+         url('../font/opensans-bold-webfont.woff') format('woff'),
+         url('../font/opensans-bold-webfont.ttf') format('truetype'),
+         url('../font/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../font/opensans-regular-webfont.eot');
+    src: url('../font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-regular-webfont.woff2') format('woff2'),
+         url('../font/opensans-regular-webfont.woff') format('woff'),
+         url('../font/opensans-regular-webfont.ttf') format('truetype'),
+         url('../font/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya_sansblack';
+    src: url('../font/alegreyasans-black_0-webfont.eot');
+    src: url('../font/alegreyasans-black_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/alegreyasans-black_0-webfont.woff2') format('woff2'),
+         url('../font/alegreyasans-black_0-webfont.woff') format('woff'),
+         url('../font/alegreyasans-black_0-webfont.ttf') format('truetype'),
+         url('../font/alegreyasans-black_0-webfont.svg#alegreya_sansblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya_sansbold';
+    src: url('../font/alegreyasans-bold_0-webfont.eot');
+    src: url('../font/alegreyasans-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/alegreyasans-bold_0-webfont.woff2') format('woff2'),
+         url('../font/alegreyasans-bold_0-webfont.woff') format('woff'),
+         url('../font/alegreyasans-bold_0-webfont.ttf') format('truetype'),
+         url('../font/alegreyasans-bold_0-webfont.svg#alegreya_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya_sansmedium';
+    src: url('../font/alegreyasans-medium_0-webfont.eot');
+    src: url('../font/alegreyasans-medium_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/alegreyasans-medium_0-webfont.woff2') format('woff2'),
+         url('../font/alegreyasans-medium_0-webfont.woff') format('woff'),
+         url('../font/alegreyasans-medium_0-webfont.ttf') format('truetype'),
+         url('../font/alegreyasans-medium_0-webfont.svg#alegreya_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya_sansregular';
+    src: url('../font/alegreyasans-regular_0-webfont.eot');
+    src: url('../font/alegreyasans-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/alegreyasans-regular_0-webfont.woff2') format('woff2'),
+         url('../font/alegreyasans-regular_0-webfont.woff') format('woff'),
+         url('../font/alegreyasans-regular_0-webfont.ttf') format('truetype'),
+         url('../font/alegreyasans-regular_0-webfont.svg#alegreya_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../font/opensans-bold-webfont.eot');
+    src: url('../font/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-bold-webfont.woff2') format('woff2'),
+         url('../font/opensans-bold-webfont.woff') format('woff'),
+         url('../font/opensans-bold-webfont.ttf') format('truetype'),
+         url('../font/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../font/opensans-regular-webfont.eot');
+    src: url('../font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-regular-webfont.woff2') format('woff2'),
+         url('../font/opensans-regular-webfont.woff') format('woff'),
+         url('../font/opensans-regular-webfont.ttf') format('truetype'),
+         url('../font/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope-o:before {
+  content: "\1f582";
+}
+.icon-heart:before {
+  content: "\1f394";
+}
+.icon-chevron-left:before {
+  content: "\1f598";
+}
+.icon-chevron-right:before {
+  content: "\1f599";
+}
+.icon-chevron-up:before {
+  content: "\1f53c";
+}
+.icon-chevron-down:before {
+  content: "\1f53d";
+}
+.icon-twitter-square:before {
+  content: "\1f5ea";
+}
+.icon-facebook-square:before {
+  content: "\1f5e9";
+}
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+.icon-caret-right:before {
+  content: "\1f59b";
+}
+.icon-envelope:before {
+  content: "\1f584";
+}
+.icon-location:before {
+  content: "\1f5b8";
+}
+.icon-mobile:before {
+  content: "\1f57e";
+}
+.icon-eye:before {
+  content: "\1f576";
+}
+.icon-vertical_align_bottom:before {
+  content: "\e258";
+}
+.icon-eye:before {
+  content: "\1f576";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-download3:before {
+  content: "\e9c7";
+}
