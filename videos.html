@@ -10,6 +10,8 @@
     <link href="./resources/assets/css/app.css" rel="stylesheet">
     <script src="./resources/assets/js/jquery-3.1.1.min.js"></script>
     <script src="./resources/assets/js/jquery.validate.min.js"></script>
+    <script src="./resources/assets/js/jquery.easing.1.3.js"></script>
+    <script src="./resources/assets/js/jquery.easing.1.3.js"></script>
     <script src="./resources/assets/js/lightslider.min.js"></script>
     <script src="./resources/assets/js/validacion.js"></script>
     <script src="./resources/assets/js/init.js"></script>
@@ -24,32 +26,42 @@
           <div class="col-lg-9 col-md-9 visible-md visible-lg-inline-block">
             <nav class="menu-header">
               <ul>
-                <li><a href="#">Inicio</a></li>
-                <li class="subNos"><a href="#">Nosotros<span> &#9660;</span></a>
+                <li><a href="http://americas-potash.com/demo/index.html">Inicio</a></li>
+                <li class="subNos"><a href="javascript:void(0)">Nosotros<span> &#9660;</span></a>
                   <ul class="submenu-header">
-                    <li><a href="#">Quienes somos</a></li>
-                    <li><a href="#">Misión y Visión</a></li>
-                    <li><a href="#">Valores</a></li>
-                    <li><a href="#">Talento</a></li>
+                    <li><a href="http://americas-potash.com/demo/nosotros.html">Quienes somos</a></li>
+                    <li><a href="http://americas-potash.com/demo/mision.html">Misión y Visión</a></li>
+                    <li><a href="http://americas-potash.com/demo/valores.html">Valores</a></li>
+                    <li><a href="http://americas-potash.com/demo/talento.html">Talento</a></li>
                   </ul>
                 </li>
                 <li class="subProy"><a href="javascript:void(0)">Proyectos<span> &#9660;</span></a>
                   <ul class="submenu-header">
-                    <li><a href="#">Fosfatos</a></li>
-                    <li><a href="#">Salmueras</a></li>
+                    <li><a href="http://americas-potash.com/demo/fosfatos.html">Fosfatos</a></li>
+                    <li><a href="http://americas-potash.com/demo/salmuera.html">Salmueras</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Sostenibilidad</a></li>
+                <li class="subSost"><a href="javascript:void(0)">Sostenibilidad<span> &#9660;</span></a>
+                  <ul class="submenu-header">
+                    <li><a href="http://americas-potash.com/demo/sostenibilidad.html">Responsabilidad Social</a></li>
+                    <li><a href="http://americas-potash.com/demo/salud.html">Salud, Seguridad y Medio Ambiente</a></li>
+                  </ul>
+                </li>
                 <li><a href="#">Comunicación Corporativa</a></li>
-                <li><a href="#">Contáctenos</a></li>
+                <li><a href="http://americas-potash.com/demo/contacto.html">Contáctenos</a></li>
               </ul>
             </nav>
           </div>
           <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 visible-md visible-lg-inline-block">
             <div class="box-search" id="box-search">
-              <div><a class="active" href="#">Español</a><span> /</span><a href="#">Inglés</a></div><img src="./resources/assets/image/lupa.png" width="40px" alt="">
+              <div><a class="active" href="#">Español</a><span> /</span><a href="#">English</a></div><img src="./resources/assets/image/lupa.png" width="40px" alt="">
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container-fluid">
+          <input class="style-box-search disp-none" type="text" id="busqueda" name="search" placeholder="Buscar..." autofocus>
         </div>
       </div>
     </header>
@@ -68,7 +80,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <ul class="menuSos text-center"><a href="http://americas-potash.com/demo/nosotros.html">
+          <ul class="menuSos text-center" id="ancla"><a href="http://americas-potash.com/demo/nosotros.html">
               <li>Responsablidad Social</li></a><a href="http://americas-potash.com/demo/mision.html">
               <li>Beca Docente</li></a><a href="http://americas-potash.com/demo/valores.html">
               <li class="activesos">Comunicación y Diálogo</li></a></ul>

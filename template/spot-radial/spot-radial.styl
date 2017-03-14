@@ -1,0 +1,72 @@
+section#spots
+	.container-fluid
+		.row
+			.bannerPrincipal.sostenibilidad
+				background-image url("../image/banner3.jpg")
+	.container
+		ul
+			margin:50px auto
+			display flex
+			justify-content center
+			padding 0
+			a
+				&:hover
+					text-decoration none
+				li
+					cursor pointer
+					color grisoscuro
+					list-style none
+					width 200px
+					padding 10px
+					transition all ease-in-out .2s
+					font-size 21px
+					height 80px
+					&:hover
+						background: verdeOscuro
+						color blanco
+						font-family fuente_active
+						display flex
+						align-items center
+						justify-content center
+					&.activesos
+						background verdeOscuro
+						color blanco
+						font-family fuente_active
+		.subComunic
+			border-top 3px solid verdeOscuro
+			ul
+				a
+					li
+						height auto
+		.contenedorSpots > div
+			display flex
+			margin-bottom 20%
+			.spot
+				&:hover .reseniaAudio
+					display block
+				.spotAudio
+					position relative
+					text-align center
+					&:hover .iconAudio
+						display block
+					img:first-child
+						width 93%
+					.iconAudio
+						position absolute
+						right 0
+						left 0
+						margin auto
+						top 0
+						bottom 0
+						display none
+				.reseniaAudio
+					background verdeOscuro
+					padding 25px
+					// display none
+					width 93%
+					margin auto
+					color blanco
+					font-size 20px
+					
+					
+			

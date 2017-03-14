@@ -1,20 +1,19 @@
 // javascript
-// box search
-$(document).ready(function(){
-  $('input.style-box-search').hide();
-  $("#box-search img").click(function(){
-        $("input.style-box-search").slideToggle("fast");
-    })
-})
-// funcion mostrar imagenes ampliadas
 var imagenesGaleriaIndex = function(){
     $(".caja-hover-galeria").click(zoomImg);
     $(".btn-cerrar-img").click(btnCerrar);
     $(".caja-hover-not").mouseover(mouseZoom);
     $(".caja-hover-not").mouseout(mouseoutZoom);
+    // clic buscador
+    $('input.style-box-search').hide();
+    $("#box-search img").click(openSearch);
+    // menu collapse
+    $("a.line-burguer").click(menuCollapse);
+    // menu gotoUp
+    $(".btnGoUp").click(gotoUp);
 }
 $(document).ready(imagenesGaleriaIndex);
-
+// funcion ampliar imagenes de galerias
 var zoomImg = function(){
     $(".modal-img").css("display","block");
     var imageZ = $(".imageZoom");
@@ -33,25 +32,23 @@ var mouseoutZoom =  function(){
     $(this).prev().css("transition:all .2s");
 }
 // FIN funcion mostrar imagenes ampliadas
-
-// Menu collapse
-$(document).ready(function() {
-    $("a.line-burguer").click(function() {
-        $("ul.menu-collapse").slideToggle(500);
-    });
-});
+// Inicio abrir buscador
+var openSearch =  function(){
+    $("input.style-box-search").slideToggle("fast");
+}
+// Fin abrir buscador
+// menu collapse
+var menuCollapse =  function(){
+    $("ul.menu-collapse").slideToggle(500);
+}
 // fin menu collapse
-// boton go to up 
-$(document).ready(function() {
-    $(".btnGoUp").click(function(){
-        $("html, body").animate({ 
+// boton go to up
+var gotoUp =  function(){
+    $("html, body").animate({ 
             scrollTop: 0 
         }, 1500,"linear");
-        // return false;
-    });
-});
+}
 // fin boton go to up
-
 $(document).ready(function() {
     topScroll = ""; 
     timeOut = ""; 
@@ -64,7 +61,6 @@ $(document).ready(function() {
         scrollTop: topScroll
     }, timeOut, 'easeInOutQuint');
 });
-
 
 $(document).ready(function() {
     $(".banner").lightSlider({
