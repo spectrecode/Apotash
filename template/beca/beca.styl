@@ -1,0 +1,90 @@
+section#beca
+	.container-fluid
+		.row
+			.bannerPrincipal.sostenibilidad
+				background-image url("../image/banner3.jpg")
+	.container
+		ul.menuSos
+			margin:50px auto
+			display flex
+			justify-content center
+			padding 0
+			a
+				&:hover
+					text-decoration none
+				li
+					cursor pointer
+					color grisoscuro
+					list-style none
+					width 200px
+					padding 10px
+					transition all ease-in-out .2s
+					font-size 21px
+					height 80px
+					&:hover
+						background: verdeOscuro
+						color blanco
+						font-family fuente_active
+						display flex
+						align-items center
+						justify-content center
+					&.activesos
+						background verdeOscuro
+						color blanco
+						font-family fuente_active
+						display flex
+						justify-content center
+						align-items center
+		.programaBeca
+			// background blanco
+			// display flex
+			// align-items center
+			background blanco
+			.titulo-prog
+				background blue
+				color blanco
+			.row
+				h2
+					margin-bottom 0
+					padding 25px
+				.menuProg
+					display flex
+					justify-content center
+					padding 50px
+					a
+						padding 15px
+						color grisoscuro
+						width 200px
+						font-size 20px
+						&.activeMenuProg
+							font-family fuente_activeMedium
+							color blanco
+							background blue
+						&:hover
+							text-decoration none
+							background blue
+							color blanco
+							font-family fuente_activeMedium
+						li
+							list-style none
+			.row:nth-child(2)
+				background blanco
+			.row
+				.descrip-beca
+					padding 0 15px 60px
+					h5
+						font-size 20px
+						color blue
+						font-family fuente_active
+					ul
+						padding 0
+						li
+							list-style none
+			.row.galerias
+				.lSAction
+					a.lSPrev
+						&:before
+							color blue
+					a.lSNext
+						&:before
+							color blue
