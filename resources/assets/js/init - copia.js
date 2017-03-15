@@ -211,45 +211,45 @@ $(document).ready(function() {
 // validacion formulario
 
 $( document ).ready(function() {
-    $("#contacto form").validate({
-        debug: false,
+	$("#contacto form").validate({
+		debug: false,
 
-        rules: {
-            "name": {
-                required: true,
+		rules: {
+			"name": {
+				required: true,
                 minlength:3,
-                // lettersonly: true
-            },
-            "mail": {
-                required: true,
-                email: true,
+				// lettersonly: true
+			},
+			"mail": {
+				required: true,
+				email: true,
                 minlength:8
-            },
-            "adress": {
-                required: true,
+			},
+			"adress": {
+				required: true,
                 min:5
-            },
-            "telf": {
-                required: true,
-                number: true,
+			},
+			"telf": {
+				required: true,
+				number: true,
                 max:9
-            },
-            "comment": {
-                required: true,
-                // email: true,
-                maxlength:140
-            },
-        },
-        messages: {
-            "name": {
-                required: "Escriba su nombre",
+			},
+			"comment": {
+				required: true,
+				// email: true,
+				maxlength:140
+			},
+		},
+		messages: {
+			"name": {
+				required: "Escriba su nombre",
                 minlength:"Escriba un nombre valido",
-                name:""
-            },
-            "mail": {
-                required: "Escriba su e-mail.",
+				name:""
+			},
+			"mail": {
+				required: "Escriba su e-mail.",
                 minlength:"Escriba un nombre valido",
-                email: ""
+				email: ""
             },
             "adress": {
                 required: "Escriba su dirección",
@@ -268,31 +268,6 @@ $( document ).ready(function() {
             submitHandler: function(form) {
                     form.submit();
             }
-        },
-    })
-});
-$(document).ready(function(){
-    //alert(234);
-    $(".verMas").click(function () {
-        var _link = "controller/noticias.php"; 
-        var paginacion = $("#paginar").attr("data-paginacion");
-        //alert(paginacion);
-        var form_data = {
-            "paginacion" : paginacion  
-        }
-
-        $.ajax({
-            type: "POST",
-            data: form_data,
-            url: _link
-        }).done(function(response) {
-            data = jQuery.parseJSON(response);
-            console.log(data);
-            $("#publicaciones").append(data.noticias);
-            $("#paginar").attr("data-paginacion",data.paginacion);
-            if (data.boolpagina == 0)
-                $("#paginar").fadeOut("slow");
-        });
-        
-    });
+		},
+	})
 });
