@@ -17,9 +17,10 @@ header.header
                     @media (max-width: 425px)
                         width: 60%
             a.line-burguer
-                display: block
-                height: 35px
-                width: 33px
+                display block
+                height 35px
+                width 33px
+                cursor pointer
                 &:before
                     content: ""
                     position: absolute
@@ -38,7 +39,6 @@ header.header
                     margin: auto
             .idiomas
                 position: absolute
-                color: #666
                 right: 4%
                 width: 100%
                 text-align: right
@@ -47,6 +47,7 @@ header.header
                     color: grisoscuro
                     &:active
                         font-weight: 700
+                        
     nav.menu-header
         ul    
             height: 120px
@@ -150,7 +151,7 @@ header.header
             a
                 text-decoration: none
                 transition: all .2s
-                color gris
+                color grisoscuro
                 &:active
                     font-family fuente_botonContacto
                     transition: all .2s
@@ -160,6 +161,50 @@ header.header
             cursor: pointer
     .row
         .container-fluid
+            .row
+                nav.menu-collapse
+                    ul.menu-collapse
+                        left:0
+                        z-index: 100
+                        position: absolute
+                        padding: 0
+                        width: 100%
+                        display: none
+                        transition: display cubic-bezier(0.85, 0.7, 0.43, 1.18) 0.6s, transform 1s
+                        a
+                            color: white
+                            text-decoration: none
+                            transition:color ease-in 0.8s, transform 0.5s
+                            
+                            &:hover
+                                // color: verdeOscuro
+                                transition: color ease-in 0.5s, transform 1s
+                                font-weight: 700
+                            li
+                                padding: 23px 30px
+                                list-style: none
+                                background: verdeOscuro
+                                position: relative
+                                display: block
+                                border-bottom: 2px solid blanco
+                                transform: scale(1)
+                                // transition: background-color linear 0.3s, padding-left cubic-bezier(0.98, 0.04, 0.04, 0.95) 0.3s, transform 0.5s
+                                transition: all 100ms ease-in                    
+                                &:hover
+                                    // transition: background-color linear .3s, padding-left ease-in-out .4s, transform 1s
+                                    transition: all .2s ease-in
+                                    // padding-left: 50px
+                                    background: #04a521
+                                    transform: scale(1.2)
+                    ul.idiomas
+                        padding 0
+                        display flex
+                        a
+                            width 50%
+                            li
+                                background gris
+                                &.activeIdioma
+                                    background grisoscuro
              .style-box-search
                     background:grisclaro
                     height: 100px

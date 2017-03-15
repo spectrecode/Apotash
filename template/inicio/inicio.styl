@@ -6,41 +6,6 @@ section#banner
     height 525px
     .container-fluid
         .row
-            nav.menu-collapse
-                ul.menu-collapse
-                    left:0
-                    z-index: 100
-                    position: absolute
-                    padding: 0
-                    width: 100%
-                    display: none
-                    transition: display cubic-bezier(0.85, 0.7, 0.43, 1.18) 0.6s, transform 1s
-                    a
-                        color: white
-                        text-decoration: none
-                        transition:color ease-in 0.8s, transform 0.5s
-                        
-                        &:hover
-                            // color: verdeOscuro
-                            transition: color ease-in 0.5s, transform 1s
-                            font-weight: 700
-                        li
-                            padding: 23px 30px
-                            list-style: none
-                            background: verdeOscuro
-                            position: relative
-                            display: block
-                            border-bottom: 2px solid blanco
-                            transform: scale(1)
-                            // transition: background-color linear 0.3s, padding-left cubic-bezier(0.98, 0.04, 0.04, 0.95) 0.3s, transform 0.5s
-                            transition: all 100ms ease-in                    
-                            &:hover
-                                // transition: background-color linear .3s, padding-left ease-in-out .4s, transform 1s
-                                transition: all .2s ease-in
-                                // padding-left: 50px
-                                background: #04a521
-                                transform: scale(1.2)
-        .row
             ul
                 overflow hidden
                 li

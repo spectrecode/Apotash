@@ -18,9 +18,8 @@
   <body ng-view>
     <header class="header" ng-controller="headerCrtl">
       <div class="container">
-        <div class="logo-max hidden-md hidden-lg"><a href="#"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a><a class="line-burguer"></a></div>
+        <div class="logo-max hidden-md hidden-lg"><a href="javascript:void(0)"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a><a class="line-burguer"></a></div>
         <div class="row">
-          <div class="col-sm-8 idiomas hidden-md hidden-lg hidden-sm hidden-xs"><a href="#"> Inglés</a></div>
           <div class="col-lg-2 col-md-2 logo-header hidden-sm hidden-xs"><a href="#"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a></div>
           <div class="col-lg-9 col-md-9 visible-md visible-lg-inline-block">
             <nav class="menu-header">
@@ -31,7 +30,7 @@
                     <li><a href="http://americas-potash.com/demo/nosotros.html">Quienes somos</a></li>
                     <li><a href="http://americas-potash.com/demo/mision.html">Misión y Visión</a></li>
                     <li><a href="http://americas-potash.com/demo/valores.html">Valores</a></li>
-                    <li><a href="talento">Talento</a></li>
+                    <li><a href="http://americas-potash.com/demo/talento.html">Talento</a></li>
                   </ul>
                 </li>
                 <li class="subProy"><a href="javascript:void(0)">Proyectos<span> &#9660;</span></a>
@@ -60,23 +59,27 @@
       </div>
       <div class="row">
         <div class="container-fluid">
+          <div class="row hidden-md hidden-lg">
+            <nav class="menu-collapse">
+              <ul class="menu-collapse text-center"><a href="http://americas-potash.com/demo/index.html">
+                  <li>Inicio</li></a><a href="http://americas-potash.com/demo/nosotros.html">
+                  <li>Nosotros</li></a><a href="http://americas-potash.com/demo/fosfato.html">
+                  <li>Proyectos</li></a><a href="http://americas-potash.com/demo/sostenibilidad.html">
+                  <li>Sostenibilidad</li></a><a href="#">
+                  <li>Comunicación Corporativa</li></a><a href="http://americas-potash.com/demo/contacto.html">
+                  <li>Contáctenos</li></a>
+                <ul class="idiomas"><a href="http://americas-potash.com/demo/contacto.html">
+                    <li class="activeIdioma">Español</li></a><a href="http://americas-potash.com/demo/contacto.html">
+                    <li>English</li></a></ul>
+              </ul>
+            </nav>
+          </div>
           <input class="style-box-search disp-none" type="text" id="busqueda" name="search" placeholder="Buscar..." autofocus>
         </div>
       </div>
     </header>
     <section id="banner">
       <div class="container-fluid">
-        <div class="row hidden-md hidden-lg">
-          <nav class="menu-collapse">
-            <ul class="menu-collapse text-center"><a href="http://americas-potash.com/demo/index.html">
-                <li>Inicio</li></a><a href="http://americas-potash.com/demo/nosotros.html">
-                <li>Nosotros</li></a><a href="http://americas-potash.com/demo/fosfato.html">
-                <li>Proyectos</li></a><a href="http://americas-potash.com/demo/sostenibilidad.html">
-                <li>Sostenibilidad</li></a><a href="#">
-                <li>Comunicación Corporativa</li></a><a href="http://americas-potash.com/demo/contacto.html">
-                <li>Contáctenos</li></a></ul>
-          </nav>
-        </div>
         <div class="row contenedor-banner">
           <ul class="banner">
             <li><img src="./resources/assets/image/banner1.jpg" alt="">
@@ -103,7 +106,7 @@
                 </div>
               </div>
             </li>
-            <li><img src="./resources/assets/image/banner4.jpg" alt="">
+            <li><img src="./resources/assets/image/banner-salmuera.jpg" alt="">
               <div class="letrero-banner">
                 <div>
                   <h2>What is Lorem ipsum</h2>
@@ -165,39 +168,31 @@
           </div>
         </div>
         <div class="row">
-          <div class="modal-img"><span class="btn-cerrar-img">X</span><img class="imageZoom"></div>
+          <div class="modal-img">
+            <div class="content-modal">
+              <div class="row-normal"><span class="btn-cerrar-img">X</span><img class="imageZoom"><i class="icon-chevron-left"></i><i class="icon-chevron-right"></i></div>
+            </div>
+          </div>
           <div class="col-lg-12"> 
             <h3>Galería</h3>
             <div>
               <ul class="sliderGaleria">
-                <li><img class="image-click" src="./resources/assets/image/home-galeria1.png" alt="" width="100%">
+                <li><img class="image-click" src="./resources/assets/image/galeria-index1.jpg" alt="" width="100%">
                   <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
                 </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria2.png" alt="" width="100%">
+                <li><img class="image-click" src="./resources/assets/image/galeria-index2.jpg" alt="" width="100%">
                   <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
                 </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria1.png" alt="" width="100%">
+                <li><img class="image-click" src="./resources/assets/image/galeria-index3.jpg" alt="" width="100%">
                   <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
                 </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria4.png" alt="" width="100%">
+                <li><img class="image-click" src="./resources/assets/image/galeria-index4.jpg" alt="" width="100%">
                   <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
                 </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria5.png" alt="" width="100%">
+                <li><img class="image-click" src="./resources/assets/image/galeria-index5.jpg" alt="" width="100%">
                   <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
                 </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria1.png" alt="" width="100%">
-                  <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria2.png" alt="" width="100%">
-                  <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria1.png" alt="" width="100%">
-                  <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria4.png" alt="" width="100%">
-                  <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                </li>
-                <li><img class="image-click" src="./resources/assets/image/home-galeria5.png" alt="" width="100%">
+                <li><img class="image-click" src="./resources/assets/image/galeria-index1.jpg" alt="" width="100%">
                   <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
                 </li>
               </ul>

@@ -5,13 +5,6 @@ header.header(ng-controller="headerCrtl")
 				img(src="./resources/assets/image/logo-potash-header.gif", alt="",width="100%")
 			a.line-burguer
 		.row
-			//- .idiomas.hidden-sm.hidden-xs
-				//- a(href="#") Español 
-				//- span /
-			.col-sm-8.idiomas.hidden-md.hidden-lg.hidden-sm.hidden-xs
-				//- a(href="#") Español 
-				//- span /
-				a(href="#")  Inglés
 			.col-lg-2.col-md-2.logo-header.hidden-sm.hidden-xs
 				a(href="#")
 					img(src="./resources/assets/image/logo-potash-header.gif", alt="",width="100%")
@@ -61,4 +54,28 @@ header.header(ng-controller="headerCrtl")
 					img(src="./resources/assets/image/lupa.png",width="40px", alt="")
 	.row
 		.container-fluid
+			.row.hidden-md.hidden-lg
+				nav.menu-collapse
+					ul.menu-collapse.text-center
+						a(href="http://americas-potash.com/demo/index.html")
+							li Inicio
+					
+						a(href="http://americas-potash.com/demo/nosotros.html")
+							li Nosotros
+					
+						a(href="http://americas-potash.com/demo/fosfato.html")
+							li Proyectos
+					
+						a(href="http://americas-potash.com/demo/sostenibilidad.html")
+							li Sostenibilidad
+					
+						a(href="#")
+							li Comunicación Corporativa
+						a(href="http://americas-potash.com/demo/contacto.html")
+							li Contáctenos
+						ul.idiomas
+							a(href="http://americas-potash.com/demo/contacto.html")
+								li.activeIdioma Español
+							a(href="http://americas-potash.com/demo/contacto.html")
+								li English
 			input(type="text",class="style-box-search disp-none",id="busqueda",name="search",placeholder="Buscar...", autofocus)

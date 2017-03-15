@@ -11,7 +11,7 @@
 	Descripcion: Se definen los colores que se usaran durante
 	todo el desarrollo del site
 ***/
-azul 			= #4983d8
+azul 			= #336df5
 blanco 			= #fff
 negro 			= #000
 rojo 			= #DD0000
@@ -19,7 +19,7 @@ verde     		= #00ac64
 verclaro        = #5e8800
 verdeOscuro 	= #006c4b
 olivo 			= #002b12
-gris            = #888
+gris            = #adadad
 grafito 		= #292929
 grisoscuro      = #666
 grisclaro       = #f3f3f3
@@ -173,6 +173,8 @@ ul
 	&.sliderGaleria
 		li
 			cursor: -webkit-zoom-in
+			p
+				display none
 .modal-img
 	width: 100%
 	height: 100%
@@ -185,20 +187,12 @@ ul
 	left:0
 	animation: fadeModal .3s
 	.imageZoom
-		margin auto
-		width 80%
-		max-width 550px
-		top 0
-		bottom 0
-		position absolute
-		left 0
-		right 0
+		height 100%
 	.btn-cerrar-img
 		position absolute
-		color blanco
-		right 80px
+		color grisoscuro
+		right 0
 		padding 0px 11px
-		font-family fuente_gruesa
 		font-size 30px
 		cursor pointer
 		// line-height 1.5
@@ -206,9 +200,62 @@ ul
 		text-shadow -0.5px -1.5px 0.5px blanco
 		height 45px
 		&:hover
-			color: grisoscuro
-			background: blanco
+			color: blanco
+			background: gris
 			transition: all ease-out .3s
 		&:active
-			background: grisoscuro
+			color grisoscuro
+	.content-modal
+		display flex
+		height 100%
+		justify-content center
+		align-items center
+		.row-modal, .row-normal
+			height 70%
+			position relative
+			i.icon-chevron-left, i.icon-chevron-right
+				position absolute
+				color grisclaro
+				left -35px
+				top 0
+				bottom 0
+				margin auto
+				cursor pointer
+				height 40px
+				font-size 40px
+				text-shadow -0.5px -1.5px 0.5px grisoscuro
+				transition all ease-out 0.3s
+				&:hover
+					transition all ease-out 0.3s
+					color grisoscuro
+		.row-normal
+			i.icon-chevron-right
+				right -35px
+				left initial
+		.row-modal:last-child
+			background blanco
+			width 25%
+			padding 30px
+			display flex
+			align-items center
+			justify-content center
+			flex-direction column
+			i.icon-chevron-right
+				right -35px
+				left initial
+			h3
+				color verdeOscuro
+				font-family fuente_tituloH2Nos
+				font-size 30px
+				&:after
+					content initial
+			span.btn-cerrar-img
+				color grisoscuro
+				right 0
+				top 0
+				&:hover
+					color blanco
+					background grisoscuro
+			.imageZoom
+				height 70%
 // fin proyectos

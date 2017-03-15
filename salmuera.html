@@ -18,9 +18,8 @@
   <body ng-view>
     <header class="header" ng-controller="headerCrtl">
       <div class="container">
-        <div class="logo-max hidden-md hidden-lg"><a href="#"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a><a class="line-burguer"></a></div>
+        <div class="logo-max hidden-md hidden-lg"><a href="javascript:void(0)"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a><a class="line-burguer"></a></div>
         <div class="row">
-          <div class="col-sm-8 idiomas hidden-md hidden-lg hidden-sm hidden-xs"><a href="#"> Inglés</a></div>
           <div class="col-lg-2 col-md-2 logo-header hidden-sm hidden-xs"><a href="#"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a></div>
           <div class="col-lg-9 col-md-9 visible-md visible-lg-inline-block">
             <nav class="menu-header">
@@ -116,7 +115,11 @@
           </div>
         </div>
         <div class="row galerias">
-          <div class="modal-img"><span class="btn-cerrar-img">X</span><img class="imageZoom"></div>
+          <div class="modal-img">
+            <div class="content-modal">
+              <div class="row-normal"><span class="btn-cerrar-img">X</span><img class="imageZoom"><i class="icon-chevron-left"></i><i class="icon-chevron-right"></i></div>
+            </div>
+          </div>
           <div class="col-lg-12">
             <h3>Galería</h3>
             <div>

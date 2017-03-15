@@ -36,9 +36,6 @@ section#beca
 						justify-content center
 						align-items center
 		.programaBeca
-			// background blanco
-			// display flex
-			// align-items center
 			background blanco
 			.titulo-prog
 				background azul
@@ -73,17 +70,34 @@ section#beca
 							list-style none
 			.row:nth-child(2)
 				background blanco
-			.row
-				.descrip-beca
-					padding 0 15px 60px
-					h5
+			.contenBecaSpot
+				display flex
+				.spot
+					&:hover .reseniaAudio
+						display block
+					.spotAudio
+						position relative
+						text-align center
+						&:hover .iconAudio
+							display block
+						img:first-child
+							width 93%
+						.iconAudio
+							position absolute
+							right 0
+							left 0
+							margin auto
+							top 0
+							bottom 0
+							display none
+					.reseniaAudio
+						background azul
+						padding 25px
+						// display none
+						width 93%
+						margin auto
+						color blanco
 						font-size 20px
-						color azul
-						font-family fuente_tituloH2Nos
-					ul
-						padding 0
-						li
-							list-style none
 			.row.galerias
 				.lSAction
 					> a
