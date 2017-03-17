@@ -11,6 +11,23 @@ var imagenesGaleriaIndex = function(){
     $("a.line-burguer").click(menuCollapse);
     // menu gotoUp
     $(".btnGoUp").click(gotoUp);
+    // mapa piura
+    $(".piura").click(goPiura);
+    // mapa Lima
+    $(".lima").click(goLima);
+    // RESPONSIVE
+    // nosotros responsive
+    $(".somosMovile").click(somosUP);
+    // mision responsive
+    $(".misionMovile").click(misionMovile);
+    // valores responsive
+    $(".valorMovil").click(valorMovil);
+    // talento responsive
+    $(".talentoMovil").click(talentoMovil);
+    // fosfato responsive
+    $(".fosfatoMovil").click(fosfatoMovil);
+    // sostenibilidad responsive
+    $(".sostenibilidadMovil").click(sostenibilidadMovil);
 }
 $(document).ready(imagenesGaleriaIndex);
 // funcion ampliar imagenes de galerias
@@ -49,9 +66,103 @@ var gotoUp =  function(){
         }, 1500,"linear");
 }
 // fin boton go to up
+// funcion goPiuraMap
+var goPiura =  function(){
+    $(".mapaLima").addClass("mapaOculto");
+    $(".piuraMap").removeClass("mapaOculto");
+}
+// fin funcion goPiuraMap
+// funcion goPiuraMap
+var goLima =  function(){
+    $(".piuraMap").addClass("mapaOculto");
+    $(".mapaLima").removeClass("mapaOculto");
+}
+// fin funcion somosUP
+// funcion somosUP
+var somosUP =  function(){
+    $("#nosotros").append($(".menuNosMovil"));
+    $(".contenedorNosotros").slideToggle("slow");
+}
+// fin funcion somosUP
+// funcion misionMovile
+var misionMovile =  function(){
+    $("#nosotros").append($(".menuNosMovil"));
+    $(".mision").slideToggle("slow");
+}
+// fin funcion misionMovile
+// funcion .valorMovil
+var valorMovil =  function(){
+    $("#nosotros").append($(".menuNosMovil"));
+    $(".valores").slideToggle("slow");
+}
+// fin funcion .valorMovil
+// funcion .talentoMovil
+var talentoMovil =  function(){
+    $("#nosotros").append($(".menuNosMovil"));
+    $(".talento").slideToggle("slow");
+}
+// fin funcion .talentoMovil
+// funcion .fosfatoMovil
+var fosfatoMovil =  function(){
+    $("#fosfatos").append($(".submenuFM"));
+    $(".fosfatoProy").slideToggle("slow");
+    // alert($(".galeriaRF").html())
+}
+// fin funcion .fosfatoMovil
+// funcion .sostenibilidadMovil
+var sostenibilidadMovil =  function(){
+    function migaleriaSoS (){
+        $(".sliderGaleria").lightSlider({
+            item: 5,
+            autoWidth: false,
+            slideMove: 1, // slidemove will be 1 if loop is true
+            slideMargin: 10,
+     
+            // addClass: '',
+            mode: "slide",
+            useCSS: true,
+            cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+     
+            speed: 400, //ms'
+            loop: true,
+            slideEndAnimation: true,
+            pause: 2000,
+     
+            pager: false,
+            galleryMargin: 5,
+            thumbMargin: 5,
+            currentPagerPosition: 'middle',
+     
+            // enableTouch:false,
+            // enableDrag:false,
+            freeMove:false,
+     
+            responsive : [
+                {   breakpoint: 768,
+                    settings: {
+                        item: 3,
+                    },
+                },
+                {   breakpoint: 426,
+                    settings: {
+                        item: 1,
+                    }
+                }
+            ]
+        });
+        //fin de la funcion
+    }
+    $("#sostenibilidad").append($(".menuSosMovil"));
+    $(".sostenibilidad-social").slideToggle("slow");
+    $("#sostenibilidad .galerias").slideToggle("slow",function(){
+        migaleriaSoS() 
+    });
+    // alert($(".galeriaRF").html())
+}
+// fin funcion .sostenibilidadMovil
 // funcion ancla para submenus
 $(document).ready(function() {
-    topScroll = ""; 
+    topScroll = "";
     timeOut = ""; 
     htmlbody = $('html,body'); 
     valor = 0; 
@@ -127,44 +238,49 @@ $(document).ready(function() {
 
 // funcionalidad slider galeria index
 $(document).ready(function() {
-    $(".sliderGaleria").lightSlider({
-        item: 5,
-        autoWidth: false,
-        slideMove: 1, // slidemove will be 1 if loop is true
-        slideMargin: 10,
- 
-        // addClass: '',
-        mode: "slide",
-        useCSS: true,
-        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
- 
-        speed: 400, //ms'
-        loop: true,
-        slideEndAnimation: true,
-        pause: 2000,
- 
-        pager: false,
-        galleryMargin: 5,
-        thumbMargin: 5,
-        currentPagerPosition: 'middle',
- 
-        // enableTouch:false,
-        // enableDrag:false,
-        freeMove:false,
- 
-        responsive : [
-            {   breakpoint: 768,
-                settings: {
-                    item: 3,
+    function migaleriaSoS (){
+        $(".sliderGaleria").lightSlider({
+            item: 5,
+            autoWidth: false,
+            slideMove: 1, // slidemove will be 1 if loop is true
+            slideMargin: 10,
+     
+            // addClass: '',
+            mode: "slide",
+            useCSS: true,
+            cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+     
+            speed: 400, //ms'
+            loop: true,
+            slideEndAnimation: true,
+            pause: 2000,
+     
+            pager: false,
+            galleryMargin: 5,
+            thumbMargin: 5,
+            currentPagerPosition: 'middle',
+     
+            // enableTouch:false,
+            // enableDrag:false,
+            freeMove:false,
+     
+            responsive : [
+                {   breakpoint: 768,
+                    settings: {
+                        item: 3,
+                    },
                 },
-            },
-            {   breakpoint: 426,
-                settings: {
-                    item: 1,
+                {   breakpoint: 426,
+                    settings: {
+                        item: 1,
+                    }
                 }
-            }
-        ]
-    });
+            ]
+        });
+        //fin de la funcion
+    }
+
+    migaleriaSoS();
 });
 $(document).ready(function() {
     $(".sliderSalud").lightSlider({
@@ -207,7 +323,47 @@ $(document).ready(function() {
         ]
     });
 });
-
+$(document).ready(function() {
+    $(".sliderNoticia").lightSlider({
+        item: 1,
+        autoWidth: false,
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 0,
+ 
+        // addClass: '',
+        mode: "slide",
+        useCSS: true,
+        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+ 
+        speed: 400, //ms'
+        loop: true,
+        slideEndAnimation: true,
+        pause: 2000,
+ 
+        pager: true,
+        controls: true,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+ 
+        // enableTouch:false,
+        // enableDrag:false,
+        freeMove:false,
+ 
+        responsive : [
+            {   breakpoint: 768,
+                settings: {
+                    item: 3,
+                },
+            },
+            {   breakpoint: 426,
+                settings: {
+                    item: 1,
+                }
+            }
+        ]
+    });
+});
 // validacion formulario
 
 $( document ).ready(function() {

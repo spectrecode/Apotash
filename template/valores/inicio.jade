@@ -10,46 +10,54 @@ section#nosotros
 							|Proyectos e iniciativas para el desarrollo e iniciativas para el desarrollo.
 	.container
 		.row
-			ul.menuNos.text-center#ancla
-				a(href="http://americas-potash.com/demo/nosotros.html")
+			ul.menuNos.hidden-sm.hidden-xs.text-center#ancla
+				a(href="http://americas-potash.com/demoV2/nosotros.html")
 					li Quiénes somos
-				a(href="http://americas-potash.com/demo/mision.html")
+				a(href="http://americas-potash.com/demoV2/mision.html")
 					li Misión y visión
-				a(href="http://americas-potash.com/demo/valores.html")
+				a(href="http://americas-potash.com/demoV2/valores.html")
 					li.activeNosotros Valores
-				a(href="http://americas-potash.com/demo/talento.html")
+				a(href="http://americas-potash.com/demoV2/talento.html")
 					li Talento humano
-			//- ul.menuNos.text-center#ancla
-			//- 	a(href="http://localhost/potash/nosotros.html")
-			//- 		li.activeNosotros Quiénes somos
-			//- 	a(href="http://localhost/potash/mision.html")
-			//- 		li Misión y visión
-			//- 	a(href="http://localhost/potash/valores.html")
-			//- 		li Valores
-			//- 	a(href="http://localhost/potash/nosotros.html")
-			//- 		li Talento humano
-		.valores
-			.row
-				.col-lg-2
-					img(src="./resources/assets/image/brazos.png")
-				.col-lg-5
-					h2 INTEGRIDAD
-					div.text-justify Es una política de la compañia promover altos estándare de integridad,  a través de la gestion de los asuntos de la empresa de manera honesta y ética.  La integridad de la empresa depende de la honestidad, sentido de justicia e integridad de cada uno de los colaboradores, reflejado en la ejecución de sus labores diarias.
-				.col-lg-6
-					img(src="./resources/assets/image/nosotros-val1.jpg" width="100%")
-			.row
-				.col-lg-2
-					img(src="./resources/assets/image/manos.png")
-				.col-lg-5
-					h2 RESPETO
-					div.text-justify Cultivar y fomentar el respeto a las ideas, costumbres y tradiciones de todos los integrantes de la organización y los grupos de interés que interactúan con Americas Potash.
-				.col-lg-6
-					img(src="./resources/assets/image/nosotros-val2.jpg" width="100%")
-			.row
-				.col-lg-2
-					img(src="./resources/assets/image/grupo.png")
-				.col-lg-5
-					h2 EXCELENCIA
-					div.text-justify Aplicar prácticas responsables, serias y manejadas por todos los integrantes de la organización con el fin de alcanzar la excelencia.
-				.col-lg-6
-					img(src="./resources/assets/image/nosotros-val3.jpg" width="100%")
+			ul.menuNosMovil.text-center.hidden-lg.hidden-md.hidden-sm
+				a(href="http://americas-potash.com/demoV2/nosotros.html")
+					li ¿Quiénes somos?
+				a(href="http://americas-potash.com/demoV2/mision.html")
+					li Misión y visión
+				a.valorMovil(href="javascript:void(0)")
+					li Valores
+				a(href="http://americas-potash.com/demoV2/talento.html")
+					li Talento humano
+		.row
+			.valores
+				.row
+					.col-lg-2.hidden-sm.hidden-xs
+						img(src="./resources/assets/image/brazos.png")
+					.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						h2.tituloValorMovil.hidden-sm.hidden-md.hidden-lg Integridad
+						.logoMovil
+							h2 INTEGRIDAD
+							img.hidden-sm.hidden-md.hidden-lg(src="./resources/assets/image/brazos.png")
+						p.text-justify Es una política de la compañia promover altos estándare de integridad,  a través de la gestion de los asuntos de la empresa de manera honesta y ética.  La integridad de la empresa depende de la honestidad, sentido de justicia e integridad de cada uno de los colaboradores, reflejado en la ejecución de sus labores diarias.
+					.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						img(src="./resources/assets/image/nosotros-val1.jpg" width="100%")
+				.row
+					.col-lg-2.hidden-sm.hidden-xs
+						img(src="./resources/assets/image/manos.png")
+					.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.logoMovil
+							h2 RESPETO
+							img.hidden-sm.hidden-md.hidden-lg(src="./resources/assets/image/manos.png")
+						p.text-justify Cultivar y fomentar el respeto a las ideas, costumbres y tradiciones de todos los integrantes de la organización y los grupos de interés que interactúan con Americas Potash.
+					.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						img(src="./resources/assets/image/nosotros-val2.jpg" width="100%")
+				.row
+					.col-lg-2.hidden-sm.hidden-xs
+						img(src="./resources/assets/image/grupo.png")
+					.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.logoMovil
+							h2 EXCELENCIA
+							img.hidden-sm.hidden-md.hidden-lg(src="./resources/assets/image/grupo.png")
+						p.text-justify Aplicar prácticas responsables, serias y manejadas por todos los integrantes de la organización con el fin de alcanzar la excelencia.
+					.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						img(src="./resources/assets/image/nosotros-val3.jpg" width="100%")

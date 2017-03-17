@@ -1,10 +1,38 @@
 #detalle
+	@media (max-width 425px)
+		background blanco
+	.container-fluid
+		.row
+			.bannerPrincipal.comuncCorp
+				background-image url("../image/banner3.jpg")
+				@media (max-width 425px)
+					background-image url("../image/banner-movilCo.jpg")
+					background-position 0px -4px
+					background-size 107%
+					height 440px
+				.letrero-banner
+					h2
+						color blanco
+					@media (min-width 426px)
+						display none
 	padding-bottom 10%
+	.container
+		.noticias-comunicacion
+			@media (max-width 425px)
+				padding 0px 30px
+			> div:last-child
+				@media (max-width 425px)
+					display flex
+					flex-direction column
+					justify-content center
+					align-items center
+			h2.titulo
+				font-size 35px
 	h2
 		color verdeOscuro
 	h3
 		color #999999
-		font 30px fuente_tituloGral
+		font 30px fuente_tituloH3
 		&:after
 			content: ""
 			border-bottom: 1.5px solid #999999
@@ -24,7 +52,7 @@
 	.inner-noticia
 		background blanco
 		border-right 3px solid #CED71F
-		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+		box-shadow sombra
 		margin-top 20px
 		&:first-child
 			margin-top 0
@@ -53,7 +81,7 @@
 			padding 10px 0
 			display block
 			margin-top 20px
-			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+			box-shadow sombra
 			&:hover
 				background #006C4B
 				transition 0.3s all ease
@@ -95,7 +123,7 @@
 			text-decoration none
 	.brochure
 		margin 20px
-		box-shadow 0 0 5px 0 rgba(0,0,0,0.75)
+		box-shadow sombra
 		h2
 			font 16px alegreya_sansblack
 			text-align center
@@ -116,15 +144,24 @@
 		margin-top 20px
 	.inner-detalle
 		background blanco
-		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+		box-shadow sombra
 		padding-bottom 20px
+		@media (max-width 425px)
+			box-shadow 0 0 0
 		h1
 			color #006C4B
 			font 33px alegreya_sansblack
 			padding 20px
+			@media (max-width 425px)
+				padding 10px
+				line-height 1.3
+		.lSSlideOuter
+				position relative
 		p
 			padding 0 30px
 			text-align justify
+			@media (max-width 425px)
+				padding 10px 0
 		h4
 			color #5D5D5D
 			font 19px alegreya_sansregular

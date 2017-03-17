@@ -36,18 +36,7 @@ header.header
                 align-items: center
                 @media (max-width: 768px)
                     width: 70%
-                    margin: auto
-            .idiomas
-                position: absolute
-                right: 4%
-                width: 100%
-                text-align: right
-                a
-                    text-decoration: none
-                    color: grisoscuro
-                    &:active
-                        font-weight: 700
-                        
+                    margin: auto                        
     nav.menu-header
         ul    
             height: 120px
@@ -90,6 +79,10 @@ header.header
                         li
                             padding 10px 13px
                             background verdeOscuro
+                            transition: all .2s
+                            &:hover
+                                background verde
+                                transition: all .2s
                             a
                                 color blanco
                                 font-size 13px
@@ -111,6 +104,10 @@ header.header
                         li
                             padding 7px 13px
                             background verdeOscuro
+                            transition: all .2s
+                            &:hover
+                                background verde
+                                transition: all .2s
                             a
                                 color blanco
                                 font-size 13px
@@ -133,6 +130,10 @@ header.header
                         li
                             padding 7px 13px
                             background verdeOscuro
+                            transition: all .2s
+                            &:hover
+                                background verde
+                                transition: all .2s
                             a
                                 color blanco
                                 font-size 13px
@@ -151,12 +152,13 @@ header.header
             a
                 text-decoration: none
                 transition: all .2s
-                color grisoscuro
-                &:active
+                color gris
+                &.active
                     font-family fuente_botonContacto
                     transition: all .2s
             span
                 padding 0 5px
+                color gris
         img
             cursor: pointer
     .row
@@ -181,7 +183,7 @@ header.header
                                 transition: color ease-in 0.5s, transform 1s
                                 font-weight: 700
                             li
-                                padding: 23px 30px
+                                padding: 26px 30px
                                 list-style: none
                                 background: verdeOscuro
                                 position: relative
@@ -194,7 +196,7 @@ header.header
                                     // transition: background-color linear .3s, padding-left ease-in-out .4s, transform 1s
                                     transition: all .2s ease-in
                                     // padding-left: 50px
-                                    background: #04a521
+                                    background: verde
                                     transform: scale(1.2)
                     ul.idiomas
                         padding 0

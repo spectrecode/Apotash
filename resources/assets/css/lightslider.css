@@ -12,11 +12,11 @@
     margin: 0;
     position: relative;
 }
-@media (max-width: 768px){
+/*@media (max-width: 768px){
     .contenedor-banner .lSSlideOuter > div{
         height: 450px;
     }
-}
+}*/
 .lSSlideOuter ul {
     display: flex;
     justify-content: space-around;
@@ -224,33 +224,15 @@
 
 /* slider actions */
 .lSAction > a {
-    top: 50%;
+    height: 45px;
     cursor: pointer;
     position: absolute;
-    /*margin-top: -10px;*/
+    margin: auto;
     opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
-}
-@media (max-width: 767px) and (min-width: 573px){
-    .lSAction > a {
-        top: 30%;
-    }
-}
-@media (max-width: 572px) and (min-width: 530px){
-    .lSAction > a {
-        top: 29%;
-    }
-}
-@media (max-width: 529px) and (min-width: 425px){
-    .lSAction > a {
-        top: 24%;
-    }
-}
-@media (max-width: 425px){
-    .lSAction > a {
-        top: 20%;
-    }
+    bottom: 0;
+    top: 0;
 }
 /*slider galeria responsive*/
 @media (max-width: 425px){

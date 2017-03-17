@@ -3,36 +3,73 @@ section#fosfatos
 		.row
 			.fosfato
 				background-image url("../image/banner-fosfatos.jpg")
+				@media (max-width 425px)
+					background-image url("../image/banner-movil3.jpg")
+					height 440px
 	.container	
-		.row
-			p
-				font-size 21px
-				padding 0 60px
-				line-height 1
-		.row	
-			ul.secuenciaFosfatos
-				display flex
-				padding 0
-				li
-					list-style none
-					font-size 18px
-					padding 20px 0
+		.fosfatoProy
+			@media (max-width 425px)
+				box-shadow 0 0 0
+				display none
+				background blanco
+			.row
+				h2
+					@media (max-width 425px)
+						font-size 28px
+						background #006c4b
+						color #fff
+						height 70px
+						width 70%
+						margin 50px 0 40px
+						padding 20px 35px
+						left -5px
+						position relative
+				p
+					font-size 21px
+					padding 0 60px
 					line-height 1
-					
-					h3
-						font-family fuente_itemsSubmenu
-						color verdeOscuro
-						font-size 24px
-						height 35px
-						&:after
-							content initial
-				i
-					height 0
-					position relative
-					padding 20px
-					font-size 35px
-					color amarilloLimon
-		.row:nth-child(3)
-			padding 20px
-			background-color blanco
-			margin-top 3%
+					@media (max-width 425px)
+						text-align justify
+						padding 0 30px
+			.fosfatoBox
+				padding 20px
+				background-color blanco
+				// padding-bottom 40px
+				.row	
+					ul.secuenciaFosfatos
+						display flex
+						padding 0
+						@media (max-width 425px)
+							flex-direction column
+							padding 0 15px
+						li
+							list-style none
+							font-size 18px
+							padding 20px 0
+							line-height 1
+							
+							h3
+								font-family fuente_itemsSubmenu
+								color verdeOscuro
+								font-size 24px
+								height 35px
+								&:after
+									content initial
+						i
+							height 0
+							position relative
+							padding 20px
+							font-size 35px
+							color amarilloLimon
+						i.icon-caret-right
+							@media (max-width 425px)
+								display none
+						i.icon-chevron-down
+							@media (max-width 425px)
+								display flex
+								justify-content center
+								align-items flex-end
+							@media (min-width 426px)
+								display none
+			.sliderGaleria
+				margin-bottom 20%

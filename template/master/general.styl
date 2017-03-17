@@ -15,7 +15,7 @@ azul 			= #336df5
 blanco 			= #fff
 negro 			= #000
 rojo 			= #DD0000
-verde     		= #00ac64
+verde     		= #04a521
 verclaro        = #5e8800
 verdeOscuro 	= #006c4b
 olivo 			= #002b12
@@ -27,6 +27,7 @@ celeste 		= #00AFCB
 amarilloOscuro  = #97a712
 amarilloLimon 	= #c7de00
 morado 			= #a078b0
+sombra 			= 0 3px 5px 3px rgba(204, 204, 204, 0.32)
 /***
 	Descripcion: Se definen las fuentes que se usaran durante
 	todo el desarrollo del site
@@ -68,11 +69,11 @@ h1, h2
 	font-family fuente_tituloH2
 // banner
 .container-fluid	
-		.row
-			.bannerPrincipal
-				background-size cover
-				height 524px
-				position relative
+	.row
+		.bannerPrincipal
+			background-size cover
+			height 524px
+			position relative
 .letrero-banner
 	height: 100%
 	width: 45%
@@ -138,33 +139,50 @@ h1, h2
 				text-align: center
 				border-left-width: 10px
 // fin banner
-	
 // proyectos
-.row
-	ul.submenu
-		margin:50px auto
-		display flex
-		justify-content center
-		padding 0
-		a
-			&:hover
-				text-decoration none
-			li
-				cursor pointer
-				color grisoscuro
-				list-style none
-				width 200px
-				padding 20px
-				transition all ease-in-out .2s
-				font-size 21px
-				&.active
-					background verdeOscuro
-					color blanco
-					font-family fuente_active
-				&:hover        
-					background: verdeOscuro
-					color blanco
-					font-family fuente_active
+section#fosfatos
+	.row
+		ul.submenu
+			margin:50px auto
+			display flex
+			justify-content center
+			padding 0
+			a
+				&:hover
+					text-decoration none
+				li
+					cursor pointer
+					color grisoscuro
+					list-style none
+					width 200px
+					padding 20px
+					transition all ease-in-out .2s
+					font-size 21px
+					&.active
+						background verdeOscuro
+						color blanco
+						font-family fuente_active
+						position relative
+					&:hover
+						background: verdeOscuro
+						color blanco
+						font-family fuente_active
+			/.submenuFM
+				display flex
+				flex-direction column
+				padding 0
+				margin-bottom 0
+				a
+					&:hover
+						text-decoration none
+					li
+						padding 30px
+						width 100%
+						background blanco
+						color grisoscuro
+						font-size 21px
+						&:hover
+							font-family fuente_active
 // slide galerias
 .galerias
 	margin-bottom 20%
@@ -258,4 +276,75 @@ ul
 					background grisoscuro
 			.imageZoom
 				height 70%
+section#beca
+	.container
+		.programaBeca
+			.row:nth-child(2)
+				background blanco
+				box-shadow: 0 0 5px 0 rgba(0,0,0,0.75)
+			.titulo-prog
+				background azul
+				color blanco
+			.row
+				h2
+					margin-bottom 0
+					display flex
+					justify-content center
+					align-items center
+					box-shadow: 0 0 5px 0 rgba(0,0,0,0.75)
+					img
+						margin-left 10px
+				.menuProg
+					display flex
+					justify-content center
+					padding 50px
+					a
+						padding 15px
+						color grisoscuro
+						width 200px
+						font-size 20px
+						transition: all .2s
+						&.activeMenuProg
+							font-family fuente_activeMedium
+							color blanco
+							background azul
+						&:hover
+							text-decoration none
+							background azul
+							color blanco
+							font-family fuente_activeMedium
+							transition: all .2s
+						li
+							list-style none
+		ul.menuSos
+			margin:50px auto
+			display flex
+			justify-content center
+			padding 0
+			a
+				&:hover
+					text-decoration none
+				li
+					cursor pointer
+					color grisoscuro
+					list-style none
+					width 200px
+					padding 10px
+					transition all ease-in-out .2s
+					font-size 21px
+					height 80px
+					&:hover
+						background: verdeOscuro
+						color blanco
+						font-family fuente_active
+						display flex
+						align-items center
+						justify-content center
+					&.activesos
+						background verdeOscuro
+						color blanco
+						font-family fuente_active
+						display flex
+						justify-content center
+						align-items center
 // fin proyectos

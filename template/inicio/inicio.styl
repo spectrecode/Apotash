@@ -3,7 +3,7 @@
         width: 1200px
 section#banner
     overflow hidden
-    height 525px
+    // height 525px
     .container-fluid
         .row
             ul
@@ -94,7 +94,7 @@ section
             bottom: 8px
         @media (max-width: 768px)
             margin-right: 0
-            margin-left: 0                                 
+            margin-left: 0
 section#inicio
     ul
         &.sliderNoticias
@@ -178,44 +178,6 @@ section#inicio
     .noticia-destacada
         @media (max-width: 425px)
             display: block !important
-    // .modal-img
-    //     width: 100%
-    //     height: 100%
-    //     background: rgba(1, 6, 0, 0.8)
-    //     top: 0
-    //     display: none
-    //     // padding-top: 100px
-    //     z-index: 10 
-    //     position: fixed
-    //     left:0
-    //     animation: fadeModal .3s
-    //     .imageZoom
-    //         margin auto
-    //         width 80%
-    //         max-width 550px
-    //         top 0
-    //         bottom 0
-    //         position absolute
-    //         left 0
-    //         right 0
-    //     .btn-cerrar-img
-    //         position absolute
-    //         color blanco
-    //         right 80px
-    //         padding 0px 11px
-    //         font-family fuente_gruesa
-    //         font-size 30px
-    //         cursor pointer
-    //         // line-height 1.5
-    //         transition all ease .2s
-    //         text-shadow -0.5px -1.5px 0.5px blanco
-    //         height 45px
-    //         &:hover
-    //             color: grisoscuro
-    //             background: blanco
-    //             transition: all ease-out .3s
-    //         &:active
-    //             background: grisoscuro
     .row
         margin:5% auto
         h3
@@ -227,10 +189,11 @@ section#inicio
                     width: 80%
             @media (max-width 595px) and (min-width 425px)
                 &:after
-                    width: 70%
+                    width: 63%
             @media (max-width 424px) 
                 &:after
-                    width: 65%
+                    width 65%
+                    max-width 60%
             @media (max-width 375px)
                 font-size: 25px
 @keyframes fadeModal

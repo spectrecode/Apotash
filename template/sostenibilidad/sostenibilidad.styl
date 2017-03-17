@@ -1,8 +1,15 @@
 section#sostenibilidad
+	@media (max-width 425px)
+		background blanco
 	.container-fluid
 		.row
 			.bannerPrincipal.sostenibilidad
 				background-image url("../image/banner3.jpg")
+				@media (max-width 425px)
+					background-image url("../image/banner-movilStn.jpg")
+					background-position 0px -4px
+					background-size 107%
+					height 440px
 	.container
 		ul
 			margin:50px auto
@@ -32,14 +39,51 @@ section#sostenibilidad
 						background verdeOscuro
 						color blanco
 						font-family fuente_active
+						@media (max-width 425px)
+							background blanco
+							color grisoscuro
+			/.menuSosMovil
+				display flex
+				flex-direction column
+				padding 0
+				margin-bottom 0
+				a
+					text-decoration none
+					color grisoscuro
+					li
+						width 100% !important
+						padding 30px
+						background blanco
+						font-size 21px
+						list-style none
+						&:hover
+							font-family fuente_active
+							background blanco
+							color grisoscuro
 		.sostenibilidad-social
 			background blanco
 			display flex
 			align-items center
+			box-shadow: sombra
+			@media (max-width 425px)
+				display none
+				box-shadow 0 0 0
 			.col-lg-5
 				padding-right 0
 				img
 					width 100%
+			.row
+				h2
+					@media (max-width 425px)
+						font-size 25px
+						background #006c4b
+						color #fff
+						height 70px
+						width 90%
+						margin 50px 0 40px
+						padding 20px 35px
+						left -45px
+						position relative
 			.descrip-sostenibilidad
 				font-size 18px
 				padding 0 45px
@@ -53,22 +97,50 @@ section#sostenibilidad
 						height 80px
 						span
 							font-size 30px
-					.number, .sign
-						font-size 100px
-						color verdeOscuro
-						font-family fuente_active
-						width 130px
-						// height 100px
-						&.sign
-							font-size 35px
-							padding 0 35px
-							height 84px
-							width 50px
-							display flex
-							justify-content center
-							align-items baseline
-					.tContenido-sostenibilidad >h5
-						width 150px
+					@media (max-width 425px)
+						flex-direction column
+						height 200px
+					.box-stn
+						display flex
+						align-items inherit
+						.number, .sign
+							font-size 100px
+							color verdeOscuro
+							font-family fuente_active
+							// height 100px
+							&.sign
+								font-size 35px
+								padding 0 35px
+								height 84px
+								width 50px
+								display flex
+								justify-content center
+								align-items baseline
+						.tContenido-sostenibilidad >h5
+							width 186px
+					.box-stn:first-child
+						width 200px
+						@media (max-width 425px)
+							margin auto
+							width 150px
+					.box-stn:last-child
+						.sign
+							@media (max-width 425px)
+								display none
+						.descrip-number
+							@media (max-width 425px)
+								text-align center
+						.signMov
+							@media (min-width 426px)
+								display none
+							@media (max-width 425px)
+								display block
+								text-align center
+								font-family fuente_gruesa
+								font-size 20px
+								color verdeOscuro
+						.verde
+							color verdeOscuro
 				.contenido-sostenibilidad:last-child .descrip-number:last-child
 					color verdeOscuro
 				.logosSostenibles
@@ -76,13 +148,27 @@ section#sostenibilidad
 					justify-content space-between
 					width 110%
 					margin-top 20px
+					@media (max-width 425px)
+						flex-direction column
+						margin-top 0
 					.logoS
 						display flex
 						align-items flex-start
+						@media (max-width 425px)
+							justify-content center
+							margin 10px 0
 						p
 							line-height 1
 							font-family fuente_descripcion
 							color verdeOscuro
 							margin-left 10px
+							@media (max-width 425px)
+								width 100px
 							b
-								color negro
+								color grisoscuro
+			.imagenRE
+				@media (max-width 425px)
+					padding-right 15px
+		.galerias
+			@media (max-width 425px)
+				display none
