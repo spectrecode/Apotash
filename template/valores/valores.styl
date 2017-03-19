@@ -7,10 +7,14 @@ section
                     background-image url("../image/banner-movil2.jpg")
                     background-position 0px -4px
                     background-size 107%
-                    height 440px
+                    height 300px
+                    background-repeat no-repeat
     .valores
+        >div:first-child
+            @media (max-width 767px)
+                background blanco
         margin-bottom 20%
-        @media (max-width 425px)
+        @media (max-width 767px)
             box-shadow 0 0 0
             display none
             margin-bottom 0
@@ -23,7 +27,7 @@ section
             background blanco
             margin 20px auto
             box-shadow: 0 0 5px 0 rgba(0,0,0,0.75)
-            @media (max-width 425px)
+            @media (max-width 767px)
                 box-shadow 0 0 0
                 display flex
                 flex-direction column
@@ -35,7 +39,7 @@ section
                 font-size 30px
                 margin-top 0
             h2.tituloValorMovil
-                @media (max-width 425px)
+                @media(max-width 767px)
                     text-align center
                     background verdeOscuro
                     width 80%
@@ -49,6 +53,9 @@ section
                     margin-bottom 50px
             div
                 font-size 20px
+            p
+                @media only screen and (min-width 768px) and (max-width 991px)
+                    line-height 1
             .logoMovil
                 display flex
                 justify-content space-between
@@ -64,7 +71,8 @@ section
                     width 110px
             > div:nth-child(3)
                 padding-right 0
-                @media (max-width 425px)
+                margin-top 20px
+                @media (max-width 767px)
                     padding-right 15px
                 &:first-child
                     .col-lg-2:first-child

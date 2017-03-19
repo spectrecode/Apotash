@@ -1,15 +1,16 @@
 section#sostenibilidad
-	@media (max-width 425px)
+	@media (max-width 767px)
 		background blanco
 	.container-fluid
 		.row
 			.bannerPrincipal.sostenibilidad
 				background-image url("../image/banner3.jpg")
 				@media (max-width 425px)
-					background-image url("../image/banner-movilStn.jpg")
+					background-image url("../image/banner-movil2.jpg")
 					background-position 0px -4px
+					background-repeat no-repeat
 					background-size 107%
-					height 440px
+					height 300px
 	.container
 		ul
 			margin:50px auto
@@ -26,7 +27,7 @@ section#sostenibilidad
 					width 200px
 					padding 10px
 					transition all ease-in-out .2s
-					font-size 21px
+					font-size 25px
 					height 80px
 					&:hover
 						background: verdeOscuro
@@ -35,11 +36,15 @@ section#sostenibilidad
 						display flex
 						align-items center
 						justify-content center
+						@media (max-width 767px)
+							font-family fuente_active
+							background blanco
+							color grisoscuro
 					&.activesos
 						background verdeOscuro
 						color blanco
 						font-family fuente_active
-						@media (max-width 425px)
+						@media (max-width 767px)
 							background blanco
 							color grisoscuro
 			/.menuSosMovil
@@ -54,52 +59,76 @@ section#sostenibilidad
 						width 100% !important
 						padding 30px
 						background blanco
-						font-size 21px
+						font-size 25px
 						list-style none
 						&:hover
 							font-family fuente_active
 							background blanco
 							color grisoscuro
 		.sostenibilidad-social
-			background blanco
-			display flex
-			align-items center
-			box-shadow: sombra
-			@media (max-width 425px)
+			@media (max-width 767px)
 				display none
-				box-shadow 0 0 0
-			.col-lg-5
-				padding-right 0
-				img
-					width 100%
-			.row
-				h2
-					@media (max-width 425px)
-						font-size 25px
-						background #006c4b
-						color #fff
-						height 70px
-						width 90%
-						margin 50px 0 40px
-						padding 20px 35px
-						left -45px
-						position relative
+			> .row:first-child
+				background blanco
+				display flex
+				align-items center
+				box-shadow: sombra
+				@media (max-width 767px)
+					box-shadow 0 0 0
+					flex-direction column
+				.col-lg-5
+					padding-right 0
+					@media (max-width 767px)
+						padding-right 15px
+					@media  only screen and (min-width 768px) and (max-width 991px)
+						height 451px
+					img
+						width 100%
+				.row
+					h2
+						@media (max-width 767px)
+							font-size 25px
+							background #006c4b
+							color #fff
+							height 70px
+							width 90%
+							margin 50px 0 40px
+							padding 20px 35px
+							left -45px
+							position relative
 			.descrip-sostenibilidad
 				font-size 18px
 				padding 0 45px
+				@media (max-width 1199px)
+					padding 0 25px
 				.contenido-sostenibilidad
 					display flex
 					align-items flex-end
 					height 130px
+					@media (max-width 1199px)
+						height 90px
 					h5
 						font-family fuente_descripcion
 						font-size 20px
 						height 80px
 						span
 							font-size 30px
-					@media (max-width 425px)
+							@media (max-width 1199px)
+								font-size 26px
+							@media (max-width 991px)
+								display block
+								font-size 20px
+						@media only screen and (min-width 992px) and (max-width 1199px)
+							width 250px
+							font-size 18px
+						@media (max-width 991px)
+							font-size 15px
+							display flex
+							align-items center
+					@media (max-width 767px)
 						flex-direction column
 						height 200px
+						align-items center
 					.box-stn
 						display flex
 						align-items inherit
@@ -108,6 +137,8 @@ section#sostenibilidad
 							color verdeOscuro
 							font-family fuente_active
 							// height 100px
+							@media (max-width 991px)
+								font-size 80px
 							&.sign
 								font-size 35px
 								padding 0 35px
@@ -116,24 +147,33 @@ section#sostenibilidad
 								display flex
 								justify-content center
 								align-items baseline
+						.tContenido-sostenibilidad
+							@media (max-width 991px)
+								width 45px
 						.tContenido-sostenibilidad >h5
 							width 186px
+							@media (max-width 991px)
+								width 155px
+								display flex
+								align-items center
 					.box-stn:first-child
 						width 200px
-						@media (max-width 425px)
+						@media (max-width 991px)
+							width 280px
+						@media (max-width 767px)
 							margin auto
 							width 150px
 					.box-stn:last-child
 						.sign
-							@media (max-width 425px)
+							@media (max-width 767px)
 								display none
 						.descrip-number
-							@media (max-width 425px)
+							@media (max-width 767px)
 								text-align center
 						.signMov
 							@media (min-width 426px)
 								display none
-							@media (max-width 425px)
+							@media (max-width 767px)
 								display block
 								text-align center
 								font-family fuente_gruesa
@@ -141,6 +181,9 @@ section#sostenibilidad
 								color verdeOscuro
 						.verde
 							color verdeOscuro
+				p
+					@media (max-width 991px)
+						font-size 15px
 				.contenido-sostenibilidad:last-child .descrip-number:last-child
 					color verdeOscuro
 				.logosSostenibles
@@ -148,13 +191,19 @@ section#sostenibilidad
 					justify-content space-between
 					width 110%
 					margin-top 20px
-					@media (max-width 425px)
+					@media only screen and (min-width 768px) and (max-width 991px)
+						width 178%
+					@media (max-width 767px)
 						flex-direction column
 						margin-top 0
+						width 100%
+						align-items center
 					.logoS
 						display flex
 						align-items flex-start
-						@media (max-width 425px)
+						@media(max-width 991px)
+							width 170px
+						@media (max-width 767px)
 							justify-content center
 							margin 10px 0
 						p
@@ -162,13 +211,13 @@ section#sostenibilidad
 							font-family fuente_descripcion
 							color verdeOscuro
 							margin-left 10px
-							@media (max-width 425px)
+							@media (max-width 767px)
 								width 100px
 							b
 								color grisoscuro
 			.imagenRE
-				@media (max-width 425px)
+				@media (max-width 767px)
 					padding-right 15px
 		.galerias
-			@media (max-width 425px)
-				display none
+			@media (max-width 767px)
+				margin-bottom 0

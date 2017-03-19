@@ -3,9 +3,17 @@ section#beca
 		.row
 			.bannerPrincipal.sostenibilidad
 				background-image url("../image/banner3.jpg")
+				@media (max-width 425px)
+					background-image url("../image/banner-movil2.jpg")
+					background-position 0px -4px
+					background-repeat no-repeat
+					background-size 107%
+					height 300px
 	.container
 		.contenBecaSpot
 			display flex
+			@media (max-width 425px)
+				flex-direction column
 			.spot
 				&:hover .reseniaAudio
 					display block
@@ -24,6 +32,8 @@ section#beca
 						top 0
 						bottom 0
 						display none
+				@media (max-width 425px)
+					margin 20px auto
 				.reseniaAudio
 					background azul
 					padding 25px
@@ -32,10 +42,17 @@ section#beca
 					margin auto
 					color blanco
 					font-size 20px
+					@media (max-width 991px)
+						padding 18px
+					p
+						@media (max-width 991px)
+							font-size 17px
+						@media (max-width 767px)
+							line-height 1
 		.row.galerias
 			.lSAction
-				> a
-					top 40%
+				// > a
+				// 	top 40%
 				a.lSPrev
 					&:before
 						color azul

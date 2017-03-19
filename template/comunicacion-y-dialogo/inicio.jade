@@ -10,54 +10,86 @@ section#comunicacion
 							|Proyectos e iniciativas para el desarrollo e iniciativas para el desarrollo.
 	.container
 		.row
-			ul.menuSos.text-center#ancla
+			ul.menuSos.hidden-xs.text-center#ancla
 				a(href="http://americas-potash.com/demoV2/sostenibilidad.html")
 					li Responsablidad Social
 				a(href="http://americas-potash.com/demoV2/beca.html")
 					li Beca Docente
 				a(href="javascript:void(0)")
 					li.activesos Comunicación y Diálogo
-		.row.subComunic
-			ul.menuSos.text-center
-				a(href="http://americas-potash.com/demoV2/nosotros.html")
-					li.activesos Boletines
-				a(href="http://americas-potash.com/demoV2/videos.html")
-					li Videos
-				a(href="http://americas-potash.com/demoV2/spot-radial.html")
-					li Spots Radiales
-				a(href="http://americas-potash.com/demoV2/oficina-movil.html")
-					li Oficina Móvil
-		.row.boletines
-			ul
-				li
-					img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
-					div.text-center.boletin
-						| BOLETÍN 
-						br 
-						|CORPORATIVO 01
-					.text-center
-						a
-							i.icon-download3
-							| Descargar pdf
-				li
-					img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
-					div.text-center.boletin
-						| BOLETÍN 
-						br 
-						|CORPORATIVO 02
-					.text-center
-						a
-							i.icon-download3
-							| Descargar pdf
-				li
-					img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
-					div.text-center.boletin
-						| BOLETÍN 
-						br 
-						|CORPORATIVO 03
-					.text-center
-						a
-							i.icon-download3
-							| Descargar pdf
-		.row.boletines
-			//- para rellenar en el futuro con nuevos boletines
+			ul.menuMovSa.hidden-sm.hidden-md.hidden-lg.text-center#ancla
+				a(href="http://americas-potash.com/demoV2/sostenibilidad.html")
+					li Responsablidad Social
+				a(href="http://americas-potash.com/demoV2/beca.html")
+					li Beca Docente
+				a(href="javascript:void(0)")
+					li.actComun Comunicación y Diálogo
+		.row.sSalud
+			.row.subComunic
+				ul.menuSos.text-center
+					a(href="http://americas-potash.com/demoV2/nosotros.html")
+						li.activesos Boletines
+					a(href="http://americas-potash.com/demoV2/videos.html")
+						li Videos
+					a(href="http://americas-potash.com/demoV2/spot-radial.html")
+						li Spots Radiales
+					a(href="http://americas-potash.com/demoV2/oficina-movil.html")
+						li Oficina Móvil
+			.row.boletines.hidden-xs
+				.col-lg-12.col-md-12.col-sm-12
+					ul
+						li
+							img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
+							div.text-center.boletin
+								| BOLETÍN N °1
+							.text-center
+								a
+									i.icon-download3
+									| Descargar pdf
+						li
+							img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
+							div.text-center.boletin
+								| BOLETÍN N °2
+							.text-center
+								a
+									i.icon-download3
+									| Descargar pdf
+						li
+							img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
+							div.text-center.boletin
+								| BOLETÍN N °3
+							.text-center
+								a
+									i.icon-download3
+									| Descargar pdf
+			.row.boletines
+				//- para rellenar en el futuro con nuevos boletines
+			.row.sliderBoletin.hidden-lg.hidden-md.hidden-sm
+				.col-xs-12
+					ul.boletinSos
+						li
+							img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
+							div.text-center.boletin
+								| BOLETÍN N °1
+							.text-center
+								a
+									i.icon-download3
+									| Descargar pdf
+						li
+							//- a(href="#")
+							img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
+							div.text-center.boletin
+								| BOLETÍN N °2
+							.text-center
+								a
+									i.icon-download3
+									| Descargar pdf
+						li
+							//- a(href="#")
+							img(src="./resources/assets/image/responsabilidad-boletin.png", alt="",width="100%")
+							div.text-center.boletin
+								| BOLETÍN N °3
+							.text-center
+								a
+									i.icon-download3
+									| Descargar pdf

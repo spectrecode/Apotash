@@ -15,7 +15,7 @@ footer
                 .footer-enlaces
                 .box-logos
                     height: 75px
-                    @media (max-width: 425px)
+                    @media (max-width: 767px)
                         height: 100%
         p
             @media (max-width: 425px)
@@ -29,22 +29,37 @@ footer
                 padding: 15px 10px
         .footer-enlaces
             display: flex
-            flex-wrap: wrap
-            justify-content: space-around
-            flex: 1 0 auto
+            // flex-wrap: wrap
+            // justify-content: space-around
+            // flex: 1 0 auto
             padding: 15px 10px
-            @media (max-width: 920px)
-                flex-direction: column
-            @media (max-width: 425px)
-                line-height: 1.8
-            a
-                justify-content: center
-                color: #c5c5c5
-                align-items: center
-                display: flex
-                padding: 10px
-                font-size 14px
-                font-family fuente_MenuFooter
+            @media (max-width: 990px)
+                flex-direction column
+                align-items center
+                justify-content space-between
+            // @media (max-width: 425px)
+            //     line-height: 1.8
+            div
+                display flex
+                justify-content space-around
+                align-items center
+                &:first-child
+                    width 40%
+                &:last-child
+                    width 60%
+                @media (max-width: 990px)
+                    width 100% !important
+                @media (max-width: 767px)
+                    flex-direction column
+                a
+                    // justify-content: center
+                    color: #c5c5c5
+                    // align-items: center
+                    // display: flex
+                    font-size 14px
+                    font-family fuente_MenuFooter
+                    @media (max-width: 767px)
+                        padding: 10px
     .footer    
         p 
             margin-top: 10px

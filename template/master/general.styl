@@ -282,6 +282,8 @@ section#beca
 			.row:nth-child(2)
 				background blanco
 				box-shadow: 0 0 5px 0 rgba(0,0,0,0.75)
+				@media (max-width 767px)
+					box-shadow 0 0 0
 			.titulo-prog
 				background azul
 				color blanco
@@ -298,6 +300,9 @@ section#beca
 					display flex
 					justify-content center
 					padding 50px
+					@media (max-width 425px)
+						flex-direction column
+						align-items center
 					a
 						padding 15px
 						color grisoscuro
@@ -321,6 +326,8 @@ section#beca
 			display flex
 			justify-content center
 			padding 0
+			@media (max-width 767px)
+				display none
 			a
 				&:hover
 					text-decoration none
@@ -331,7 +338,7 @@ section#beca
 					width 200px
 					padding 10px
 					transition all ease-in-out .2s
-					font-size 21px
+					font-size 23px
 					height 80px
 					&:hover
 						background: verdeOscuro
@@ -340,6 +347,10 @@ section#beca
 						display flex
 						align-items center
 						justify-content center
+						@media (max-width 767px)
+							font-family fuente_active
+							background blanco
+							color grisoscuro
 					&.activesos
 						background verdeOscuro
 						color blanco
@@ -347,4 +358,22 @@ section#beca
 						display flex
 						justify-content center
 						align-items center
+			/.menuMovSos
+				display flex
+				flex-direction column
+				padding 0
+				margin-bottom 0
+				a
+					text-decoration none
+					color grisoscuro
+					li
+						width 100% !important
+						padding 30px
+						background blanco
+						font-size 23px
+						list-style none
+						&:hover
+							font-family fuente_active
+							background blanco
+							color grisoscuro
 // fin proyectos

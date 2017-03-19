@@ -1,14 +1,25 @@
 section#videos
+	@media (max-width 767px)
+		background blanco
 	.container-fluid
 		.row
 			.bannerPrincipal.sostenibilidad
 				background-image url("../image/banner3.jpg")
+				@media (max-width 425px)
+					background-image url("../image/banner-movil2.jpg")
+					background-position 0px -4px
+					background-repeat no-repeat
+					background-size 107%
+					height 300px
 	.container
 		ul
 			margin:50px auto
 			display flex
 			justify-content center
-			padding 0
+			@media (max-width 991px)
+				padding 0
+			@media (max-width 767px)
+				margin 30px auto
 			a
 				&:hover
 					text-decoration none
@@ -21,33 +32,88 @@ section#videos
 					transition all ease-in-out .2s
 					font-size 21px
 					height 80px
+					@media (max-width 991px)
+						width 180px
+					@media (max-width 767px)
+						width 100%
 					&:hover
 						background: verdeOscuro
-						color blanco
+						color grisoscuro
 						font-family fuente_active
 						display flex
 						align-items center
 						justify-content center
+						@media (max-width 767px)
+							background verdeOscuro
+							color blanco
 					&.activesos
 						background verdeOscuro
 						color blanco
 						font-family fuente_active
+						width 180px
+			/.menuMovVid
+				flex-direction column
+				padding 0
+				a
+					&:hover
+						text-decoration none
+					li
+						width auto
+						padding 30px
+						background blanco
+						list-style none
+						color grisoscuro
+						font-size 25px
+						&:hover
+							font-family fuente_active
+							background blanco
+							color grisoscuro
+						&.movVideoBtn
+							background blanco
+		.Videos
+			@media (max-width 767px)
+				display none
 		.subComunic
 			border-top 3px solid verdeOscuro
+			@media (max-width 767px)
+				border none
 			ul
+				@media (max-width 767px)
+					flex-direction column
+					align-items center
 				a
 					li
 						height auto
+						@media (max-width 767px)
+							width 180px
 		.contenedorVideo
-			display flex
-			margin-bottom 20%
-			.box-somos
-				width 30%
-				padding 50px
-				background verdeOscuro
-				font-size 20px
-				color blanco
+			> div
 				display flex
-				align-items center
-			.videoPotash
-				width 70%
+				margin-bottom 20%
+				@media (max-width 767px)
+					flex-direction column-reverse
+					margin-bottom 0
+					padding 0 70px
+				.box-somos
+					width 30%
+					padding 50px
+					background verdeOscuro
+					font-size 20px
+					color blanco
+					display flex
+					align-items center
+					@media (max-width 991px)
+						width 45%
+						padding 40px
+					@media (max-width 767px)
+						width 100%
+						height 180px
+					p
+						@media (max-width 991px)
+							line-height 1
+							font-size 21px
+				.videoPotash
+					width 70%
+					height 400px
+					@media (max-width 767px)
+						width 102%

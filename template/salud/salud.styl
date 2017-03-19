@@ -3,6 +3,12 @@ section#salud
 		.row
 			.bannerPrincipal.sostenibilidad
 				background-image url("../image/banner3.jpg")
+				@media (max-width 425px)
+					background-image url("../image/banner-movil2.jpg")
+					background-position 0px -4px
+					background-repeat no-repeat
+					background-size 107%
+					height 300px
 	.container
 		.salud
 			margin-top 50px
@@ -12,7 +18,11 @@ section#salud
 					content: initial
 		.galerias	
 			.contenedorSalud
-				display flex
+				> div
+					display flex
+					margin-bottom 20%
+					@media (max-width 767px)
+						flex-direction column
 				.box-somos
 					width 55%
 					font-size 20px
@@ -26,6 +36,16 @@ section#salud
 					left 15px
 					position relative
 					box-shadow: 0 0 5px 0 rgba(0,0,0,0.75)
+					@media (max-width 1199px)
+						font-size 16px
+						line-height 1
+						padding 0 20px
+					@media (max-width 991px)
+						font-size 15px
+						padding 0 15px
+					@media (max-width 767px)
+						width 100%
+						left 0px
 				.lSSlideOuter
 					width 45%
 					position relative
@@ -34,3 +54,6 @@ section#salud
 						display flex
 						li
 							cursor pointer
+					@media (max-width 767px)
+						width 100%
+						margin auto

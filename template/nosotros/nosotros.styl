@@ -10,13 +10,18 @@ section#nosotros
                 @media (max-width 425px)
                     background-image url("../image/banner-movil2.jpg")
                     background-position 0px -4px
+                    background-repeat no-repeat
                     background-size 107%
-                    height 440px
+                    height 300px
     ul
         margin:50px auto
         display flex
         justify-content center
-        padding 0
+        @media (max-width 991px)
+            padding 0
+        @media (max-width 767px)
+            flex-direction column
+            align-items center
         a
             &:hover
                 text-decoration none
@@ -27,7 +32,9 @@ section#nosotros
                 width 200px
                 padding 20px
                 transition all ease-in-out .2s
-                font-size 21px
+                font-size 23px
+                @media (max-width 991px)
+                    width 180px
                 &:hover        
                     background: verdeOscuro
                     color blanco
@@ -38,17 +45,20 @@ section#nosotros
                 width auto
                 padding 30px
                 background blanco
-                font-size 25px
+                font-size 23px
                 &:hover
                     font-family fuente_active
                     background blanco
                     color grisoscuro
+                    @media (max-width 767px)
+                        background blanco
+                        color grisoscuro
     .contenedorNosotros
         background: blanco
         padding 20px 40px 70px
         margin-bottom 20%
         box-shadow 2px 1px 5px 0px grisoscuro
-        @media (max-width 425px)
+        @media (max-width 767px)
             box-shadow 0 0 0
             display none
             margin-bottom 0
@@ -86,7 +96,7 @@ section#nosotros
                 border: 2px solid green
                 border-radius: 35px
                 padding: 6px
-                @media (max-width 425px)
+                @media (max-width 598px)
                     height 43%
                     width 100%
                 .am, .gr
@@ -96,7 +106,7 @@ section#nosotros
                     height 100px
                     width 250px
                     text-align center
-                    @media (max-width 425px)
+                    @media (max-width 768px)
                         height 85px
                     img
                         width 80%
@@ -119,7 +129,7 @@ section#nosotros
                         right -25px
                         transform rotatex(160deg)
                         z-index -1
-                        @media(max-width 425px)
+                        @media(max-width 768px)
                             border-width 0 25px 43px
                     &:after
                         content ""
@@ -134,7 +144,7 @@ section#nosotros
                         bottom 47px
                         right -25px
                         z-index -1
-                        @media (max-width 425px)
+                        @media (max-width 768px)
                             border-width 0 25px 45px
                             bottom 40px
                 .am
@@ -144,6 +154,8 @@ section#nosotros
             > div
                 display flex
                 height 240px
+                @media (max-width 991px)
+                    height 185px
         .row
             .circleMax,.circleMin
                 padding 10px
@@ -151,7 +163,10 @@ section#nosotros
                 border-radius 100%
                 display: flex
                 justify-content: center
-                @media (max-width 425px)
+                width 90%
+                @media (max-width 991px)
+                    width 160px
+                    height 180px
                     margin auto
                 > div
                     height 220px
@@ -160,8 +175,14 @@ section#nosotros
                     background grisclaro
                     display flex
                     align-items center
+                    @media (max-width 991px)
+                        width 140px
+                        height 155px
                     .circle
-                        padding 30px
+                        padding 20px
+                        @media (max-width 991px)
+                            padding 10px
+                            width 100%
                         h2
                             font-family fuente_tituloH2Nos
                             color olivo
@@ -172,29 +193,52 @@ section#nosotros
                         p
                             line-height 1
                             font-family fuente_descripcion
-                            font-size 19
+                            @media (max-width 991px)
+                                line-height 0.8
+                                font-size 14px
             .circleMin
                 padding 8px
                 width 200px
                 margin auto
+                @media (max-width 991px)
+                    width 150px
+                    height 160px
                 > div  
                     height 180px
                     width 180px
                     display flex
                     justify-content: center
+                    @media (max-width 991px)
+                        height 140px
                     .circle
                         h2
                             font-size 27px
+                            @media (max-width 1199px)
+                                font-size 24px
+                            @media (max-width 991px)
+                                font-size 22px
             .circleMax
                 .circle
                     h2
                         font-size 32px
+                        @media (max-width 1199px)
+                                font-size 28px
+                        @media (max-width 991px)
+                                font-size 21px
                         span
                             font-size 25px
+                            @media (max-width 1199px)
+                                font-size 22px
+                            @media (max-width 991px)
+                                font-size 18px
             .circleMax
                 .circle
                     h2.max
                         font-size 60px
+                        @media (max-width 1199px)
+                            font-size 50px
+                        @media (max-width 991px)
+                            font-size 40px
                         span
                             font-size 30px
     // .directores

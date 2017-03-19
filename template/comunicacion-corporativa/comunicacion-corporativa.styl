@@ -44,17 +44,19 @@
 				font-size 35px
 	#publicaciones
 		> div:nth-child(2)
-			@media (max-width 425px)
+			@media (max-width 767px)
 				display none
 		> div:nth-child(3)
-			@media (max-width 425px)
+			@media (max-width 767px)
 				display none
 		.inner-noticia
 			background blanco
 			border-right 3px solid #CED71F
 			box-shadow sombra
 			margin-top 20px
-			@media (max-width 425px)
+			// @media only screen and (min-width 768px) and (max-width 991px)
+			// 	height 230px
+			@media (max-width 767px)
 				border-right none
 				box-shadow 0 0 0
 			&:first-child
@@ -63,12 +65,17 @@
 				h4
 					font 20px alegreya_sansblack
 					color #006C4B
-					@media (max-width 425px)
+					@media (max-width 1199px)
+						line-height 1
+					@media (max-width 991px)
+						font-size 16px
+					@media (max-width 767px)
 						padding 0 40px 20px
 						line-height 1
 						position relative
 						color grisoscuro
 						font-family inherit
+						text-align center
 						&:after
 							content ""
 							width 200px
@@ -81,17 +88,23 @@
 				p
 					font 19px alegreya_sansregular
 					color #5D5D5D
+					@media (max-width 1199px)
+						line-height 1
+					@media (max-width 991px)
+						font-size 15px
 				.seguirL
 					a
 						font 18px alegreya_sansregular
 						color #006C4B
 						text-decoration none
+						@media (max-width 991px)
+							font-size 15px
 					img
 						display inline-block
 						margin-left 5px
 						vertical-align bottom
 				p,.seguirL
-					@media (max-width 425px)
+					@media (max-width 767px)
 						display none
 		.noticiasCo
 			padding 40px 0
@@ -171,7 +184,7 @@
 						@media (max-width: 340px)
 							font-size: 22px
 	#publicaciones+.row
-		@media (max-width 425px)
+		@media (max-width 767px)
 			display none
 	.inner-logo
 		text-align center
@@ -202,7 +215,7 @@
 		background blanco
 		padding-bottom 50px
 		box-shadow sombra
-		@media (max-width 425px)
+		@media (max-width 767px)
 			box-shadow 0 0 0
 		&:last-child
 			padding-bottom 15px
@@ -217,19 +230,45 @@
 		.brochure
 			margin 20px
 			box-shadow sombra
-			@media (max-width 425px)
+			@media (max-width 767px)
 				box-shadow 0 0 0
 				margin 0
 			h2
 				font 16px alegreya_sansblack
 				text-align center
 				margin-top 10px
+				@media(max-width 1199px)
+					line-height 1
+					font-size 15px
+				@media(max-width 767px)
+					font-size 22px
+				@media(max-width 425px)
+					font-size 18px
 			p
 				font-size 14px
+				@media (max-width 1199px)
+					line-height 1
+				@media(max-width 767px)
+					font-size 20px
+					line-height inherit
+				@media(max-width 425px)
+					font-size 18px
 			.inner-brochure
 				padding-left 0
+				@media (max-width 1199px)
+					padding-right 0
+				@media (max-width 991px)
+					padding 0
 				img
 					width 92%
+					@media (max-width 991px)
+						width 100%
+			> div:nth-child(2)
+				@media (max-width 1199px)
+					padding-left 0
+				@media (max-width 991px)
+					padding 0 15px
+					text-align justify
 			// // h2
 			// // 	text-align center
 			// // 	margin-top 0
@@ -238,11 +277,15 @@
 			// 	font 15px alegreya_sansregular
 			// 	color #666666
 			.icon-brochure
-				@media (max-width 425px)
+				@media (max-width 991px)
+					text-align center
+				@media (max-width 767px)
 					display none
 				.icon-download3
 					color #006C4B
 					margin-left 10px
+					@media (max-width 1199px)
+						margin-left initial
 					a
 						font 13px alegreya_sansmedium
 						color #006C4B
@@ -252,6 +295,9 @@
 					color #006C4B
 					margin-top 5px
 					margin-left 10px
+					@media (max-width 1199px)
+						margin-top initial
+						margin-left initial
 					a
 						font 13px alegreya_sansmedium
 						color #006C4B
@@ -264,7 +310,7 @@
 				display flex
 				position relative
 				bottom 1px
-				@media (min-width 426px)
+				@media (min-width 767px)
 					display none
 				.icon-download3, .icon-eye
 					width 50%
@@ -286,7 +332,7 @@
 			text-decoration none
 	.container-prensa
 		.brochure:nth-child(3)
-			@media (max-width 425px)
+			@media (max-width 767px)
 				display none
 	#noticias
 		display none

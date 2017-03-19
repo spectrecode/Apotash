@@ -5,6 +5,12 @@ section#contacto
     .row
         .bannerPrincipal.misionNos
             background-image url("../image/banner4.jpg")
+            @media (max-width 425px)
+                background-image url("../image/banner-movil2.jpg")
+                background-position 0px -4px
+                background-repeat no-repeat
+                background-size 107%
+                height 300px
     .fondo-blanco
         background-color: grisclaro
         color: grisoscuro
@@ -31,11 +37,15 @@ section#contacto
         .cvForm
             width 60%
             margin auto 
+            @media (max-width 425px)
+                width 85%
             .datosTrabajador
                 h2
                     font-size 40px
                     font-family fuente_gruesa
                     margin 40px 0 50px
+                    @media (max-width 768px)
+                        font-size 25px
                 h3
                     border: 2px solid blanco
                     font-size: 22px
@@ -46,6 +56,10 @@ section#contacto
                     padding: 8px
                     &:after
                         content initial
+                    @media (max-width 991px)
+                        font-size 19px
+                    @media (max-width 768px)
+                        width 50%
             form
                 input
                     background blanco
@@ -65,12 +79,18 @@ section#contacto
                     padding: 8px
                     &:after
                         content initial
+                    @media (max-width 991px)
+                        font-size 19px
+                    @media (max-width 767px)
+                        width 50%
                 .trio-input
                     display flex
                     input
                         margin-right 8px
                     input[name="dni"]
                         margin-right 0
+                    @media (max-width 768px)
+                        display initial
                 button
                     background blanco
                     color verdeOscuro

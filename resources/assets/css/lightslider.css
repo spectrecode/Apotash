@@ -235,11 +235,11 @@
     top: 0;
 }
 /*slider galeria responsive*/
-@media (max-width: 425px){
+/*@media (max-width: 425px){
     .sliderGaleria + .lSAction > a {
         top: 41%;
     }
-}
+}*/
 /* fin slider galeria responsive */
 .lSAction > .lSPrev:before{
     content: "\f0d9";
@@ -267,14 +267,14 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
-@media (max-width: 425px){
+/*@media (max-width: 425px){
     .lSAction > .lSNext:before{
         font-size: 40px;
     }
     .lSAction > .lSNext:before{
         font-size: 40px;
     }
-}
+}*/
 .lSAction > a:hover {
     opacity: 1;
     text-decoration: none;

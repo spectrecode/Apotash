@@ -92,6 +92,10 @@ section
             // min-width: 85%
             width: 88%
             bottom: 8px
+            @media (max-width: 767px)
+                width 70%
+            @media (max-width: 425px)
+                width 60%
         @media (max-width: 768px)
             margin-right: 0
             margin-left: 0
@@ -180,6 +184,7 @@ section#inicio
             display: block !important
     .row
         margin:5% auto
+        position relative
         h3
             @media (max-width 992px) and (min-width 768px)
                 &:after
@@ -196,6 +201,14 @@ section#inicio
                     max-width 60%
             @media (max-width 375px)
                 font-size: 25px
+        .lSAction > .lSPrev
+            left -10px
+            @media (max-width 425px)
+                left 7px
+        .lSAction > .lSNext
+            right -10px
+            @media (max-width 425px)
+                right 7px
 @keyframes fadeModal
     0%
         opacity: 0

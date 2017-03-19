@@ -1,0 +1,104 @@
+section .container-fluid .row .bannerPrincipal.valoresNos {
+  background-image: url("../image/banner2.jpg");
+}
+@media (max-width: 425px) {
+  section .container-fluid .row .bannerPrincipal.valoresNos {
+    background-image: url("../image/banner-movil2.jpg");
+    background-position: 0px -4px;
+    background-size: 107%;
+    height: 440px;
+  }
+}
+section .valores {
+  margin-bottom: 20%;
+}
+@media (max-width: 767px) {
+  section .valores >div:first-child {
+    background: blanco;
+  }
+}
+@media (max-width: 767px) {
+  section .valores {
+    box-shadow: 0 0 0;
+    display: none;
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: blanco;
+  }
+}
+section .valores .row {
+  display: flex;
+  align-items: center;
+  background: blanco;
+  margin: 20px auto;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+}
+@media (max-width: 767px) {
+  section .valores .row {
+    box-shadow: 0 0 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 15px;
+  }
+}
+section .valores .row h2 {
+  font-family: fuente_tituloH2Nos;
+  color: verdeOscuro;
+  font-size: 30px;
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  section .valores .row h2.tituloValorMovil {
+    text-align: center;
+    background: verdeOscuro;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    color: blanco;
+    font-family: fuente_tituloH2;
+    margin-bottom: 50px;
+  }
+}
+section .valores .row div {
+  font-size: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section .valores .row p {
+    line-height: 1;
+  }
+}
+section .valores .row .logoMovil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .valores .row .logoMovil img {
+  width: 60px;
+}
+section .valores .row .col-lg-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 13.666667%;
+}
+section .valores .row .col-lg-2 img {
+  width: 110px;
+}
+section .valores .row > div:nth-child(3) {
+  padding-right: 0;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  section .valores .row > div:nth-child(3) {
+    padding-right: 15px;
+  }
+}
+section .valores .row > div:nth-child(3):first-child .col-lg-2:first-child {
+  height: 160px;
+  align-items: flex-start;
+}
