@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./resources/assets/css/lightslider.css">
+    <link href="./resources/assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="./resources/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./resources/assets/css/app.css" rel="stylesheet">
     <script src="./resources/assets/js/jquery-3.1.1.min.js"></script>
     <script src="./resources/assets/js/jquery.validate.min.js"></script>
     <script src="./resources/assets/js/jquery.easing.1.3.js"></script>
+    <script src="./resources/assets/js/jquery.fancybox.min.js"></script>
     <script src="./resources/assets/js/lightslider.min.js"></script>
     <script src="./resources/assets/js/validacion.js"></script>
     <script src="./resources/assets/js/init.js"></script>
@@ -18,35 +20,35 @@
   <body ng-view>
     <header class="header" ng-controller="headerCrtl">
       <div class="container">
-        <div class="logo-max hidden-md hidden-lg"><a href="http://americas-potash.com/demoV2/index.html"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a><a class="line-burguer"></a></div>
+        <div class="logo-max hidden-md hidden-lg"><a href="http://americas-potash.com/demoV3/index.html"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a><a class="line-burguer"></a></div>
         <div class="row">
-          <div class="col-lg-2 col-md-2 logo-header hidden-sm hidden-xs"><a href="#"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a></div>
+          <div class="col-lg-2 col-md-2 logo-header hidden-sm hidden-xs"><a href="http://americas-potash.com/demoV3/index.html"><img src="./resources/assets/image/logo-potash-header.gif" alt="" width="100%"></a></div>
           <div class="col-lg-9 col-md-9 visible-md visible-lg-inline-block">
             <nav class="menu-header">
               <ul>
-                <li><a href="http://americas-potash.com/demoV2/index.html">Inicio</a></li>
+                <li><a href="http://americas-potash.com/demoV3/index.html">Inicio</a></li>
                 <li class="subNos"><a href="javascript:void(0)">Nosotros<span> &#9660;</span></a>
                   <ul class="submenu-header">
-                    <li><a href="http://americas-potash.com/demoV2/nosotros.html">¿Quiénes somos?</a></li>
-                    <li><a href="http://americas-potash.com/demoV2/mision.html">Misión y Visión</a></li>
-                    <li><a href="http://americas-potash.com/demoV2/valores.html">Valores</a></li>
-                    <li><a href="http://americas-potash.com/demoV2/talento.html">Talento Humano </a></li>
+                    <li><a href="http://americas-potash.com/demoV3/nosotros.html">¿Quiénes somos?</a></li>
+                    <li><a href="http://americas-potash.com/demoV3/mision.html">Misión y Visión</a></li>
+                    <li><a href="http://americas-potash.com/demoV3/valores.html">Valores</a></li>
+                    <li><a href="http://americas-potash.com/demoV3/talento.html">Talento Humano </a></li>
                   </ul>
                 </li>
                 <li class="subProy"><a href="javascript:void(0)">Proyectos<span> &#9660;</span></a>
                   <ul class="submenu-header">
-                    <li><a href="http://americas-potash.com/demoV2/fosfatos.html">Fosfatos</a></li>
-                    <li><a href="http://americas-potash.com/demoV2/salmuera.html">Salmueras</a></li>
+                    <li><a href="http://americas-potash.com/demoV3/fosfatos.html">Fosfatos</a></li>
+                    <li><a href="http://americas-potash.com/demoV3/salmuera.html">Salmueras</a></li>
                   </ul>
                 </li>
                 <li class="subSost"><a href="javascript:void(0)">Sostenibilidad<span> &#9660;</span></a>
                   <ul class="submenu-header">
-                    <li><a href="http://americas-potash.com/demoV2/sostenibilidad.html">Responsabilidad Social</a></li>
-                    <li><a href="http://americas-potash.com/demoV2/salud.html">Salud, Seguridad y Medio Ambiente</a></li>
+                    <li><a href="http://americas-potash.com/demoV3/sostenibilidad.html">Responsabilidad Social</a></li>
+                    <li><a href="http://americas-potash.com/demoV3/salud.html">Salud, Seguridad y Medio Ambiente</a></li>
                   </ul>
                 </li>
-                <li><a href="http://americas-potash.com/demoV2/comunicacion-corporativa.html">Comunicación Corporativa</a></li>
-                <li><a href="http://americas-potash.com/demoV2/contacto.html">Contáctenos</a></li>
+                <li><a href="http://americas-potash.com/demoV3/comunicacion-corporativa.html">Comunicación Corporativa</a></li>
+                <li><a href="http://americas-potash.com/demoV3/contacto.html">Contáctenos</a></li>
               </ul>
             </nav>
           </div>
@@ -61,12 +63,12 @@
         <div class="container-fluid">
           <div class="row hidden-md hidden-lg">
             <nav class="menu-collapse">
-              <ul class="menu-collapse text-center"><a href="http://americas-potash.com/demoV2/index.html">
-                  <li>Inicio</li></a><a href="http://americas-potash.com/demoV2/nosotros.html">
-                  <li>Nosotros</li></a><a href="http://americas-potash.com/demoV2/fosfato.html">
-                  <li>Proyectos</li></a><a href="http://americas-potash.com/demoV2/sostenibilidad.html">
-                  <li>Sostenibilidad</li></a><a href="#">
-                  <li>Comunicación Corporativa</li></a><a href="http://americas-potash.com/demoV2/contacto.html">
+              <ul class="menu-collapse text-center"><a href="http://americas-potash.com/demoV3/index.html">
+                  <li>Inicio</li></a><a href="http://americas-potash.com/demoV3/nosotros.html">
+                  <li>Nosotros</li></a><a href="http://americas-potash.com/demoV3/fosfatos.html">
+                  <li>Proyectos</li></a><a href="http://americas-potash.com/demoV3/sostenibilidad.html">
+                  <li>Sostenibilidad</li></a><a href="http://americas-potash.com/demoV3/comunicacion-corporativa.html">
+                  <li>Comunicación Corporativa</li></a><a href="http://americas-potash.com/demoV3/contacto.html">
                   <li>Contáctenos</li></a>
                 <ul class="idiomas"><a href="#">
                     <li class="activeIdioma">Español</li></a><a href="#">
@@ -93,76 +95,100 @@
       </div>
       <div class="container">
         <div class="row">
-          <ul class="submenu hidden-sm hidden-xs text-center" id="ancla"><a href="javascript:void(0)">
-              <li class="active">Fosfatos</li></a><a href="http://americas-potash.com/demo/salmuera.html">
+          <ul class="submenu hidden-xs text-center" id="ancla"><a href="javascript:void(0)">
+              <li class="active">Fosfatos</li></a><a href="http://americas-potash.com/demoV3/salmuera.html">
               <li>Salmuera</li></a></ul>
-          <ul class="submenuFM hidden-lg hidden-md text-center"><a href="javascript:void(0)">
-              <li class="fosfatoMovil">Fosfatos</li></a><a href="http://americas-potash.com/demo/salmuera.html">
+          <ul class="submenuFM hidden-lg hidden-md hidden-sm text-center"><a href="javascript:void(0)">
+              <li class="fosfatoMovil">Fosfatos</li></a><a href="http://americas-potash.com/demoV3/salmuera.html">
               <li>Salmuera</li></a></ul>
         </div>
         <div class="row">
-          <div class="fosfatoProy">
-            <div class="fosfatoBox">
-              <div class="row">
-                <h2 class="hidden-lg hidden-md">Fosfatos</h2>
-                <div class="col-lg-12">
-                  <p class="text-center">Se está evaluando el potencial de explotar el recurso de roca de fosfato ubicado en nuestras concesiones, con especial foco en Bayóvar 7.</p>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="fosfatoProy">
+                <div class="fosfatoBox">
+                  <div class="row">
+                    <h2 class="hidden-lg hidden-md hidden-sm">Fosfatos</h2>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <p class="text-center">Se está evaluando el potencial de explotar el recurso de roca de fosfato ubicado en nuestras concesiones, con especial foco en Bayóvar 7.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="fosfatoBox">
-              <div class="row">
-                <div class="col-xs-12">
-                  <ul class="secuenciaFosfatos">
-                    <li class="text-center">
-                      <h3>EXTRACCIÓN</h3>Explotación de roca de fosfato
-                    </li><i class="icon-caret-right"></i><i class="icon-chevron-down"></i>
-                    <li class="text-center">
-                      <h3>UBICACIÓN</h3>Concesión 7 del Proyecto Bayóvar, en un ambiente del desierto árido.
-                    </li><i class="icon-caret-right"></i><i class="icon-chevron-down"></i>
-                    <li class="text-center">
-                      <h3>43 KM</h3>Distancia entre Bayovar 7 y la ciudad de Sechura.
-                    </li><i class="icon-caret-right"></i><i class="icon-chevron-down"></i>
-                    <li class="text-center">
-                      <h3>FASE DE OPERACIONES</h3>Las operaciones de fosfato se encuentra en la fase de exploración
-                    </li><i class="icon-caret-right"></i><i class="icon-chevron-down"></i>
-                    <li class="text-center">
-                      <h3>COMERCIO</h3>La producción será destinada a la exportación como al mercado local y regional.
-                    </li><i class="icon-caret-right"></i><i class="icon-chevron-down"></i>
-                    <li class="text-center">
-                      <h3>82,195 HECTAREAS</h3>Área total de las concesiones 5, 6, 7 y 8 del proyecto Bayóvar.
-                    </li>
-                  </ul>
+                <div class="fosfatoBox">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <ul class="secuenciaFosfatos">
+                        <li class="text-center">
+                          <h3>43 KM</h3>Distancia entre Bayovar 7 y la ciudad de Sechura.
+                        </li><i class="icon-caret-right"></i><i class="icon-chevron-down"></i>
+                        <li class="text-center">
+                          <h3>FASE DE OPERACIONES</h3>Las operaciones de fosfato se encuentra en la fase de exploración
+                        </li><i class="icon-caret-right"></i><i class="icon-chevron-down"></i>
+                        <li class="text-center">
+                          <h3>COMERCIO</h3>La producción será destinada a la exportación como al mercado local y regional.
+                        </li><i class="icon-caret-right"></i><i class="icon-chevron-down"></i>
+                        <li class="text-center">
+                          <h3>82,195 HECTÁREAS</h3>Área total de las concesiones 5, 6, 7 y 8 del proyecto Bayóvar.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="modal-img">
-                <div class="content-modal">
-                  <div class="row-normal"><span class="btn-cerrar-img">X</span><img class="imageZoom"><i class="icon-chevron-left"></i><i class="icon-chevron-right"></i></div>
+                <div class="col-lg-12 galeriaRF">
+                  <h3>Galería</h3>
+                  <div class="galeria">
+                    <ul class="sliderGaleria">
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/0967.png"><img class="image-click" src="./resources/assets/image/0967.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1111.png"><img class="image-click" src="./resources/assets/image/1111.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/0979.png"><img class="image-click" src="./resources/assets/image/0979.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1006.png"><img class="image-click" src="./resources/assets/image/1006.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1011.png"><img class="image-click" src="./resources/assets/image/1011.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1043.png"><img class="image-click" src="./resources/assets/image/1043.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1063.png"><img class="image-click" src="./resources/assets/image/1063.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1075.png"><img class="image-click" src="./resources/assets/image/1075.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1078.png"><img class="image-click" src="./resources/assets/image/1078.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1087.png"><img class="image-click" src="./resources/assets/image/1087.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1089.png"><img class="image-click" src="./resources/assets/image/1089.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1085.png"><img class="image-click" src="./resources/assets/image/1085.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1121.png"><img class="image-click" src="./resources/assets/image/1121.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1126.png"><img class="image-click" src="./resources/assets/image/1126.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1388.png"><img class="image-click" src="./resources/assets/image/1388.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                      <li class="example-group" data-fancybox="group" href="./resources/assets/image/1366.png"><img class="image-click" src="./resources/assets/image/1366.png" alt="" width="100%">
+                        <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-12 galeriaRF">
-              <h3>Galería</h3>
-              <div class="galeriaRF">
-                <ul class="sliderGaleria">
-                  <li><img class="image-click" src="./resources/assets/image/galeria-fosfato1.jpg" alt="" width="100%">
-                    <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                  </li>
-                  <li><img class="image-click" src="./resources/assets/image/galeria-fosfato2.jpg" alt="" width="100%">
-                    <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                  </li>
-                  <li><img class="image-click" src="./resources/assets/image/galeria-fosfato3.jpg" alt="" width="100%">
-                    <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                  </li>
-                  <li><img class="image-click" src="./resources/assets/image/galeria-fosfato4.jpg" alt="" width="100%">
-                    <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                  </li>
-                  <li><img class="image-click" src="./resources/assets/image/galeria-fosfato1.jpg" alt="" width="100%">
-                    <div class="caja-hover-galeria"><i class="icon-eye"></i></div>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -170,19 +196,22 @@
       </div>
     </section>
     <footer>
-      <div class="btnGoUp hidden-xs hidden-sm"><i class="icon-chevron-up"></i></div>
+      <div class="btnGoUp hidden-xs"><i class="icon-chevron-up"></i></div>
       <div class="footer">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 box-footer">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 box-footer">
               <div class="row box-logos">
-                <div><a href="http://americas-potash.com/demoV2/index.html"><img src="./resources/assets/image/logo-potash-footer.png" alt="" width="100%"></a></div>
+                <div><a href="http://americas-potash.com/demoV3/index.html"><img src="./resources/assets/image/logo-potash-footer.png" alt="" width="100%"></a></div>
                 <div><a href="http://www.growmaxcorp.com/" target="_blank"><img src="./resources/assets/image/logo-growmax-footer.png" alt="" width="100%"></a></div>
               </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-8 box-footer">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 box-footer">
               <div class="row">
-                <div class="footer-enlaces"><a href="http://americas-potash.com/demoV2/index.html">Inicio</a><a href="http://americas-potash.com/demoV2/nosotros.html">Nosotros</a><a href="http://americas-potash.com/demoV2/fosfatos.html">Proyectos</a><a href="http://americas-potash.com/demoV2/sostenibilidad.html">Sostenibilidad</a><a href="http://americas-potash.com/demoV2/comunicacion-corporativa.html">Comunicación Corporativa</a><a href="http://americas-potash.com/demoV2/contacto.html">Contáctenos</a></div>
+                <div class="footer-enlaces">
+                  <div><a href="http://americas-potash.com/demoV3/index.html">Inicio</a><a href="http://americas-potash.com/demoV3/nosotros.html">Nosotros</a><a href="http://americas-potash.com/demoV3/fosfatos.html">Proyectos</a></div>
+                  <div><a href="http://americas-potash.com/demoV3/sostenibilidad.html">Sostenibilidad</a><a href="http://americas-potash.com/demoV3/comunicacion-corporativa.html">Comunicación Corporativa</a><a href="http://americas-potash.com/demoV3/contacto.html">Contáctenos</a></div>
+                </div>
               </div>
             </div>
           </div>

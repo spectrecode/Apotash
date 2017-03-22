@@ -1,0 +1,158 @@
+section#banner
+	.container-fluid
+		.row.contenedor-banner
+			ul.banner
+				li
+					img.hidden-xs(src="./resources/assets/image/banner-fosfato.jpg", alt="")
+					img.hidden-sm.hidden-md.hidden-lg(src="./resources/assets/image/banner-movilFos.jpg", alt="", width="100%")
+					.letrero-banner
+						div
+							h2 What is Lorem ipsum
+							//- p Lorem Ipsum
+							.rectangle
+								|Proyectos e iniciativas para el desarrollo e iniciativas para el desarrollo.
+				li
+					img.hidden-xs(src="./resources/assets/image/banner-salmuera.jpg", alt="")
+					img.hidden-sm.hidden-md.hidden-lg(src="./resources/assets/image/banner-movilSalm.jpg", alt="",width="100%")
+					.letrero-banner
+						div
+							h2 What is Lorem ipsum
+							//- p Lorem Ipsum
+							.rectangle
+								|Proyectos e iniciativas para el desarrollo e iniciativas para el desarrollo.
+				li
+					img.hidden-xs(src="./resources/assets/image/banner-labrador.jpg", alt="")
+					img.hidden-sm.hidden-md.hidden-lg(src="./resources/assets/image/banner-movilLabrador.jpg", alt="",width="100%")
+					.letrero-banner
+						div
+							h2 Enriqueciendo la tierra
+							//- p Lorem Ipsum
+							.rectangle
+								|Produciremos fertilizantes ricos en fósforo y potasio.
+				li
+					img.hidden-xs(src="./resources/assets/image/banner-creciendo.jpg", alt="")
+					img.hidden-sm.hidden-md.hidden-lg(src="./resources/assets/image/banner-movilStn.jpg", alt="",width="100%")
+					.letrero-banner
+						div
+							h2 Creciendo juntos
+							//- p Lorem Ipsum
+							.rectangle
+								|Por el desarrollo sostenible de Sechura.
+section#inicio
+	.container
+		.row
+			.col-lg-12
+				h3 Noticias
+				.row.noticia-destacada.hide
+					img(src="./resources/assets/image/5690.png", alt="",width="100%")
+					div.descrip-img-noticias
+						p INICIÓ EL PROGRAMA BECA DOCENTE AMERICAS POTASH
+				.row
+					ul.sliderNoticias
+						li
+							img.notiImg(src="./resources/assets/image/5690.png", alt="",width="100%")
+							.caja-hover-not
+								p.titular.text-center INICIÓ EL PROGRAMA BECA DOCENTE AMERICAS POTASH
+								.noticia.text-center
+									p Beca integral beneficiará aproximadamente a 500 estudiantes del distrito de Sechura.
+									a(href="http://americas-potash.com/demoV3/en/detalle.html")
+										i.icon-eye
+											span Ver más
+							.descrip-img-noticias.hidden-lg.hidden-md.hidden-sm
+								a
+									p Beca integral beneficiará aproximadamente a 500 estudiantes del distrito de Sechura.
+						li
+							img.notiImg(src="./resources/assets/image/1063.png", alt="",width="100%")
+							.caja-hover-not
+								p.titular.text-center GROWMAX INVERTIRÁ US$ 279 MILLONES EN BAYÓVAR
+								.noticia.text-center
+									p Proyecto de Fosfatos
+									a(href="http://americas-potash.com/demoV3/en/detalle-1.html")
+										i.icon-eye
+											span Ver más
+							.descrip-img-noticias.hidden-lg.hidden-md.hidden-sm
+								a
+									p Proyecto de Fosfatos
+						li
+							img.notiImg(src="./resources/assets/image/1043.png", alt="",width="100%")
+							.caja-hover-not
+								p.titular.text-center INVERTIRÁ US$ 10 MILLONES
+								.noticia.text-center
+									p Growmax Resources
+									a(href="http://americas-potash.com/demoV3/en/detalle-2.html")
+										i.icon-eye
+											span Ver más
+							.descrip-img-noticias.hidden-lg.hidden-md.hidden-sm
+								a
+									p Growmax Resources
+		.row.galerias
+			.col-lg-12 
+				h3 Galería
+				.row
+					ul.sliderGaleria
+						li(class="example-group" data-fancybox="group" href="./resources/assets/image/0291.png")
+							img.image-click(src="./resources/assets/image/0291.png", alt="",width="100%")
+							.caja-hover-galeria
+								i.icon-eye
+						li(class="example-group" data-fancybox="group" href="./resources/assets/image/0341.png")
+							//- a(href="#")
+							img.image-click(src="./resources/assets/image/0341.png", alt="",width="100%")
+							.caja-hover-galeria
+								i.icon-eye
+						li(class="example-group" data-fancybox="group" href="./resources/assets/image/0357.png")
+							img.image-click(src="./resources/assets/image/0357.png", alt="",width="100%")
+							.caja-hover-galeria
+								i.icon-eye
+						li(class="example-group" data-fancybox="group" href="./resources/assets/image/0382.png")
+							//- a(href="#")
+							img.image-click(src="./resources/assets/image/0382.png", alt="",width="100%")
+							.caja-hover-galeria
+								i.icon-eye
+						li(class="example-group" data-fancybox="group" href="./resources/assets/image/0394.png")
+							img.image-click(src="./resources/assets/image/0394.png", alt="",width="100%")
+							.caja-hover-galeria
+								i.icon-eye
+section#contacto
+		.container-fluid
+			.row
+				.container
+					.content-contact
+						.row
+							.contacto-titulo.text-center
+								h2 
+									b CONTACTO
+								p Nos encantaría saber sobre tus comentarios y/o sugerencias
+						.row
+							.col-lg-6.col-md-6.col-sm-12.col-xs-12
+								.box-contact
+									div
+										i.icon-envelope-o
+										a(href="javascript:void(0)") 
+											|informes@americas-potash.com
+										br
+										br
+									div
+										i.icon-mobile
+										a(href="javascript:void(0)")
+											|933534107
+										br
+										br
+							.col-lg-6.col-md-6.col-sm-12.col-xs-12
+								form(method="post",action="",novalidate="novalidate")
+									input(type="text",placeholder="Nombre",name="name",id="name",required)
+									label(for="name")
+									input(type="text",placeholder="Dirección",name="adress",id="adress",required)
+									label(for="adress")
+									div.duo-input
+										.col-lg-6.col-md-6.col-sm-12.col-xs-12
+											.row
+												input(type="text",placeholder="E-mail",name="mail",id="mail",required)
+												label(for="mail")
+										.col-lg-6.col-md-6.col-sm-12.col-xs-12
+											.row
+												input(type="text",placeholder="Teléfono",name="telf",maxlength="9",id="telf",required)
+												label(for="telf")
+									textarea(type="text",placeholder="Comentario",name="comment",rows="6",id="comment")
+									button(type="submit",id="btn-form")
+										b Enviar
+
