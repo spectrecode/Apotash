@@ -1,0 +1,98 @@
+/***
+	Estilos Generalas para botones, link formularios en general
+***/
+    .content-contact
+        margin: 5% auto
+        max-width: 87%
+        // @media (max-width: 425px)
+        //     max-width: 100%
+        .contacto-titulo
+            margin: auto 13%
+            h2
+                b
+                    font-family: fuente_tituloContacto
+                    font-size: 40px
+                    @media (max-width: 425px)
+                        font-size: 30px
+            p
+                font-size 20px
+                font-family fuente_descripcion
+        // .row:nth-child(2)
+        //     @media (max-width: 425px)
+        //         display: flex
+        //         flex-direction: column-reverse
+    .box-contact
+        margin: 45px 0px
+        display flex
+        flex-direction column
+        justify-content space-around
+        height 200px
+        @media (max-width: 992px)
+            margin-bottom: 0
+            margin: auto
+            max-width: 390px
+        @media (max-width: 425px)
+            max-width: 315px
+            height: 100%
+            margin: 10px 30px
+            @media (max-width: 375px)
+                max-width: 290px
+                margin: 10px auto
+            @media (max-width: 345px)
+                max-width: 260px
+        a
+            color: blanco
+            font-family: fuente_contenidoContacto
+            font-size: 20px
+            @media (max-width: 390px)
+                font-size: 19px
+            @media (max-width: 345px)
+                font-size: 16px
+        i
+            color: #006c4b
+            background: #fff
+            padding: 14px
+            border-radius: 100%
+            font-size: 30px
+            margin-right: 10px
+            @media (max-width: 425px)
+                padding: 6px
+                font-size: 17px
+    form
+        margin: 10px auto
+        .duo-input
+            display: flex
+            justify-content: space-around
+            @media (max-width: 767px)
+                display initial
+            .col-lg-6:first-child
+                margin-right: 5px
+        input,textarea
+            font-size:16px
+            color:blanco
+            width: 100%
+            padding: 8px 15px
+            vertical-align: middle
+            border: 1px solid blanco
+            margin: 4px auto
+            background:transparent
+        button
+            display: block
+            background: verde
+            color: blanco
+            border: none
+            padding: 8px 45px
+            margin: auto
+            margin-top: 5px
+            font-family: fuente_botonContacto
+            transition: all .2s
+            font-size 20px
+            &:active
+                background-color: #005200
+                transition: all .2s
+            &:focus
+                outline: none
+    // @media (max-width: 992px)
+    //     .box-contact
+    //         margin: 40px auto
+    //         margin-bottom: 0

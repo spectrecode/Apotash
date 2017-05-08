@@ -1,0 +1,240 @@
+@media (min-width: 1200px)
+    .container
+        width: 1200px
+section#banner
+    overflow hidden
+    // height 525px
+    .container-fluid
+        .row
+            ul
+                overflow hidden
+                li
+                    .letrero-banner
+                        height: 100%
+                        width: 45%
+                        position: absolute
+                        bottom: 0
+                        display: flex
+                        @media (max-width 992px) and (min-width 768px)
+                            width: 50%
+                        @media (max-width 767px)
+                            width: 100%
+                        > div
+                            width: 79%
+                            height: 85px
+                            position: absolute
+                            top: 40%
+                            right: 0
+                            color: white
+                            font-size: 37px
+                            text-shadow: 5px 3px 6px black
+                            font-family: fuente_titulo
+                            justify-content: center
+                            display: flex
+                            flex-direction: column
+                            @media (max-width: 1200px)
+                                font-size: 25px
+                            @media (max-width: 992px)
+                                font-size: 24px
+                            @media (max-width: 767px)
+                                right: initial
+                                display: flex
+                                align-items: center
+                                width: 100%
+                                font-size: 35px
+                            @media (max-width: 589px)
+                                font-size: 30px
+                            @media (max-width: 521px)
+                                    font-size: 26px
+                            @media (max-width: 375px)
+                                    font-size: 18px
+                            h2
+                                font-family fuente_tituloBanner
+                            .rectangle
+                                background: rgba(0,108,76,0.78)
+                                font-size: 18px
+                                border-radius: 0 0 70px
+                                border-left: 7px solid rgba(255,215,0,0.74);
+                                padding: 20px
+                                text-shadow: 0 0 0
+                                font-family fuente_descripcion
+                                line-height: 30px
+                                // transform: translate(50px 0)
+                                @media (max-width: 1200px)
+                                    font-size: 17px
+                                @media (max-width: 992px)
+                                    padding: 15px
+                                @media (max-width: 767px)
+                                    border-radius: 0px
+                                    width: 60%
+                                @media (max-width: 569px)
+                                    width: 75%
+                                @media (max-width: 375px)
+                                    font-size: 15px
+                                    text-align: center
+                                    border-left-width: 10px
+section
+    background:grisclaro
+    // padding: 25px 0
+    h3
+        color: #808080
+        margin: 15px
+        margin-top:0
+        position: relative
+        font-weight: 600
+        font-size: 39px
+        font-family: fuente_tituloH3
+        @media (max-width 375px)
+            font-size: 25px
+        &:after
+            content: ""
+            border-bottom: 1.5px solid grisoscuro
+            position: absolute
+            right: 0
+            // min-width: 85%
+            width: 88%
+            bottom: 8px
+            @media (max-width 1199px)
+                width 85%
+            @media (max-width 991px)
+                width 80%
+            @media (max-width 767px)
+                width 70%
+            @media (max-width 425px)
+                width 60%
+            @media (max-width 375px)
+                width 65%
+        @media (max-width 768px)
+            margin-right 0
+            margin-left 0
+section#inicio
+    ul
+        &.sliderNoticias
+            li
+                border-bottom 5px solid amarilloLimon
+                &:hover .caja-hover-not
+                    display: block
+                    @media (max-width: 767px)
+                        display:none
+                .caja-hover-not
+                    background: rgba(8, 16, 0, 0.65)
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    display: none
+                    animation: hoverNot .2s
+                    animation-fill-mode: both
+                    .titular
+                        color: blanco
+                        font-family: fuente_tituloNoticias
+                        height: 100%
+                        display: flex
+                        font-size: 26px
+                        justify-content: center
+                        text-shadow: 2.5px 1.5px 1px negro
+                        padding: 28% 8%
+                        line-height: 1.1
+                        @media (max-width: 991px)
+                            font-size: 25px                            
+                    .noticia
+                        width: 100%
+                        height: 26%
+                        background: #fff
+                        bottom: 0
+                        position: absolute
+                        color: #000
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: space-around
+                        padding: 10px
+                        a
+                            text-decoration: none
+                            color: #616161
+                            position: relative
+                            padding-left: 5%
+                            border-left: 2px solid #808080
+                            i
+                                font-size: 28px
+                                @media (max-width: 991px)
+                                    font-size: 21px
+                            span
+                                font-size: 14px
+                                display: block
+                                font-family: fuente_descripcion
+                                @media (max-width: 991px)
+                                    line-height: 0.8
+                        p
+                            margin: 0
+                            line-height: 1
+                            font-size 17px
+                            width 70%
+                img
+                    transition: all .2s
+            .scale-img
+                transform: scale(1.5)
+                transition: all .2s
+    .descrip-img-noticias
+        width: 100%
+        background: blanco
+        padding: 15px
+        border-bottom: 3px solid gold
+        line-height: 0.9
+        font-size: 25px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        height 150px
+        a
+            color negro
+            &:hover
+                color negro
+                text-decoration none
+        p
+            @media (max-width: 767px)
+                font-size: 20px
+            @media (max-width: 375px)
+                font-size: 18px
+    .noticia-destacada
+        @media (max-width: 425px)
+            display: block !important
+    .row
+        margin:5% auto
+        position relative
+        .lSAction > .lSPrev
+            left -10px
+            @media (max-width 767px)
+                left 7px
+        .lSAction > .lSNext
+            right -10px
+            @media (max-width 767px)
+                right 7px
+@keyframes fadeModal
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+@keyframes hoverNot
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+        
+@keyframes slideLeft
+    0% 
+        margin-left: 0%
+    20% 
+        margin-left: 0%
+    25% 
+        margin-left: -100%
+    45% 
+        margin-left: -100%
+    50% 
+        margin-left: -200%
+    70% 
+        margin-left: -200%
+    75% 
+        margin-left: -300%
+    100% 
+        margin-left: -300%

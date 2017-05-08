@@ -1,15 +1,8 @@
 section#beca
-	.container-fluid
-		.row
-			.bannerPrincipal.sostenibilidad
-				background-image url("../image/banner-creciendo.jpg")
-				@media (max-width 425px)
-					background-image url("../image/banner-movilStn.jpg")
-					background-position 0px -4px
-					background-repeat no-repeat
-					background-size 107%
-					height 300px
 	.container
+		@media (max-width 767px)
+			display flex
+			flex-direction column-reverse
 		.programaBeca
 			background blanco
 			.titulo-prog
@@ -21,28 +14,9 @@ section#beca
 					display flex
 					justify-content center
 					align-items center
+					margin-top 0
 					img
 						margin-left 10px
-				.menuProg
-					display flex
-					justify-content center
-					padding 50px
-					a
-						padding 15px
-						color grisoscuro
-						width 200px
-						font-size 20px
-						&.activeMenuProg
-							font-family fuente_activeMedium
-							color blanco
-							background azul
-						&:hover
-							text-decoration none
-							background azul
-							color blanco
-							font-family fuente_activeMedium
-						li
-							list-style none
 			.row:nth-child(2)
 				background blanco
 			.contenedorBecaVideo
@@ -79,8 +53,8 @@ section#beca
 				.videoBeca
 					width 70%
 					@media (max-width 767px)
-						width 102%
-						height 400px
+						width 100%
+						height 380px
 			.row.galerias
 				.lSAction
 				// 	> a

@@ -1,0 +1,237 @@
+@media (max-width: 767px) {
+  section#comunicacion {
+    background: blanco;
+  }
+}
+section#comunicacion .container-fluid .row .bannerPrincipal.sostenibilidad {
+  background-image: url("../image/banner-creciendo.jpg");
+}
+@media (max-width: 991px) {
+  section#comunicacion .container-fluid .row .bannerPrincipal.sostenibilidad {
+    background-position: 0px -4px;
+    background-repeat: no-repeat;
+    height: 325px;
+  }
+}
+@media (max-width: 424px) {
+  section#comunicacion .container-fluid .row .bannerPrincipal.sostenibilidad {
+    background-image: url("../image/banner-movilStn.jpg");
+    height: 415px;
+  }
+}
+@media (max-width: 568px) {
+  section#comunicacion .container-fluid .row .bannerPrincipal.sostenibilidad .letrero-banner > div {
+    bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  section#comunicacion .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+section#comunicacion .container ul {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  section#comunicacion .container ul {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  section#comunicacion .container ul {
+    margin: 30px auto;
+  }
+}
+section#comunicacion .container ul a:hover {
+  text-decoration: none;
+}
+section#comunicacion .container ul a li {
+  cursor: pointer;
+  color: grisoscuro;
+  list-style: none;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.2s;
+  font-size: 23px;
+  height: 65px;
+  line-height: 1;
+}
+@media (max-width: 991px) {
+  section#comunicacion .container ul a li {
+    width: 180px;
+  }
+}
+@media (max-width: 767px) {
+  section#comunicacion .container ul a li {
+    background: blanco;
+    color: grisoscuro;
+    width: 100%;
+  }
+}
+section#comunicacion .container ul a li:hover {
+  background: verdeOscuro;
+  color: blanco;
+  font-family: fuente_active;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  section#comunicacion .container ul a li:hover {
+    background: blanco;
+    color: grisoscuro;
+    width: 100%;
+  }
+}
+section#comunicacion .container ul a li.activesos {
+  background: verdeOscuro;
+  color: blanco;
+  font-family: fuente_active;
+  width: 180px;
+}
+@media (max-width: 767px) {
+  section#comunicacion .container ul a li.activesos {
+    background: transparent;
+    color: verdeOscuro;
+  }
+}
+.menuMovSa {
+  flex-direction: column;
+  padding: 0;
+}
+.menuMovSa a:hover {
+  text-decoration: none;
+}
+.menuMovSa a li {
+  width: auto;
+  padding: 30px;
+  background: blanco;
+  font-size: 23px;
+  list-style: none;
+  color: grisoscuro;
+}
+.menuMovSa a li:hover {
+  font-family: fuente_active;
+  background: blanco;
+  color: grisoscuro;
+}
+.menuMovSa a li.actComun {
+  background: blanco;
+}
+section#comunicacion .container .subComunic {
+  border-top: 3px solid verdeOscuro;
+}
+@media (max-width: 767px) {
+  section#comunicacion .container .subComunic {
+    border: none;
+  }
+}
+@media (max-width: 767px) {
+  section#comunicacion .container .subComunic ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+section#comunicacion .container .subComunic ul a li {
+  height: 65px;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  section#comunicacion .container .subComunic ul a li:hover {
+    color: verdeOscuro;
+    width: 180px;
+  }
+}
+section#comunicacion .container p.dialogo {
+  padding: 40px;
+  background: blanco;
+  box-shadow: sombra;
+  text-align: justify;
+  font-size: 19px;
+}
+@media (max-width: 1199px) {
+  section#comunicacion .container p.dialogo {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  section#comunicacion .container p.dialogo {
+    line-height: 1;
+  }
+}
+section#comunicacion .container .boletines ul {
+  display: flex;
+  justify-content: space-around;
+}
+section#comunicacion .container .boletines ul li {
+  list-style: none;
+}
+section#comunicacion .container .boletines ul li img {
+  box-shadow: 0px 17px 18px -11px #636363;
+}
+section#comunicacion .container .boletines ul li .boletin {
+  margin: 10% 0 12%;
+  line-height: 1.2;
+  color: verdeOscuro;
+  font-family: fuente_gruesa;
+  font-size: 20px;
+}
+section#comunicacion .container .boletines ul li a {
+  text-decoration: none;
+  color: verdeOscuro;
+  transition: all 0.5s, transform 0.5s;
+  cursor: pointer;
+}
+section#comunicacion .container .boletines ul li a:hover {
+  padding: 15px;
+  background: verdeOscuro;
+  color: blanco;
+  transition: background-color 0.5s, transform 0.5s;
+}
+@media (min-width: 767px) {
+  section#comunicacion .container .sSalud {
+    margin-bottom: 20%;
+  }
+}
+section#comunicacion .container .sSalud .sliderBoletin {
+  width: 60%;
+  margin: auto;
+}
+section#comunicacion .container .sSalud .sliderBoletin .col-xs-12 .lSSlideWrapper {
+  position: initial;
+}
+section#comunicacion .container .sSalud .sliderBoletin .col-xs-12 .lSSlideWrapper ul.boletinSos {
+  display: flex;
+}
+section#comunicacion .container .sSalud .sliderBoletin .col-xs-12 .lSSlideWrapper ul.boletinSos .boletin {
+  margin: 10% 0 12%;
+  line-height: 1.2;
+  color: blanco;
+  background: verdeOscuro;
+  font-family: fuente_gruesa;
+  font-size: 20px;
+  padding: 15px;
+}
+section#comunicacion .container .sSalud .sliderBoletin .col-xs-12 .lSSlideWrapper ul.boletinSos a {
+  text-decoration: none;
+  color: verdeOscuro;
+  transition: all 0.5s, transform 0.5s;
+  cursor: pointer;
+}
+section#comunicacion .container .sSalud .sliderBoletin .col-xs-12 .lSSlideWrapper ul.boletinSos a:hover {
+  padding: 15px;
+  background: blanco;
+  color: verdeOscuro;
+  transition: background-color 0.5s, transform 0.5s;
+}
+section#comunicacion .container .sSalud .lSAction a.lSPrev {
+  left: -15px;
+}
+section#comunicacion .container .sSalud .lSAction a.lSNext {
+  right: -15px;
+}

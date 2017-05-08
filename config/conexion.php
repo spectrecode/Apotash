@@ -1,12 +1,12 @@
 <?php
 session_start();
 class Conexion{
-	private $dbconn	    = null;
+	private $dbconn		= null;
 	private $stmt = ""; 
 	private $dbhost 	= "localhost";
-	private $database	= "db_ohemedical";
-	private $user 		= "root";
-    private $password 	= "";
+	private $database	= "potashWeb";
+	private $user 		= "potashUser";
+	private $password	= "P=W,+so(-c1c";
 
 	function __construct($host=NULL, $db=NULL, $user=NULL, $pass=NULL){
 		/****Pasamos los datos de conexion******/

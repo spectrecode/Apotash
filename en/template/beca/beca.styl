@@ -5,37 +5,24 @@ section#beca
 		.row
 			.bannerPrincipal.sostenibilidad
 				background-image url("../image/banner-creciendo.jpg")
-				@media (max-width 425px)
-					background-image url("../image/banner-movilStn.jpg")
+				@media (max-width 991px)
 					background-position 0px -4px
 					background-repeat no-repeat
-					background-size 107%
-					height 300px
+					background-size cover
+					height 325px
+				@media (max-width 424px)
+					background-image url("../image/banner-movilStn.jpg")
+					height 403px
+				@media (max-width 375px)
+					height 370px
+				@media (max-width 320px)
+					height 315px
+				
 	.container
+		@media (max-width 767px)
+			display flex
+			flex-direction column-reverse
 		.programaBeca
-			// @media (max-width 767px)
-			// 	display none
-			.row
-				.descrip-beca
-					padding 0 15px 60px
-					h5
-						font-size 20px
-						color azul
-						font-family fuente_tituloH2Nos
-					ul
-						padding 0
-						li
-							list-style none
-					h2
-						@media (max-width 767px)
-							height 70px
-							width 60%
-							font-size 25px
-							box-shadow 0 0 0
-							left -30px
-							position relative
-					> p
-						margin-top 30px
 			.row.galerias
 				.lSAction
 					// > a

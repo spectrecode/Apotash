@@ -4,10 +4,17 @@
 		.row
 			.bannerPrincipal.comuncCorp
 				background-image url("../image/FGB_2008.png")
+				@media (max-width 991px)
+					background-repeat no-repeat
+					background-size cover
+					height 325px
 				@media (max-width 425px)
 					background-image url("../image/banner-movilCo.jpg")
-					background-size cover
-					height 300px
+					height 415px
+				@media (max-width 375px)
+					height 365px
+				@media (max-width 320px)
+					height 315px
 				.letrero-banner
 					h2
 						color blanco
@@ -15,6 +22,8 @@
 						display none
 	.container
 		.noticias-comunicacion
+			@media (max-width 767px)
+				background blanco
 			@media (max-width 425px)
 				padding 20px 30px
 			> div:last-child
@@ -30,7 +39,8 @@
 				font 30px fuente_tituloH3
 				margin-left 0
 				margin-right 0
-				@media (max-width 425px)
+				@media (max-width 424px)
+					padding-top 0 !important
 					&:after
 						content ""
 						border-bottom 1.5px solid gris
@@ -41,12 +51,12 @@
 			h2.titulo
 				font-size 35px
 	#publicaciones
-		> div:nth-child(2)
-			@media (max-width 767px)
-				display none
-		> div:nth-child(3)
-			@media (max-width 767px)
-				display none
+		// > div:nth-child(2)
+		// 	@media (max-width 767px)
+		// 		display none
+		// > div:nth-child(3)
+		// 	@media (max-width 767px)
+		// 		display none
 		.inner-noticia
 			background blanco
 			border-right 3px solid #CED71F
@@ -59,6 +69,8 @@
 				box-shadow 0 0 0
 			&:first-child
 				margin-top 0
+				@media (max-width 424px)
+					padding 0
 			> div:nth-child(2)
 				h4
 					font 20px alegreya_sansblack
@@ -194,8 +206,13 @@
 			display none
 	.inner-logo
 		text-align center
-	.inner-img
-		padding-left 0
+	.inner-noticia
+		.inner-img
+			padding-left 0
+			@media (max-width 767px)
+				padding-left 15px
+			@media (max-width 424px)
+				padding 0
 	.inner-logo
 		img
 			width 100%
@@ -250,6 +267,8 @@
 					font-size 22px
 				@media(max-width 425px)
 					font-size 18px
+				@media(max-width 374px)
+					font-size 15px
 			p
 				font-size 14px
 				@media (max-width 1199px)

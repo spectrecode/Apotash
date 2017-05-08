@@ -4,83 +4,80 @@ section#contacto
 			.bannerPrincipal.misionNos
 				.letrero-banner
 					div
-						h2 What is Lorem ipsum
+						h2 Crece con nosotros
 						//- p Lorem Ipsum
 						.rectangle
-							|Proyectos e iniciativas para el desarrollo e iniciativas para el desarrollo.
-	.row.fondo-blanco
-		.container
-			.content-contact
-				.row
-					.contacto-titulo.text-center
-						h2 
-							b CONTACTO
-						p Nos encantaría saber sobre tus comentarios y/o sugerencias
-				.row
-					.col-lg-6.col-md-6.col-sm-12.col-xs-12
-						.box-contact
-							div
-								i.icon-envelope-o
-								a(href="#") 
+							| Escríbenos una sugerencia o trabaja con nosotros.
+		.row.fondo-blanco
+			.container
+				.content-contact
+					.row
+						.contacto-titulo.text-center
+							h2 
+								b CONTACTO
+							p Nos encantaría saber sobre tus comentarios y/o sugerencias
+					.row
+						.col-lg-6.col-md-6.col-sm-12.col-xs-12
+							.box-contact
+								div
+									i.icon-envelope-o
 									|informes@americas-potash.com
-								br
-								br
-							div
-								i.icon-mobile
-								a(href="#")
-									|999 888 765
-								br
-								br
-					.col-lg-6.col-md-6.col-sm-12.col-xs-12
-						form(method="post",action="",novalidate="novalidate")
-							input(type="text",placeholder="Nombre",name="name",id="name",required)
-							label(for="name")
-							input(type="text",placeholder="Dirección",name="adress",id="adress",required)
-							label(for="adress")
-							div.duo-input
-								.col-lg-6.col-md-6.col-sm-6.col-xs-12
-									.row
-										input(type="text",placeholder="E-mail",name="mail",id="mail",required)
-										label(for="mail")
-								.col-lg-6.col-md-6.col-sm-6.col-xs-12
-									.row
-										input(type="text",placeholder="Teléfono",name="telf",maxlength="9",id="telf",required)
-										label(for="telf")
-							textarea(type="text",placeholder="Comentario",name="comment",rows="6",id="comment")
-							button(type="submit",id="btn-form")
-								b Enviar
-
-	.row.trabajo
-		.container
-			.cvForm
-				.row
-					.datosTrabajador.text-center
-						h2 
-							b TRABAJA CON NOSOTROS
-						h3 DATOS PERSONALES
-				.row
-					.col-lg-12.col-md-12.col-sm-12.col-xs-12
-						form(method="post",action="",novalidate="novalidate")
-							input(type="text",placeholder="Nombre",name="name",id="name",required)
-							label(for="name")
-							input(type="text",placeholder="Dirección",name="adress",id="adress",required)
-							label(for="adress")
-							div.trio-input
-								//- .col-lg-4.col-md-4.col-sm-4.col-xs-4
-								//- 	.row
-								input(type="text",placeholder="E-mail",name="mail",id="mail",required)
-								label(for="mail")
-								//- .col-lg-4.col-md-4.col-sm-4.col-xs-4
-								//- 	.row
-								input(type="text",placeholder="Teléfono",name="telf",maxlength="9",id="telf",required)
-								label(for="telf")
-								//- .col-lg-4.col-md-4.col-sm-4.col-xs-4
-								//- 	.row
-								input(type="text",placeholder="DNI",name="dni",maxlength="9",id="dni",required)
-								label(for="dni")
-							textarea(type="text",placeholder="Comentario",name="comment",rows="6",id="comment")
-							h3.text-center ADJUNTAR CV
-							P.text-center Tamaño máximo de 500kb. Extensión o formatos válidos: pdf, doc, docx
-							input(type="file")
-							button(type="submit",id="btn-form")
-								b Enviar
+									br
+									br
+								div
+									i.icon-mobile
+									|933 534 107
+									br
+									br
+						.col-lg-6.col-md-6.col-sm-12.col-xs-12
+							form#formcontacto
+								input(type="text",placeholder="Nombre",name="name",id="name",required, autocomplete="off")
+								label(for="name")
+								input(type="text",placeholder="Dirección",name="adress",id="adress",required,autocomplete="off")
+								label(for="adress")
+								div.duo-input
+									.col-lg-6.col-md-6.col-sm-6.col-xs-12
+										.row
+											input(type="text",placeholder="E-mail",name="mail",id="mail",required,autocomplete="off")
+											label(for="mail")
+									.col-lg-6.col-md-6.col-sm-6.col-xs-12
+										.row
+											input(type="text",placeholder="Teléfono",name="telf",maxlength="9",id="telf",required,autocomplete="off")
+											label(for="telf")
+								textarea(type="text",placeholder="Comentario",name="comment",rows="6",id="comment")
+								button(type="button",id="btn-form")
+									b Enviar
+		.row.trabajo
+			.container
+				.cvForm
+					.row
+						.datosTrabajador.text-center
+							h2 
+								b TRABAJA CON NOSOTROS
+							h3 DATOS PERSONALES
+					.row
+						.col-lg-12.col-md-12.col-sm-12.col-xs-12
+							form.cv
+								input(type="text",placeholder="Nombre",name="name2",id="name2",required)
+								label(for="name2")
+								input(type="text",placeholder="Dirección",name="adress2",id="adress2",required)
+								label(for="adress2")
+								div.trio-input
+									.col-lg-4.col-md-4.col-sm-4.col-xs-12
+										.row
+											input(type="email",placeholder="E-mail",name="mail2",id="mail2",required)
+											label(for="mail2")
+									.col-lg-4.col-md-4.col-sm-4.col-xs-12
+										.row
+											input(type="text",placeholder="Teléfono",name="telf2",maxlength="9",id="telf2",required)
+											label(for="telf2")
+									.col-lg-4.col-md-4.col-sm-4.col-xs-12
+										.row
+											input(type="text",placeholder="DNI",name="dni",maxlength="9",id="dni",required)
+											label(for="dni")
+								textarea(type="text",placeholder="Comentario",name="comment2",rows="6",id="comment2")
+								h3.text-center ADJUNTAR CV
+								P.text-center Tamaño máximo de 500kb. Extensión o formatos válidos: pdf, doc, docx
+								input(type="file", name="filecv", id="filecv" )
+								button(type="button",id="btn-formCV")
+									b Enviar

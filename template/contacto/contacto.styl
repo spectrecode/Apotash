@@ -5,12 +5,17 @@ section#contacto
     .row
         .bannerPrincipal.misionNos
             background-image url("../image/banner4.jpg")
-            @media (max-width 425px)
-                background-image url("../image/banner-movil2.jpg")
-                background-position 0px -4px
+            @media (max-width 991px)
                 background-repeat no-repeat
-                background-size 107%
-                height 300px
+                height 325px
+                background-size cover
+            @media (max-width 424px)
+                background-image url("../image/movil-contacto.png")
+                height 415px
+            @media (max-width 375px)
+                    height 370px
+            @media (max-width 320px)
+                height 315px
     .fondo-blanco
         background-color: grisclaro
         color: grisoscuro
@@ -19,16 +24,17 @@ section#contacto
                 h2
                     color verdeOscuro
             .box-contact
+                color grisoscuro
                 i
                     background verdeOscuro
                     color blanco
-                a
-                    color grisoscuro
             form
                 input
                     background blanco
+                    -webkit-text-fill-color grisoscuro
                 textarea
                     background blanco
+                    -webkit-text-fill-color grisoscuro
                 button
                     background verdeOscuro
     .trabajo
@@ -37,7 +43,7 @@ section#contacto
         .cvForm
             width 60%
             margin auto 
-            @media (max-width 425px)
+            @media (max-width 767px)
                 width 85%
             .datosTrabajador
                 h2
@@ -63,13 +69,16 @@ section#contacto
             form
                 input
                     background blanco
+                    -webkit-text-fill-color grisoscuro
                 input[type="file"]
                     background transparent
                     border 0
                     width 50%
+                    color blanco
                     display block
                 textarea
                     background blanco
+                    -webkit-text-fill-color grisoscuro
                 h3
                     border: 2px solid blanco
                     font-size: 22px
@@ -89,9 +98,13 @@ section#contacto
                         margin-right 8px
                     input[name="dni"]
                         margin-right 0
-                    @media (max-width 768px)
+                    > div:first-child
+                        margin-right 8px
+                    > div:nth-child(2)
+                        margin-right 8px
+                    @media (max-width 767px)
                         display initial
                 button
-                    background blanco
+                    background grisclaro
                     color verdeOscuro
                     margin 40px auto 50px auto

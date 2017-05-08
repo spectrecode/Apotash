@@ -1,0 +1,149 @@
+section#spots
+	@media (max-width 767px)
+		background blanco
+	.container-fluid
+		.row
+			.bannerPrincipal.sostenibilidad
+				background-image url("../image/banner-creciendo.jpg")
+				@media (max-width 425px)
+					background-image url("../image/banner-movilStn.jpg")
+					background-position 0px -4px
+					background-repeat no-repeat
+					background-size 107%
+					height 300px
+	.container
+		// @media (max-width 767px)
+			// display flex
+			// flex-direction column-reverse
+		ul
+			margin:50px auto
+			display flex
+			justify-content center
+			@media (max-width 991px)
+				padding 0
+			@media (max-width 767px)
+				margin 30px auto
+			a
+				&:hover
+					text-decoration none
+				li
+					cursor pointer
+					color grisoscuro
+					list-style none
+					width 180px
+					display flex
+					justify-content center
+					align-items center
+					transition all ease-in-out .2s
+					font-size 23px
+					height 65px
+					line-height 1
+					@media (max-width 767px)
+						color grisoscuro
+						width 100%
+					&:hover
+						background: verdeOscuro
+						color blanco
+						font-family fuente_active
+						display flex
+						align-items center
+						justify-content center
+						@media (max-width 767px)
+							background blanco
+							color grisoscuro
+							width 100%
+					&.activesos
+						background verdeOscuro
+						color blanco
+						font-family fuente_active
+						width 200px
+			/.menuMovSa
+				flex-direction column
+				padding 0
+				a
+					&:hover
+						text-decoration none
+					li
+						width auto
+						padding 30px
+						background blanco
+						font-size 20px
+						list-style none
+						color grisoscuro
+						&:hover
+							font-family fuente_active
+							background blanco
+							color grisoscuro
+						&.actComun
+							background blanco
+		.subComunic
+			border-top 3px solid verdeOscuro
+			@media (max-width 767px)
+				border none
+			ul
+				@media (max-width 767px)
+					flex-direction column
+					align-items center
+				a
+					li
+						height 65px
+						font-size 20px
+						&:hover
+							@media (max-width 767px)
+								background verdeOscuro
+								color blanco
+								width 200px
+		.contenedorSpots
+			@media (max-width 767px)
+				padding-top 50px
+		.contenedorSpots > div
+			display flex
+			margin-bottom 20%
+			justify-content center
+			@media (max-width 641px)
+				flex-direction column
+				// margin-bottom 0
+			.spot
+				@media (max-width 767px)
+					padding 0 15px
+				&:hover .reseniaAudio
+					display block
+				.spotAudio
+					position relative
+					text-align center
+					&:hover .iconAudio
+						display block
+					img:first-child
+						width 70%
+						@media (max-width 424px)
+							width 100%
+					.iconAudio
+						position absolute
+						right 0
+						left 0
+						margin auto
+						top 0
+						bottom 0
+						display none
+						@media (max-width 767px)
+							display block
+				.reseniaAudio
+					background verdeOscuro
+					padding 25px
+					// display none
+					width 70%
+					margin auto
+					color blanco
+					font-size 20px
+					@media (max-width 424px)
+						padding 15px
+						width 100%
+					p
+						@media (max-width 991px)
+							line-height 1
+						@media (max-width 424px)
+							font-size 16px
+						@media (max-width 374px)
+							font-size 15px
+					audio
+						width 100%

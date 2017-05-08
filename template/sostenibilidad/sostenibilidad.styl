@@ -5,16 +5,42 @@ section#sostenibilidad
 		.row
 			.bannerPrincipal.sostenibilidad
 				background-image url("../image/banner-creciendo.jpg")
-				@media (max-width 425px)
-					background-image url("../image/banner-movilStn.jpg")
+				@media (max-width 991px)
 					background-position 0px -4px
 					background-repeat no-repeat
-					background-size 107%
-					height 300px
+					height 325px
+					background-size cover
+				// @media (max-width 760px)
+				// 	height 292px
+				// @media (max-width 600px)
+				// 	height 229px
+				@media (max-width 424px)
+					background-image url("../image/banner-movilStn.jpg")
+					height 403px
+				@media (max-width 375px)
+					height 370px
+				@media (max-width 320px)
+					height 315px
+					// @media (max-width 424px)
+					// 	bottom 0px
 	.container
 		@media (max-width 767px)
 			display flex
 			flex-direction column-reverse
+		.cont-Salud
+			border-top 3px solid verdeOscuro
+			@media (max-width 767px)
+				border-top none
+				margin-top 50px
+			.activesos
+				background transparent
+				color grisoscuro
+				&:hover
+					color blanco
+					background verdeOscuro
+					@media (max-width 767px)
+						color verdeOscuro
+						background transparent
 		ul
 			display flex
 			justify-content center
@@ -83,13 +109,19 @@ section#sostenibilidad
 				display flex
 				align-items center
 				box-shadow: sombra
+				@media (max-width 1199px)
+					align-items inherit
 				@media (max-width 767px)
 					box-shadow 0 0 0
 					flex-direction column
 				.col-lg-5
 					padding-right 0
+					@media  only screen and (min-width 768px) and (max-width 1199px)
+						padding-left 0
 					@media (max-width 767px)
-						padding-right 15px
+						padding 0 75px 15px
+					@media (max-width 424px)
+						padding 50px
 					@media  only screen and (min-width 768px) and (max-width 991px)
 						height 451px
 					img
@@ -98,39 +130,34 @@ section#sostenibilidad
 					h2
 						@media (max-width 767px)
 							font-size 25px
-							background #006c4b
-							color #fff
-							height 70px
-							width 90%
-							margin 50px 0 40px
-							display flex
-							justify-content center
-							align-items center
-							left -45px
-							position relative
+							color verdeOscuro
+							text-align center
+							font-family fuente_tituloH2Nos
 			.descrip-sostenibilidad
 				font-size 18px
 				padding 0 45px
 				@media (max-width 1199px)
-					padding 0 25px
+					padding 0 45px
 				.contenido-sostenibilidad
 					display flex
 					align-items flex-end
 					height 130px
 					@media (max-width 1199px)
-						height 90px
-					@media only screen and (min-width 426px) and (max-width 767px)
+						height auto
+						min-height 90px
+					@media only screen and (min-width 615px) and (max-width 767px)
 						flex-direction row
 						padding 0 50px
-						height 130px
 					@media (max-width 425px)
 						flex-direction column
 						height 200px
-						align-items center
+					@media (max-width 375px)
+						min-height 290px
 					h5
 						font-family fuente_descripcion
 						font-size 20px
 						height 80px
+						line-height 1
 						span
 							font-size 30px
 							@media (max-width 1199px)
@@ -138,6 +165,9 @@ section#sostenibilidad
 							@media (max-width 991px)
 								display block
 								font-size 20px
+						.parentesis
+							font-size 10px
+							line-height 1.5em
 						@media only screen and (min-width 992px) and (max-width 1199px)
 							width 250px
 							font-size 18px
@@ -182,11 +212,33 @@ section#sostenibilidad
 						@media (max-width 425px)
 							margin auto
 							width 150px
+							margin-bottom 0
+							margin-top 0
 					.box-stn:last-child
 						.sign
 							@media (max-width 425px)
 								display none
 						.descrip-number
+							h5
+								span:first-child
+									font-family fuente_active
+									font-size 26px
+									display inline-block
+									position relative
+									top -2px
+									margin-right 3px
+									@media (max-width 1199px)
+										font-size 19px
+									@media (max-width 991px)
+										font-size 18px
+									@media (max-width 767px)
+										font-size 17px
+										top -1px
+								.parentesis
+									> span
+										font-size 12.5px
+										display inline-block
+										font-family fuente_active
 							@media (max-width 767px)
 								text-align center
 						.signMov
@@ -200,27 +252,40 @@ section#sostenibilidad
 								color verdeOscuro
 						.verde
 							color verdeOscuro
+							display flex
+							flex-direction column
+							line-height 1.25em
 				p
 					@media (max-width 991px)
 						font-size 15px
+					&:first-child
+						padding-top 20px
 				.contenido-sostenibilidad:last-child .descrip-number:last-child
 					color verdeOscuro
 				.logosSostenibles
 					display flex
 					justify-content space-between
 					width 110%
-					margin-top 20px
+					margin-top 40px
+					margin-bottom 20px
+					@media only screen and (min-width 768px) and (max-width 1199px)
+						width 185%
 					@media only screen and (min-width 768px) and (max-width 991px)
-						width 178%
-					@media only screen and (min-width 426px) and (max-width 767px)
+						margin 60px auto
+					@media (max-width 767px)
+						width 100%
+					@media only screen and (min-width 426px) and (max-width 601px)
 						flex-direction row
-						width 87%
+						width 100%
 						margin 50px auto
+						top 25px
+						position relative
 					@media (max-width 425px)
 						flex-direction column
 						margin-top 0
 						width 100%
 						align-items center
+						margin-bottom 0
 					.logoS
 						display flex
 						align-items flex-start
@@ -241,6 +306,31 @@ section#sostenibilidad
 								width 100px
 							b
 								color grisoscuro
+						span
+							font-size 23px
+							position relative
+							top -1.3px
+							@media (max-width 767px)
+								font-size 18px
+						span.uno
+							top -2px
+							@media (max-width 991px)
+								font-size 19px
+							@media (max-width 767px)
+								font-size 18px
+						span.dos
+							@media (max-width 991px)
+								font-size 19px
+							@media (max-width 767px)
+								font-size 18px
+						span.tres
+							top -1px
+							font-size 24px
+							@media (max-width 991px)
+								font-size 20px
+								top 0
+							@media (max-width 767px)
+								font-size 18px
 			.imagenRE
 				@media (max-width 767px)
 					padding-right 15px

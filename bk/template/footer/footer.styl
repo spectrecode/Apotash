@@ -1,0 +1,106 @@
+footer
+    position: relative;
+    .footer
+        background: #4a4a4a
+        padding: 3% 3% 0.5%
+        color: #c5c5c5
+        height: 100%
+        font-family: fuente_footer-bold
+        .row
+            @media (max-width: 767px)
+                display: flex
+                flex-direction: column-reverse
+            .box-footer
+                border: 1px solid #c5c5c5
+                .footer-enlaces
+                .box-logos
+                    height: 75px
+                    @media (max-width: 767px)
+                        height: 100%
+                .footer-enlaces
+                    @media (max-width: 767px)
+                        height 270px
+            .box-footer:last-child
+                @media (max-width: 767px)
+                    height: 270px
+        p
+            @media (max-width: 424px)
+                font-size: 12px
+        .box-logos
+            display: flex
+            align-items: center
+            justify-content: center
+            @media (max-width: 767px)
+                flex-direction: row
+                padding: 15px 10px
+        .footer-enlaces
+            display: flex
+            // flex-wrap: wrap
+            // justify-content: space-around
+            // flex: 1 0 auto
+            padding: 15px 10px
+            @media (max-width: 991px)
+                flex-direction column
+                align-items center
+                justify-content space-between
+            // @media (max-width: 425px)
+            //     line-height: 1.8
+            div
+                display flex
+                justify-content space-around
+                align-items center
+                &:first-child
+                    width 40%
+                &:last-child
+                    width 60%
+                @media (max-width: 991px)
+                    width 100% !important
+                @media (max-width: 767px)
+                    flex-direction column
+                    height 120px
+                a
+                    // justify-content: center
+                    color: #c5c5c5
+                    // align-items: center
+                    // display: flex
+                    font-size 14px
+                    font-family fuente_MenuFooter
+                    @media (max-width: 767px)
+                        padding: 10px
+                        height 40px
+                        
+    .footer    
+        p 
+            margin-top: 10px
+            font-size 12px
+            margin-bottom: 0
+            font-family fuente_MenuFooter
+            span
+                font-family: fuente_footerbold
+        @media (min-width: 992px)
+            .box-logos
+                img
+                    padding: 15px
+    .btnGoUp
+        height: 70px
+        position: absolute
+        right: 100px
+        width: 75px
+        top: -69px
+        z-index: 1
+        background: verdeOscuro
+        cursor: pointer
+        i
+            font-size: 55px
+            display: flex
+            justify-content: center
+            color: blanco
+            @media (max-width: 991px)
+                font-size 45px
+                align-items center
+                height 100%
+        @media (max-width: 991px)
+            right 38px
+            height 60px
+            width 60px
+            top -60px

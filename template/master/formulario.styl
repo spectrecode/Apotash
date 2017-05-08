@@ -17,47 +17,54 @@
             p
                 font-size 20px
                 font-family fuente_descripcion
+                @media (max-width: 424px)
+                    line-height 1
+                    font-size 18px
         // .row:nth-child(2)
         //     @media (max-width: 425px)
         //         display: flex
         //         flex-direction: column-reverse
     .box-contact
-        margin: 45px 20px
+        margin: 45px 0px
         display flex
         flex-direction column
         justify-content space-around
         height 200px
-        @media (max-width: 992px)
+        color blanco
+        font-family fuente_contenidoContacto
+        font-size 20px
+        @media (max-width: 991px)
             margin-bottom: 0
             margin: auto
             max-width: 390px
-        @media (max-width: 425px)
+        @media (max-width: 424px)
             max-width: 315px
             height: 100%
             margin: 10px 30px
-            @media (max-width: 375px)
-                max-width: 290px
-                margin: 10px auto
-            @media (max-width: 345px)
-                max-width: 260px
-        a
-            color: blanco
-            font-family: fuente_contenidoContacto
-            font-size: 20px
-            @media (max-width: 390px)
-                font-size: 19px
-            @media (max-width: 345px)
-                font-size: 16px
+            font-size 18px
+        @media (max-width: 412px)
+            font-size: 17px
+            margin: 10px 15px
+        @media (max-width: 374px)
+            font-size 16px
+            margin 0
+        // @media (max-width: 345px)
+        //     max-width: 260px
+        // @media (max-width: 345px)
+        //     font-size: 16px
         i
-            color: #006c4b
-            background: #fff
-            padding: 14px
-            border-radius: 100%
-            font-size: 30px
-            margin-right: 10px
-            @media (max-width: 425px)
-                padding: 6px
-                font-size: 17px
+            color #006c4b
+            background #fff
+            padding 14px
+            border-radius 100%
+            font-size 30px
+            margin-right 10px
+            top 5px
+            position relative
+            @media (max-width 424px)
+                padding 6px
+                font-size 17px
+                top inherit
     form
         margin: 10px auto
         .duo-input
@@ -76,6 +83,7 @@
             border: 1px solid blanco
             margin: 4px auto
             background:transparent
+            -webkit-text-fill-color blanco
         button
             display: block
             background: verde

@@ -1,0 +1,340 @@
+[23-Mar-2017 13:16:11 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 13:16:11 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 13:16:11 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:16:11 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:16:11 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:16:11 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:16:11 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:16:11 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:16:30 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 13:16:30 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:16:30 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:16:30 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 13:16:30 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:16:30 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:16:30 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:17:39 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 13:17:39 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 13:17:39 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:17:39 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:17:39 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:17:39 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:17:39 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:17:39 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:19:36 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 13:19:36 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 12
+[23-Mar-2017 13:20:03 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 13:20:03 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 12
+[23-Mar-2017 13:20:03 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:20:03 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:20:03 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:20:03 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:20:03 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:20:03 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:20:24 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 13:20:24 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 12
+[23-Mar-2017 13:20:24 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:20:24 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:20:39 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 13:20:39 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 12
+[23-Mar-2017 13:20:39 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:20:39 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:20:39 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:20:39 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:20:39 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:20:39 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:22:49 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:22:49 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:22:49 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:49 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:49 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:22:49 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:22:50 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:22:50 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:22:50 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:50 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:50 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:22:50 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:22:51 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:22:51 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:22:51 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:51 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:51 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:22:51 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:22:52 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:22:52 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:22:52 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:52 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:52 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:22:52 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 13:22:53 America/Lima] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[23-Mar-2017 13:22:53 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[23-Mar-2017 13:22:53 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:53 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[23-Mar-2017 13:22:53 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[23-Mar-2017 13:22:53 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[23-Mar-2017 20:52:13 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:52:16 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:52:18 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:52:29 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:53:55 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:54:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:54:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:54:10 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:54:36 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:57:28 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 20:57:30 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 21:15:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 21:15:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 21:15:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 21:15:03 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 21:15:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 21:16:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/americaspotash/public_html/demoV3/busqueda.php on line 33
+[23-Mar-2017 16:22:28 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:22:28 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:22:39 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:22:39 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:22:46 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:22:46 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:23:00 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:23:00 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:23:14 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:23:14 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:25:25 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:25:25 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:25:46 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:25:46 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:25:53 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:25:53 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:26:17 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:26:17 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:32:34 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:32:34 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:33:25 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:33:25 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:34:27 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:34:27 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:36:22 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:36:22 America/Lima] PHP Notice:  Undefined index: filtro in /home/americaspotash/public_html/demoV3/busqueda.php on line 9
+[23-Mar-2017 16:36:31 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:39:03 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:39:11 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:39:47 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:39:48 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:39:48 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:40:28 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:40:32 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:40:49 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:40:56 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:41:39 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:43:46 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:44:51 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:45:53 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:46:09 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:46:33 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:46:45 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 16:48:51 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:11:54 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:13:43 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:13:53 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:13:56 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:13:56 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:13:57 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:14:01 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:16:29 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:16:33 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:16:55 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:19:26 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:19:31 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:20:23 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:20:24 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:20:24 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:20:24 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:20:24 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:20:24 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:20:31 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:21:27 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:21:29 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:21:29 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:21:29 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:21:30 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:21:32 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:21:58 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:23:11 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:23:13 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:23:13 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 8
+[23-Mar-2017 17:25:15 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:28:27 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:41:13 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:42:38 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:45:18 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:45:19 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:45:27 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:45:27 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:45:27 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:46:48 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:47:04 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:47:29 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:47:30 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:49:21 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:49:59 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:51:49 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:52:19 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:52:46 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:53:12 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:53:12 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:53:37 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:53:41 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:54:31 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:58:40 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:58:52 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 17:59:04 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:02:38 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:02:46 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:03:46 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:04:56 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:06:03 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:06:03 America/Lima] PHP Warning:  Illegal string offset 'not_id' in /home/americaspotash/public_html/demoV3/busqueda.php on line 26
+[23-Mar-2017 18:06:03 America/Lima] PHP Warning:  Illegal string offset 'not_titulo' in /home/americaspotash/public_html/demoV3/busqueda.php on line 27
+[23-Mar-2017 18:06:03 America/Lima] PHP Warning:  Illegal string offset 'not_descripcion' in /home/americaspotash/public_html/demoV3/busqueda.php on line 28
+[23-Mar-2017 18:06:03 America/Lima] PHP Warning:  Illegal string offset 'not_link' in /home/americaspotash/public_html/demoV3/busqueda.php on line 29
+[23-Mar-2017 18:06:03 America/Lima] PHP Warning:  Illegal string offset 'not_fechacreacion' in /home/americaspotash/public_html/demoV3/busqueda.php on line 30
+[23-Mar-2017 18:07:30 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:07:30 America/Lima] PHP Warning:  Illegal string offset 'not_id' in /home/americaspotash/public_html/demoV3/busqueda.php on line 26
+[23-Mar-2017 18:07:30 America/Lima] PHP Warning:  Illegal string offset 'not_titulo' in /home/americaspotash/public_html/demoV3/busqueda.php on line 27
+[23-Mar-2017 18:07:30 America/Lima] PHP Warning:  Illegal string offset 'not_descripcion' in /home/americaspotash/public_html/demoV3/busqueda.php on line 28
+[23-Mar-2017 18:07:30 America/Lima] PHP Warning:  Illegal string offset 'not_link' in /home/americaspotash/public_html/demoV3/busqueda.php on line 29
+[23-Mar-2017 18:07:30 America/Lima] PHP Warning:  Illegal string offset 'not_fechacreacion' in /home/americaspotash/public_html/demoV3/busqueda.php on line 30
+[23-Mar-2017 18:07:44 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:10:53 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:10:53 America/Lima] PHP Warning:  Illegal string offset 'not_id' in /home/americaspotash/public_html/demoV3/busqueda.php on line 26
+[23-Mar-2017 18:10:53 America/Lima] PHP Warning:  Illegal string offset 'not_titulo' in /home/americaspotash/public_html/demoV3/busqueda.php on line 27
+[23-Mar-2017 18:10:53 America/Lima] PHP Warning:  Illegal string offset 'not_descripcion' in /home/americaspotash/public_html/demoV3/busqueda.php on line 28
+[23-Mar-2017 18:10:53 America/Lima] PHP Warning:  Illegal string offset 'not_link' in /home/americaspotash/public_html/demoV3/busqueda.php on line 29
+[23-Mar-2017 18:10:53 America/Lima] PHP Warning:  Illegal string offset 'not_fechacreacion' in /home/americaspotash/public_html/demoV3/busqueda.php on line 30
+[23-Mar-2017 18:11:44 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:13:13 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:13:32 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:14:19 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:15:26 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:17:01 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:17:12 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:17:21 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:17:35 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:19:39 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:19:46 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:20:07 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:21:04 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:21:20 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:21:28 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:22:57 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:26:29 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:26:39 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:27:26 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[23-Mar-2017 18:29:55 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:10:25 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:10:43 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:10:56 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:10:59 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:11:05 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:11:13 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:11:18 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:11:31 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:11:44 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:12:32 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:13:00 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:56:53 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:57:01 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:57:09 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:57:17 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:57:24 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:57:34 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:57:43 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:57:51 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:57:56 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:58:01 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 10:58:06 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[24-Mar-2017 11:01:42 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 10:02:41 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 10:03:02 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 10:09:34 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 13:39:22 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 15:01:09 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 15:01:18 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 15:09:01 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 16:19:37 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 16:20:23 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 16:22:38 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 16:22:40 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 16:22:49 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 16:23:17 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[25-Mar-2017 16:27:09 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 10:25:58 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 10:35:00 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 10:45:30 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 10:45:30 America/Lima] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/americaspotash/public_html/demoV3/config/conexion.php on line 24
+[27-Mar-2017 10:45:30 America/Lima] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 25
+[27-Mar-2017 10:45:30 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[27-Mar-2017 10:45:30 America/Lima] PHP Warning:  mysqli_real_escape_string(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 36
+[27-Mar-2017 10:45:30 America/Lima] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/americaspotash/public_html/demoV3/config/conexion.php on line 60
+[27-Mar-2017 10:45:30 America/Lima] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/americaspotash/public_html/demoV3/config/conexion.php on line 62
+[27-Mar-2017 10:52:06 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 11:23:42 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 11:23:47 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 11:24:23 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 11:24:34 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 11:24:43 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 11:25:05 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV3/busqueda.php on line 11
+[27-Mar-2017 13:04:19 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:06:26 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:06:27 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:06:28 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:06:31 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:06:36 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:06:53 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:06:53 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:06:53 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:10:52 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:11:44 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:11:51 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:11:52 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:11:55 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:11:56 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:13:03 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:13:05 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[27-Mar-2017 13:17:23 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[31-Mar-2017 10:50:34 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[31-Mar-2017 10:50:43 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[31-Mar-2017 10:50:51 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[31-Mar-2017 16:40:09 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[31-Mar-2017 16:42:43 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[31-Mar-2017 16:43:05 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[31-Mar-2017 16:44:11 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 09:39:12 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 12:40:10 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 12:40:16 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 12:47:19 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 12:47:33 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 12:47:37 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 12:48:10 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 12:48:13 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 12:48:14 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[03-Apr-2017 18:13:49 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:34:33 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:34:58 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:34:59 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:34:59 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:35:05 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:40:24 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:43:20 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:48:43 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11
+[05-Apr-2017 10:48:52 America/Lima] PHP Notice:  Undefined index: page in /home/americaspotash/public_html/demoV5/busqueda.php on line 11

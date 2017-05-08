@@ -1,0 +1,90 @@
+section#contacto
+	.container-fluid
+		.row
+			.bannerPrincipal.misionNos
+				.letrero-banner
+					div
+						h2 Growing together
+						//- p Lorem Ipsum
+						.rectangle
+							| Make a suggestion or work with us.
+		.row.fondo-blanco
+			.container
+				.content-contact
+					.row
+						.contacto-titulo.text-center
+							h2 
+								b CONTACT  US
+							p Let us know your comments and/or suggestions
+					.row
+						.col-lg-6.col-md-6.col-sm-12.col-xs-12
+							.box-contact
+								div
+									i.icon-envelope-o
+									|informes@americas-potash.com
+									br
+									br
+								div
+									i.icon-mobile
+									|933 534 107
+									br
+									br
+						.col-lg-6.col-md-6.col-sm-12.col-xs-12
+							form#formcontacto
+								input(type="text",placeholder="Name",name="name",id="name",required, autocomplete="off")
+								label(for="name")
+								input(type="text",placeholder="Adress",name="adress",id="adress",required,autocomplete="off")
+								label(for="adress")
+								div.duo-input
+									.col-lg-6.col-md-6.col-sm-6.col-xs-12
+										.row
+											input(type="text",placeholder="E-mail",name="mail",id="mail",required,autocomplete="off")
+											label(for="mail")
+									.col-lg-6.col-md-6.col-sm-6.col-xs-12
+										.row
+											input(type="text",placeholder="Phone",name="telf",maxlength="9",id="telf",required,autocomplete="off")
+											label(for="telf")
+								textarea(type="text",placeholder="Comments",name="comment",rows="6",id="comment")
+								button(type="button",id="btn-form")
+									b Send
+		.row.trabajo
+			.container
+				.cvForm
+					.row
+						.datosTrabajador.text-center
+							h2 
+								b WORK WITH US
+							h3 PERSONAL INFORMATION
+					.row
+						.col-lg-12.col-md-12.col-sm-12.col-xs-12
+							form.cv
+								input(type="text",placeholder="Name",name="name2",id="name2",required)
+								label(for="name2")
+								input(type="text",placeholder="Adress",name="adress2",id="adress2",required)
+								label(for="adress2")
+								div.trio-input
+									.col-lg-4.col-md-4.col-sm-4.col-xs-12
+										.row
+											input(type="email",placeholder="E-mail",name="mail2",id="mail2",required)
+											label(for="mail2")
+									.col-lg-4.col-md-4.col-sm-4.col-xs-12
+										.row
+											input(type="text",placeholder="Phone",name="telf2",maxlength="9",id="telf2",required)
+											label(for="telf2")
+									.col-lg-4.col-md-4.col-sm-4.col-xs-12
+										.row
+											input(type="text",placeholder="ID",name="dni",maxlength="9",id="dni",required)
+											label(for="dni")
+								textarea(type="text",placeholder="Comments",name="comment2",rows="6",id="comment2")
+								h3.text-center ATTACH YOUR RESUMÉ (CV):
+								//- input(type="file", name="filecv", id="filecv", value="ssss")
+								div.box
+									//- input(id="file-1", type="file", name="file-1", data-multiple-caption="{count} files selected", multiple="",class="inputfile inputfile-1")
+									input(id="filecv", type="file", name="filecv", data-multiple-caption="{count} files selected", multiple="",class="filecv inputfile-1")
+									//- label(for="file-1")
+									label(for="filecv" id="labelCV")
+										span
+											| Upload CV
+								P.text-center No greater than 500 kb in size. Valid extensions or formats: .pdf, .doc, .docx
+								button(type="button",id="btn-formCV")
+									b Send

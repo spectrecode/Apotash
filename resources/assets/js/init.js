@@ -1,5 +1,5 @@
 // javascript
-var imagenesGaleriaIndex = function(){
+var potash = function(){
     if ($('body,html').width() >= 768 ){
         galeria ();
         console.log(222);
@@ -7,8 +7,7 @@ var imagenesGaleriaIndex = function(){
     else{
         $('body,html').off(galeria());
     }
-
-    $(".btn-cerrar-img").click(btnCerrar);
+    setTimeout(mostrarPagina, 1000);
     $(".caja-hover-not").mouseover(mouseZoom);
     $(".caja-hover-not").mouseout(mouseoutZoom);
     // clic buscador
@@ -18,6 +17,8 @@ var imagenesGaleriaIndex = function(){
     $("a.line-burguer").click(menuCollapse);
     // menu gotoUp
     $(".btnGoUp").click(gotoUp);
+    // sub sub menu
+    $(".sMenuSostenibilidad, .sMenuProy, .sMenuNosotros").click(subMenuCollapse);
     // RESPONSIVE
     // nosotros responsive
     $(".somosMovile").click(somosUP);
@@ -43,38 +44,120 @@ var imagenesGaleriaIndex = function(){
     $(".movVideoBtn").click(movVideoBtn);
     // oficina responsive
     // oficina responsive
-    $(".activesos").click(oficina);
+    $(".activeBeca").click(oficina);
+    // form contacto
+    $("#btn-form").click(function(){
+        if ($("#formcontacto").valid()){
+            nombre = $("#name").val();
+            adress = $("#adress").val();
+            mail = $("#mail").val();
+            telf = $("#telf").val();
+            comment = $("#comment").val();
+            form_data = {
+                nombre : nombre,
+                adress : adress,
+                mail : mail,
+                telf : telf,
+                comment : comment
+            }
+            var _link = "controller/contacto/enviar.php"; 
+            console.log(form_data);
+            $.ajax({
+                type: "POST",
+                data: form_data,
+                url: _link
+            }).done(function(response) {
+                data = jQuery.parseJSON(response);
+                if (data.b_envio)
+                    alert("Se envió el mensaje correctamente")
+                else
+                    alert("No se pudo enviar")
+                $("#formcontacto")[0].reset();
+            });
+        }
+    });
+    // form val CV
+    $("#btn-formCV").click(function(){
+        if ($(".cv").valid()){
+            // alert($("#name").val());
+            formData = new FormData();
+            formData.append("file", $("#filecv")[0].files[0]);
+            formData.append("name2", $("#name2").val());
+            formData.append("adress2", $("#adress2").val());
+            formData.append("dni", $("#dni").val());
+            formData.append("telf2", $("#telf2").val());
+            formData.append("mail2", $("#mail2").val());
+            formData.append("comment2", $("#comment2").val());            
+            var _link = "controller/bolsa/procesar.php"; 
+            console.log(formData);
+            $.ajax({
+                type: "POST",
+                data: formData,
+                url: _link,
+                dataType: "html",
+                cache: false, 
+                contentType: false,
+                processData: false
+            }).done(function(response) {
+                console.log(response);
+                data = jQuery.parseJSON(response);
+                if (data.b_envio)
+                    alert("Se envió el mensaje correctamente")
+                else
+                    alert("No se pudo enviar")
+                $(".cv")[0].reset();
+            });
+        }
+        return false;
+    });
 }
-$(document).ready(imagenesGaleriaIndex);
+$(document).ready(potash);
 
+function mostrarPagina(){
+    $("#carga").fadeOut("slow");
+    $("body").removeClass("no-scroll");
+    $("#logo-ap").attr("src","./resources/assets/image/logo-ap-header.gif");
+    $("#logo-apM").attr("src","./resources/assets/image/logo-ap-header.gif");
+} 
 
 $(document).ready(function() {
-    $(".example-group").fancybox({
-            // Options will go here
-        'transitionIn'  :   'elastic',
-        'transitionOut' :   'elastic',
-        'speedIn'       :   600, 
-        'speedOut'      :   200, 
-        'overlayShow'   :   false
+    $("#busqueda").keypress(function(e){
+        var filtro = 1;
+        if (e.which==13){
+            filtro = $(this).val()
+            top.location.href = "busqueda.php?filtro="+filtro;
+        }
     });
+    if ( $(".example-group").length > 0 ) {
+        $(".example-group").fancybox({
+                // Options will go here
+            'transitionIn'  :   'elastic',
+            'transitionOut' :   'elastic',
+            'speedIn'       :   600, 
+            'speedOut'      :   200, 
+            'overlayShow'   :   false
+        });
+    }
     var map;
     function initMap(latitud,longitud) {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: latitud , lng: longitud},
-        zoom: 18,
-      });
-      var image = './resources/assets/image/map-marker.png';
-      var beachMarker = new google.maps.Marker({
-        position: {lat: latitud, lng: longitud},
-        map: map,
-        icon: image
-      });
+        if ( $("#map").length > 0 ) {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: latitud , lng: longitud},
+                zoom: 18,
+            });
+            var image = './resources/assets/image/map-marker.png';
+            var beachMarker = new google.maps.Marker({
+                position: {lat: latitud, lng: longitud},
+                map: map,
+                icon: image
+            });
+        }
     }
-    initMap(-12.088526,-77.017846)
+    initMap(-12.096941, -77.037019)
     mostrarMapa = function(id){
         var midireccion = ""
         if (id==1){
-            initMap(-12.088526,-77.017846);
+            initMap(-12.096941, -77.037019);
             midireccion = "<b> Av. Victor Andrés Belaunde 147 </b>";
             midireccion+= "Torre Real Uno, Oficina 602 – San Isidro";
             midireccion+= "<br />";
@@ -95,23 +178,13 @@ $(document).ready(function() {
         }
     }
 });
-// funcion ampliar imagenes de galerias
-var zoomImg = function(){
-    $(".modal-img").css("display","block");
-    var imageZ = $(".imageZoom");
-    var imageN = $(this).prev().attr("src");
-    imageZ.attr("src",imageN);
-}
-var btnCerrar = function(){
-    $(".modal-img").fadeOut(300);
-}
 
 var mouseZoom =  function(){
-    $(this).prev().addClass("scale-img");
+    $(this).prev().before().addClass("scale-img");
 }
 var mouseoutZoom =  function(){
-    $(this).prev().removeClass("scale-img");
-    $(this).prev().css("transition:all .2s");
+    $(this).prev().before().removeClass("scale-img");
+    $(this).prev().before().css("transition:all .2s");
 }
 // FIN funcion mostrar imagenes ampliadas
 // Inicio abrir buscador
@@ -122,8 +195,15 @@ var openSearch =  function(){
 // menu collapse
 var menuCollapse =  function(){
     $("ul.menu-collapse").slideToggle(500);
+    $("body").toggleClass("bloqueoMenu");
 }
 // fin menu collapse
+// sub sub menu
+var subMenuCollapse =  function(){
+    // $("").slideToggle(500);
+    $(".submenu-movil").toggleClass("subBlock");
+}
+// fin sub submenu
 // boton go to up
 var gotoUp =  function(){
     $("html, body").animate({ 
@@ -169,11 +249,6 @@ var salmueraMovil =  function(){
 var sostenibilidadMovil =  function(){
     // $("#sostenibilidad").append($(".menuSosMovil"));
     $(".sostenibilidad-social").slideToggle("slow");
-    migaleriaSoS();
-};
-var activeMovsos =  function(){
-    // $("#beca").append($(".menuMovSos"));
-    $(".sSalud").slideToggle("slow");
     migaleriaSoS();
 };
 var activeMovsos =  function(){
@@ -228,7 +303,7 @@ function galeria (){
         freeMove:false,
  
         responsive : [
-            {   breakpoint: 768,
+            {   breakpoint: 992,
                 settings: {
                     item: 3,
                 },
@@ -288,16 +363,18 @@ function migaleriaSoS (){
 // fin funcion .sostenibilidadMovil
 // funcion ancla para submenus
 $(document).ready(function() {
-    topScroll = "";
-    timeOut = ""; 
-    htmlbody = $('html,body'); 
-    valor = 0; 
-    topScroll = $("#ancla").offset().top; 
-    //x|alert(">>>"+$("#ancla").height()); 
-    timeOut = 1500; 
-    htmlbody.animate({ 
-        scrollTop: topScroll
-    }, timeOut, 'easeInOutQuint');
+    if ($("#ancla").length > 0){
+        topScroll = "";
+        timeOut = ""; 
+        htmlbody = $('html,body'); 
+        valor = 0; 
+        topScroll = $("#ancla").offset().top; 
+        //x|alert(">>>"+$("#ancla").height()); 
+        timeOut = 1500; 
+        htmlbody.animate({ 
+            scrollTop: topScroll
+        }, timeOut, 'easeInOutQuint');
+    }
 });
 // fin de funcion ancla para submenus
 $(document).ready(function() {
@@ -327,6 +404,7 @@ $(document).ready(function() {
         thumbMargin: 5,
         currentPagerPosition: 'middle',
     });
+
 });
 // funcionalidad slider gallery noticias index
 $(document).ready(function() {
@@ -470,29 +548,25 @@ $(document).ready(function() {
 });
 // validacion formulario
 
-$( document ).ready(function() {
-    $("#contacto form").validate({
-        debug: false,
-
+var valFC = function(){
+    $("#formcontacto").validate({
         rules: {
             "name": {
                 required: true,
-                minlength:3,
+                minlength:3
                 // lettersonly: true
             },
             "mail": {
                 required: true,
-                email: true,
-                minlength:8
+                email: true
             },
             "adress": {
                 required: true,
-                min:5
             },
             "telf": {
                 required: true,
                 number: true,
-                max:9
+                maxlength:9
             },
             "comment": {
                 required: true,
@@ -501,39 +575,61 @@ $( document ).ready(function() {
             },
         },
         messages: {
-            "name": {
-                required: "Escriba su nombre",
-                minlength:"Escriba un nombre valido",
-                name:""
+            "name": "Escriba un nombre válido",
+            "mail": "Escriba su e-mail.",
+            "adress": "Escriba su dirección",
+            "telf": "Escriba un teléfono válido",
+            "comment": "Deje su comentario"
+        }
+    })
+}
+var valFCV = function(){
+    $("form.cv").validate({
+        rules: {
+            "name2": {
+                required: true,
+                minlength:3
+                // lettersonly: true
             },
-            "mail": {
-                required: "Escriba su e-mail.",
-                minlength:"Escriba un nombre valido",
-                email: ""
+            "mail2": {
+                required: true,
+                email: true
             },
-            "adress": {
-                required: "Escriba su dirección",
-                min: "Escriba una dirección válida",
-                adress: ""
+            "adress2": {
+                required: true,
             },
-            "telf": {
-                required: "Escriba su número de contacto",
-                telf: ""
+            "telf2": {
+                required: true,
+                number: true,
+                maxlength:9
             },
-            "comment": {
-                required: "Deje su comentario",
-                text: "",
+            "dni": {
+                required: true,
+                number: true,
+                maxlength:9
+            },
+            "comment2": {
+                required: true,
+                // email: true,
                 maxlength:140
             },
-            submitHandler: function(form) {
-                    form.submit();
-            }
         },
+        messages: {
+            "name2":"Escriba su nombre",
+            "mail2":"Escriba su e-mail.",
+            "adress2":"Escriba su dirección",
+            "telf2":"Escriba su número de contacto",
+            "dni":"Número de DNI",
+            "comment2": "Deje su comentario"
+        }
     })
-});
+}
+
 $(document).ready(function(){
     //alert(234);
-    $(".verMas").click(function () {
+    valFC();
+    valFCV();
+    function initNoticias(){
         var _link = "controller/noticias.php"; 
         var paginacion = $("#paginar").attr("data-paginacion");
         //alert(paginacion);
@@ -546,6 +642,31 @@ $(document).ready(function(){
             data: form_data,
             url: _link
         }).done(function(response) {
+            if ($("#publicaciones").length > 0){
+                data = jQuery.parseJSON(response);
+                console.log(data);
+                $("#publicaciones").append(data.noticias);
+                $("#paginar").attr("data-paginacion",data.paginacion);
+                if (data.boolpagina == 0)
+                    $("#paginar").fadeOut("slow");
+            }
+        });
+    }
+    function initBusqueda(){
+        var _link = "controller/busqueda.php"; 
+        var paginacion = $("#paginar").attr("data-paginacion");
+        var _filtro = $("#_filtro").val();
+        //alert(paginacion);
+        var form_data = {
+            "page" : paginacion,
+            "filtro" : _filtro
+        }
+        console.log(form_data);
+        $.ajax({
+            type: "POST",
+            data: form_data,
+            url: _link
+        }).done(function(response) {
             data = jQuery.parseJSON(response);
             console.log(data);
             $("#publicaciones").append(data.noticias);
@@ -553,434 +674,14 @@ $(document).ready(function(){
             if (data.boolpagina == 0)
                 $("#paginar").fadeOut("slow");
         });
-        
+    }
+
+    $(".verMas").click(function () {
+        initNoticias();
     });
+    $(".verMasBusqueda").click(function () {
+        initBusqueda();
+    });
+    if ($(".innerBusqueda").length <= 0)
+        initNoticias();
 });
-// function migaleriaSoS (nameGal){
-//     alert(nameGal);
-//     $("#"+nameGal).lightSlider({
-//         item: 5,
-//         autoWidth: false,
-//         slideMove: 1, // slidemove will be 1 if loop is true
-//         slideMargin: 10,
- 
-//         // addClass: '',
-//         mode: "slide",
-//         useCSS: true,
-//         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
- 
-//         speed: 400, //ms'
-//         loop: true,
-//         slideEndAnimation: true,
-//         pause: 2000,
- 
-//         pager: false,
-//         galleryMargin: 5,
-//         thumbMargin: 5,
-//         currentPagerPosition: 'middle',
- 
-//         // enableTouch:false,
-//         // enableDrag:false,
-//         freeMove:false,
- 
-//         responsive : [
-//             {   breakpoint: 768,
-//                 settings: {
-//                     item: 3,
-//                 },
-//             },
-//             {   breakpoint: 426,
-//                 settings: {
-//                     item: 1,
-//                 }
-//             }
-//         ]
-//     });
-//     //fin de la funcion
-// }
-// var imagenesGaleriaIndex = function(){
-//     $(".caja-hover-galeria").click(zoomImg);
-//     $(".btn-cerrar-img").click(btnCerrar);
-//     $(".caja-hover-not").mouseover(mouseZoom);
-//     $(".caja-hover-not").mouseout(mouseoutZoom);
-//     // clic buscador
-//     $('input.style-box-search').hide();
-//     $("#box-search img").click(openSearch);
-//     // menu collapse
-//     $("a.line-burguer").click(menuCollapse);
-//     // menu gotoUp
-//     $(".btnGoUp").click(gotoUp);
-//     // mapa piura
-//     $(".piura").click(goPiura);
-//     // mapa Lima
-//     $(".lima").click(goLima);
-//     // RESPONSIVE
-//     // nosotros responsive
-//     $(".somosMovile").click(somosUP);
-//     // mision responsive
-//     $(".misionMovile").click(misionMovile);
-//     // valores responsive
-//     $(".valorMovil").click(valorMovil);
-//     // talento responsive
-//     $(".talentoMovil").click(talentoMovil);
-//     // fosfato responsive
-//     $(".fosfatoMovil").click(fosfatoMovil);
-//     // sostenibilidad responsive
-//     $(".sostenibilidadMovil").click(sostenibilidadMovil);
-//     // beca responsive
-//     //$(".activeMovsos").click(activeMovsos);
-//     alert(234)
-//     migaleriaSoS("galeriaCC");
-// }
-// $(document).ready(imagenesGaleriaIndex);
-// // funcion ampliar imagenes de galerias
-// var zoomImg = function(){
-//     $(".modal-img").css("display","block");
-//     var imageZ = $(".imageZoom");
-//     var imageN = $(this).prev().attr("src");
-//     imageZ.attr("src",imageN);
-// }
-// var btnCerrar = function(){
-//     $(".modal-img").fadeOut(300);
-// }
-
-// var mouseZoom =  function(){
-//     $(this).prev().addClass("scale-img");
-// }
-// var mouseoutZoom =  function(){
-//     $(this).prev().removeClass("scale-img");
-//     $(this).prev().css("transition:all .2s");
-// }
-// // FIN funcion mostrar imagenes ampliadas
-// // Inicio abrir buscador
-// var openSearch =  function(){
-//     $("input.style-box-search").slideToggle("fast");
-// }
-// // Fin abrir buscador
-// // menu collapse
-// var menuCollapse =  function(){
-//     $("ul.menu-collapse").slideToggle(500);
-// }
-// // fin menu collapse
-// // boton go to up
-// var gotoUp =  function(){
-//     $("html, body").animate({ 
-//             scrollTop: 0 
-//         }, 1500,"linear");
-// }
-// // fin boton go to up
-// // funcion goPiuraMap
-// var goPiura =  function(){
-//     $(".mapaLima").addClass("mapaOculto");
-//     $(".piuraMap").removeClass("mapaOculto");
-// }
-// // fin funcion goPiuraMap
-// // funcion goPiuraMap
-// var goLima =  function(){
-//     $(".piuraMap").addClass("mapaOculto");
-//     $(".mapaLima").removeClass("mapaOculto");
-// }
-// // fin funcion somosUP
-// // funcion somosUP
-// var somosUP =  function(){
-//     $("#nosotros").append($(".menuNosMovil"));
-//     $(".contenedorNosotros").slideToggle("slow");
-// }
-// // fin funcion somosUP
-// // funcion misionMovile
-// var misionMovile =  function(){
-//     $("#nosotros").append($(".menuNosMovil"));
-//     $(".mision").slideToggle("slow");
-// }
-// // fin funcion misionMovile
-// // funcion .valorMovil
-// var valorMovil =  function(){
-//     $("#nosotros").append($(".menuNosMovil"));
-//     $(".valores").slideToggle("slow");
-// }
-// // fin funcion .valorMovil
-// // funcion .talentoMovil
-// var talentoMovil =  function(){
-//     $("#nosotros").append($(".menuNosMovil"));
-//     $(".talento").slideToggle("slow");
-// }
-// // fin funcion .talentoMovil
-// // funcion .fosfatoMovil
-// var fosfatoMovil =  function(){
-//     $("#fosfatos").append($(".submenuFM"));
-//     $(".fosfatoProy").slideToggle("slow");
-//     // alert($(".galeriaRF").html())
-// }
-// // fin funcion .fosfatoMovil
-// // funcion .beca
-// // var activeMovsos =  function(){
-// //     $("#beca").append($(".menuMovSos"));
-// //     $(".programaBeca").slideToggle("slow");
-// //     // alert($(".galeriaRF").html())
-// // }
-// // fin funcion .beca
-// // funcion .sostenibilidadMovil
-
-
-// var sostenibilidadMovil =  function(){
-
-//     $("#sostenibilidad").append($(".menuSosMovil"));
-//     $(".sostenibilidad-social").slideToggle("slow");
-//     $("#sostenibilidad .galerias").slideToggle("slow");
-//     console.log(4)
-//     migaleriaSoS("galeriaCC");
-//     // alert($(".galeriaRF").html())
-// }
-// // fin funcion .sostenibilidadMovil
-// // funcion ancla para submenus
-// $(document).ready(function() {
-//     topScroll = "";
-//     timeOut = ""; 
-//     htmlbody = $('html,body'); 
-//     valor = 0; 
-//     topScroll = $("#ancla").offset().top; 
-//     //x|alert(">>>"+$("#ancla").height()); 
-//     timeOut = 1500; 
-//     htmlbody.animate({ 
-//         scrollTop: topScroll
-//     }, timeOut, 'easeInOutQuint');
-// });
-// // fin de funcion ancla para submenus
-// $(document).ready(function() {
-//     $(".banner").lightSlider({
-//         item: 1,
-//         slideMove: 1, // slidemove will be 1 if loop is true
-//         slideMargin: 0,
- 
-//         // addClass: '',
-//         mode: "slide",
-//         useCSS: true,
-//         cssEasing: 'ease-in-out', //'cubic-bezier(0.25, 0, 0.25, 1)',//
- 
-//         speed: 1200, //ms'
-//         auto: true,
-//         loop: true,
-//         slideEndAnimation: true,
-//         pause: 5000,
- 
-//         keyPress: true,
-//         controls: true,
-
-//         pager: true,
-//         enableTouch:true,
-//         freeMove:true,
-//         galleryMargin: 5,
-//         thumbMargin: 5,
-//         currentPagerPosition: 'middle',
-//     });
-// });
-// // funcionalidad slider gallery noticias index
-// $(document).ready(function() {
-//     $(".sliderNoticias").lightSlider({
-//         item: 3,
-//         autoWidth: false,
-//         slideMove: 1, // slidemove will be 1 if loop is true
-//         slideMargin: 10,
- 
-//         // addClass: '',
-//         mode: "slide",
-//         useCSS: true,
-//         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-
-//         speed: 400, //ms'
-//         loop: true,
-//         slideEndAnimation: true,
-//         pause: 2000,
-
-//         pager: false,
-//         galleryMargin: 5,
-//         thumbMargin: 5,
-//         currentPagerPosition: 'middle',
- 
-//         responsive : [
-//             {
-//                 breakpoint: 768,
-//                 settings: {
-//                     item: 2,
-//                 }
-//             },
-//         ]
-//     });
-// });
-
-// // funcionalidad slider galeria index
-// $(document).ready(function() {
-    
-
-//     //migaleriaSoS();
-// });
-// $(document).ready(function() {
-//     $(".sliderSalud").lightSlider({
-//         item: 1,
-//         autoWidth: false,
-//         slideMove: 1, // slidemove will be 1 if loop is true
-//         slideMargin: 0,
- 
-//         // addClass: '',
-//         mode: "slide",
-//         useCSS: true,
-//         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
- 
-//         speed: 400, //ms'
-//         loop: true,
-//         slideEndAnimation: true,
-//         pause: 2000,
- 
-//         pager: true,
-//         controls: false,
-//         galleryMargin: 5,
-//         thumbMargin: 5,
-//         currentPagerPosition: 'middle',
- 
-//         // enableTouch:false,
-//         // enableDrag:false,
-//         freeMove:false,
- 
-//         responsive : [
-//             {   breakpoint: 768,
-//                 settings: {
-//                     item: 3,
-//                 },
-//             },
-//             {   breakpoint: 426,
-//                 settings: {
-//                     item: 1,
-//                 }
-//             }
-//         ]
-//     });
-// });
-// $(document).ready(function() {
-//     $(".sliderNoticia").lightSlider({
-//         item: 1,
-//         autoWidth: false,
-//         slideMove: 1, // slidemove will be 1 if loop is true
-//         slideMargin: 0,
- 
-//         // addClass: '',
-//         mode: "slide",
-//         useCSS: true,
-//         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
- 
-//         speed: 400, //ms'
-//         loop: true,
-//         slideEndAnimation: true,
-//         pause: 2000,
- 
-//         pager: true,
-//         controls: true,
-//         galleryMargin: 5,
-//         thumbMargin: 5,
-//         currentPagerPosition: 'middle',
- 
-//         // enableTouch:false,
-//         // enableDrag:false,
-//         freeMove:false,
- 
-//         responsive : [
-//             {   breakpoint: 768,
-//                 settings: {
-//                     item: 3,
-//                 },
-//             },
-//             {   breakpoint: 426,
-//                 settings: {
-//                     item: 1,
-//                 }
-//             }
-//         ]
-//     });
-// });
-// // validacion formulario
-
-// $( document ).ready(function() {
-//     $("#contacto form").validate({
-//         debug: false,
-
-//         rules: {
-//             "name": {
-//                 required: true,
-//                 minlength:3,
-//                 // lettersonly: true
-//             },
-//             "mail": {
-//                 required: true,
-//                 email: true,
-//                 minlength:8
-//             },
-//             "adress": {
-//                 required: true,
-//                 min:5
-//             },
-//             "telf": {
-//                 required: true,
-//                 number: true,
-//                 max:9
-//             },
-//             "comment": {
-//                 required: true,
-//                 // email: true,
-//                 maxlength:140
-//             },
-//         },
-//         messages: {
-//             "name": {
-//                 required: "Escriba su nombre",
-//                 minlength:"Escriba un nombre valido",
-//                 name:""
-//             },
-//             "mail": {
-//                 required: "Escriba su e-mail.",
-//                 minlength:"Escriba un nombre valido",
-//                 email: ""
-//             },
-//             "adress": {
-//                 required: "Escriba su dirección",
-//                 min: "Escriba una dirección válida",
-//                 adress: ""
-//             },
-//             "telf": {
-//                 required: "Escriba su número de contacto",
-//                 telf: ""
-//             },
-//             "comment": {
-//                 required: "Deje su comentario",
-//                 text: "",
-//                 maxlength:140
-//             },
-//             submitHandler: function(form) {
-//                     form.submit();
-//             }
-//         },
-//     })
-// });
-// $(document).ready(function(){
-//     //alert(234);
-//     $(".verMas").click(function () {
-//         var _link = "controller/noticias.php"; 
-//         var paginacion = $("#paginar").attr("data-paginacion");
-//         //alert(paginacion);
-//         var form_data = {
-//             "paginacion" : paginacion  
-//         }
-
-//         $.ajax({
-//             type: "POST",
-//             data: form_data,
-//             url: _link
-//         }).done(function(response) {
-//             data = jQuery.parseJSON(response);
-//             console.log(data);
-//             $("#publicaciones").append(data.noticias);
-//             $("#paginar").attr("data-paginacion",data.paginacion);
-//             if (data.boolpagina == 0)
-//                 $("#paginar").fadeOut("slow");
-//         });
-        
-//     });
-// });

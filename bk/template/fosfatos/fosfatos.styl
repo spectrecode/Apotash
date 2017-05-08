@@ -1,0 +1,125 @@
+section#fosfatos
+	@media (max-width 767px)
+		background blanco
+	.container-fluid	
+		.row
+			.fosfato
+				background-image url("../image/banner-fosfatos.jpg")
+				@media (max-width 425px)
+					background-image url("../image/banner-movil3.jpg")
+					height 300px
+	.container
+		@media (max-width 767px)
+			display flex
+			flex-direction column-reverse
+		.fosfatoProy
+			margin-bottom 5%
+			box-shadow sombra
+			@media (max-width 767px)
+				// display none
+				background blanco
+				box-shadow 0 0 0
+			.row
+				h2
+					@media (max-width 767px)
+						font-size 28px
+						background #006c4b
+						color #fff
+						height 70px
+						width 70%
+						margin 50px 0 40px
+						padding 20px 35px
+						left -15px
+						position relative
+				p
+					font-size 21px
+					width 80%
+					line-height 1
+					margin auto
+					padding 20px 0
+					@media (max-width 991px)
+						font-size 18px
+					@media (max-width 767px)
+						font-size 21px
+					@media (max-width 425px)
+						text-align justify
+						padding 0 20px
+			.fosfatoBox
+				// padding 20px
+				background-color blanco
+				// padding-bottom 40px
+				.row	
+					ul.secuenciaFosfatos
+						display flex
+						padding 0
+						@media (max-width 767px)
+							flex-direction column
+							align-items center
+							box-shadow 0 0 0
+							padding 0 15px
+						li
+							list-style none
+							font-size 20px
+							padding 20px
+							line-height 1
+							width 45%
+							text-align justify
+							@media (max-width 1199px)
+								display flex
+								flex-direction column
+								align-items center
+								font-size 18px
+							@media (max-width 991px)
+								font-size 16px
+								padding 10px
+							@media (max-width 767px)
+								font-size 20px
+								width 100%
+							h3
+								font-family fuente_itemsSubmenu
+								color verdeOscuro
+								font-size 22px
+								height 35px
+								margin-left 0
+								margin-right 0
+								line-height 1
+								text-align center
+								&:after
+									content initial
+								@media (max-width 1199px)
+									font-size 20px
+								@media (max-width 991px)
+									font-size 16px
+									margin-bottom 10px
+								@media (max-width 767px)
+									font-size 22px
+						i
+							height 100px
+							position relative
+							font-size 35px
+							color #c7de00
+							width 50px
+							display flex
+							align-items center
+							justify-content center
+							top 0
+							bottom 0
+							margin auto
+							@media (max-width 1199px)
+								align-items flex-start
+						i.icon-caret-right
+							@media (max-width 767px)
+								display none
+						i.icon-chevron-down
+							@media (max-width 767px)
+								display flex
+								justify-content center
+								align-items flex-end
+								height 40px
+							@media (min-width 767px)
+								display none
+			.galeriaRF
+				margin-bottom 20%
+				margin-top 50px
+				.lSAction > a
+						height 0

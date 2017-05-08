@@ -1,0 +1,2 @@
+[30-Mar-2017 12:25:07 America/Lima] PHP Warning:  move_uploaded_file(../../resources/assets/cv/0715_0183.jpg): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/en/controller/bolsa/procesar.php on line 21
+[30-Mar-2017 12:25:07 America/Lima] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpOITjCS' to '../../resources/assets/cv/0715_0183.jpg' in /home/americaspotash/public_html/demoV5/en/controller/bolsa/procesar.php on line 21

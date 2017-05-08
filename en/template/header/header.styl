@@ -38,7 +38,7 @@ header.header
                     width: 70%
                     margin: auto                        
     nav.menu-header
-        ul    
+        ul
             height: 120px
             display: flex
             align-items: center
@@ -59,9 +59,9 @@ header.header
                     text-decoration: none
                     z-index: 5
                     transition: all .2s
-                    &:hover
+                    &:hover,&.active
                         color: verdeOscuro
-                        font-weight bold
+                        font-weight normal
                 &.subProy
                     a    
                         &:hover span
@@ -74,7 +74,7 @@ header.header
                         list-style none
                         position absolute
                         background verdeOscuro
-                        z-index 5
+                        z-index 11
                         height auto
                         li
                             padding 10px 13px
@@ -100,7 +100,7 @@ header.header
                         list-style none
                         position absolute
                         background verdeOscuro
-                        z-index 5
+                        z-index 11
                         li
                             padding 7px 13px
                             background verdeOscuro
@@ -125,7 +125,7 @@ header.header
                         list-style none
                         position absolute
                         background verdeOscuro
-                        z-index 5
+                        z-index 11
                         height auto
                         li
                             padding 7px 13px
@@ -177,13 +177,14 @@ header.header
                             color: white
                             text-decoration: none
                             transition:color ease-in 0.8s, transform 0.5s
-                            
+                            display block
+                            width 100%
+                            padding 20px 30px
                             &:hover
                                 // color: verdeOscuro
                                 transition: color ease-in 0.5s, transform 1s
                                 font-weight: 700
                             li
-                                padding: 26px 30px
                                 list-style: none
                                 background: verdeOscuro
                                 position: relative
@@ -191,22 +192,58 @@ header.header
                                 border-bottom: 2px solid blanco
                                 transform: scale(1)
                                 // transition: background-color linear 0.3s, padding-left cubic-bezier(0.98, 0.04, 0.04, 0.95) 0.3s, transform 0.5s
-                                transition: all 100ms ease-in                    
+                                transition: all 100ms ease-in
                                 &:hover
                                     // transition: background-color linear .3s, padding-left ease-in-out .4s, transform 1s
                                     transition: all .2s ease-in
                                     // padding-left: 50px
                                     background: verde
                                     transform: scale(1.2)
-                    ul.idiomas
-                        padding 0
-                        display flex
-                        a
-                            width 50%
+                                    @media (max-width 991px)
+                                        transform none
+                        li
+                            list-style: none
+                            background: verdeOscuro
+                            position: relative
+                            display: block
+                            border-bottom: 2px solid blanco
+                            transform: scale(1)
+                            // transition: background-color linear 0.3s, padding-left cubic-bezier(0.98, 0.04, 0.04, 0.95) 0.3s, transform 0.5s
+                            transition: all 100ms ease-in                    
+                            &:hover
+                                // transition: background-color linear .3s, padding-left ease-in-out .4s, transform 1s
+                                transition: all .2s ease-in
+                                // padding-left: 50px
+                                background: verde
+                                transform: scale(1.2)
+                                @media (max-width 991px)
+                                    transform none
+                        ul.idiomas
+                            padding 0
+                            display flex
+                            li
+                                width 100%
+                                a
+                                    background gris
+                                a.activeIdioma
+                                        background grisoscuro
+                    li.sMenuSostenibilidad, .sMenuProy, .sMenuNosotros
+                        color blanco
+                        .submenu-movil
+                            display none
+                            padding 0
+                            position absolute
+                            left 0
+                            width 100%
+                            z-index 10
+                            top 64px
                             li
                                 background gris
-                                &.activeIdioma
+                                color blanco
+                                &:hover
                                     background grisoscuro
+                        .subBlock
+                            display block
              .style-box-search
                     background:grisclaro
                     height: 100px
@@ -219,4 +256,5 @@ header.header
                     z-index: 10
                     display: none
                     outline none
+                    
             
