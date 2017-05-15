@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /config/
+Disallow: /controller/
+Disallow: /modelo/
+Disallow: /resources/
+Disallow: /template/
+Disallow: /en/config/
+Disallow: /en/controller/
+Disallow: /en/modelo/
+Disallow: /en/resources/
+Disallow: /en/template/
+Sitemap: http://americas-potash.com/demoV5/sitemap.xml

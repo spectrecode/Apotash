@@ -1,56 +1,59 @@
 header.header(ng-controller="headerCrtl")
 	.container
 		div.logo-max.hidden-md.hidden-lg
-			a(href="http://americas-potash.com/demoV5/en/index.html")
+			a(href="http://americas-potash.com/demoV5/en/index")
 				img(src="./resources/assets/image/logo-trans.png",id="logo-apM" alt="",width="100%")
-			a.line-burguer
+			.box-burguer
+				#box-search
+					img(src="./resources/assets/image/lupa.png",width="40px", alt="")
+				a.line-burguer
 		.row
 			.col-lg-2.col-md-2.logo-header.hidden-sm.hidden-xs
-				a(href="http://americas-potash.com/demoV5/en/index.html")
+				a(href="http://americas-potash.com/demoV5/en/index")
 					img(src="./resources/assets/image/logo-trans.png",id="logo-ap" alt="",width="100%")
 			.col-lg-9.col-md-9.visible-md.visible-lg-inline-block
 				nav.menu-header
 					ul
 						li
-							a(href="http://americas-potash.com/demoV5/en/index.html") Home
+							a.active(href="http://americas-potash.com/demoV5/en/index") Home
 						li.subNos
-							a.active(href="javascript:void(0)") About Us
+							a(href="javascript:void(0)") About Us
 								span  &#9660;
 							ul.submenu-header
 								li
-									a(href="http://americas-potash.com/demoV5/en/About_Us.html") Who We Are
+									a(href="http://americas-potash.com/demoV5/en/About_Us") Who We Are
 								li
-									a(href="http://americas-potash.com/demoV5/en/Mission_and_Vision.html") Mission and Vision
+									a(href="http://americas-potash.com/demoV5/en/Mission_and_Vision") Mission and Vision
 								li
-									a(href="http://americas-potash.com/demoV5/en/Values.html") Values
+									a(href="http://americas-potash.com/demoV5/en/Values") Values
 								li
-									a(href="http://americas-potash.com/demoV5/en/Human_Talent.html") Human Talent 
+									a(href="http://americas-potash.com/demoV5/en/Human_Talent") Human Talent 
 						li.subProy
 							a(href="javascript:void(0)") Projects
 								span  &#9660;
 							ul.submenu-header
 								li
-									a(href="http://americas-potash.com/demoV5/en/Phosphates.html") Phosphates
+									a(href="http://americas-potash.com/demoV5/en/Phosphates") Phosphates
 								li
-									a(href="http://americas-potash.com/demoV5/en/Brine.html") Brines
+									a(href="http://americas-potash.com/demoV5/en/Brine") Brines
 						li.subSost
 							a(href="javascript:void(0)") Sustainability
 								span  &#9660;
 							ul.submenu-header
 								li
-									a(href="http://americas-potash.com/demoV5/en/Sustainability.html") Social Responsability
+									a(href="http://americas-potash.com/demoV5/en/Sustainability") Social Responsability
 								li
-									a(href="http://americas-potash.com/demoV5/en/Health.html") Health, Safety and Environment
+									a(href="http://americas-potash.com/demoV5/en/Health") Health, Safety and Environment
 						li
-							a(href="http://americas-potash.com/demoV5/en/Corporate_Communication.html") Corporate Communication
+							a(href="http://americas-potash.com/demoV5/en/Corporate_Communication") Corporate Communication
 						li
-							a(href="http://americas-potash.com/demoV5/en/Contact_Us.html") Contact Us
+							a(href="http://americas-potash.com/demoV5/en/Contact_Us") Contact Us
 			.col-lg-1.col-md-1.col-sm-1.col-xs-1.visible-md.visible-lg-inline-block
 				.box-search#box-search
 					div
-						a(href="http://americas-potash.com/demoV5/index.html") Español
+						a(href="http://americas-potash.com/demoV5/index") Español
 						span  /
-						a.active(href="http://americas-potash.com/demoV5/en/index.html") English
+						a.active(href="http://americas-potash.com/demoV5/en/index") English
 					img(src="./resources/assets/image/lupa.png",width="40px", alt="")
 	.row
 		.container-fluid
@@ -58,7 +61,7 @@ header.header(ng-controller="headerCrtl")
 				nav.menu-collapse
 					ul.menu-collapse.text-center
 						li
-							a(href="http://americas-potash.com/demoV5/en/index.html")
+							a(href="http://americas-potash.com/demoV5/en/index")
 								| Home
 					
 						li.sMenuNosotros
@@ -66,46 +69,46 @@ header.header(ng-controller="headerCrtl")
 								| About Us
 							ul.submenu-movil
 								li
-									a(href="http://americas-potash.com/demoV5/en/About_Us.html")
+									a(href="http://americas-potash.com/demoV5/en/About_Us")
 										| Who We Are
 								li
-									a(href="http://americas-potash.com/demoV5/en/Mission_and_Vision.html")
+									a(href="http://americas-potash.com/demoV5/en/Mission_and_Vision")
 										| Mission and Vision
 								li
-									a(href="http://americas-potash.com/demoV5/en/Values.html")
+									a(href="http://americas-potash.com/demoV5/en/Values")
 										| Values
 								li
-									a(href="http://americas-potash.com/demoV5/en/Human_Talent.html")
+									a(href="http://americas-potash.com/demoV5/en/Human_Talent")
 										| Human Talent
 						li.sMenuProy
 							a(href="javascript:void(0)")
 								| Projects
 							ul.submenu-movil
 								li
-									a(href="http://americas-potash.com/demoV5/en/Phosphates.html")
+									a(href="http://americas-potash.com/demoV5/en/Phosphates")
 										| Phosphates
 								li
-									a(href="http://americas-potash.com/demoV5/en/Brine.html")
+									a(href="http://americas-potash.com/demoV5/en/Brine")
 										| Brine
 						li.sMenuSostenibilidad
 							a(href="javascript:void(0)")
 								| Sustainability
 							ul.submenu-movil
 								li
-									a(href="http://americas-potash.com/demoV5/en/Sustainability.html") Social Responsability
+									a(href="http://americas-potash.com/demoV5/en/Sustainability") Social Responsability
 								li
-									a(href="http://americas-potash.com/demoV5/en/Health.html") Health, Safety and Environment
+									a(href="http://americas-potash.com/demoV5/en/Health") Health, Safety and Environment
 						li 
-							a(href="http://americas-potash.com/demoV5/en/Corporate_Communication.html")
+							a(href="http://americas-potash.com/demoV5/en/Corporate_Communication")
 								| Corporate Communication
 						li
-							a(href="http://americas-potash.com/demoV5/en/Contact_Us.html")
+							a(href="http://americas-potash.com/demoV5/en/Contact_Us")
 								| Contact Us
 						ul.idiomas
 							li
-								a(href="http://americas-potash.com/demoV5/index.html")
+								a(href="http://americas-potash.com/demoV5/index")
 									| Español
 							li
-								a.activeIdioma(href="http://americas-potash.com/demoV5/en/index.html")
+								a.activeIdioma(href="http://americas-potash.com/demoV5/en/index")
 									| English
 			input(type="text",class="style-box-search disp-none",id="busqueda",name="search",placeholder="Search...", autofocus)

@@ -3,23 +3,27 @@
 	.container-fluid
 		.row
 			.bannerPrincipal.comuncCorp
-				background-image url("../image/FGB_2008.png")
-				@media (max-width 991px)
-					background-repeat no-repeat
-					background-size cover
-					height 325px
-				@media (max-width 425px)
-					background-image url("../image/banner-movilCo.jpg")
-					height 415px
-				@media (max-width 375px)
-					height 365px
-				@media (max-width 320px)
-					height 315px
-				.letrero-banner
-					h2
-						color blanco
-					@media (min-width 426px)
-						display none
+				height 100%
+				iframe
+					@media (max-width 425px)
+						height 234px
+				// background-image url("../image/FGB_2008.png")
+				// @media (max-width 991px)
+				// 	background-repeat no-repeat
+				// 	background-size cover
+				// 	height 325px
+				// @media (max-width 425px)
+				// 	background-image url("../image/banner-movilCo.jpg")
+				// 	height 415px
+				// @media (max-width 375px)
+				// 	height 365px
+				// @media (max-width 320px)
+				// 	height 315px
+				// .letrero-banner
+				// 	h2
+				// 		color blanco
+				// 	@media (min-width 426px)
+				// 		display none
 	.container
 		.noticias-comunicacion
 			@media (max-width 767px)
@@ -59,18 +63,17 @@
 		// 		display none
 		.inner-noticia
 			background blanco
-			border-right 3px solid #CED71F
-			box-shadow sombra
 			margin-top 20px
+			border-right none
+			box-shadow 0 0 0
 			// @media only screen and (min-width 768px) and (max-width 991px)
 			// 	height 230px
-			@media (max-width 767px)
-				border-right none
-				box-shadow 0 0 0
+			@media (min-width 768px)
+				border-right 3px solid #CED71F
+				box-shadow sombra
+				padding 20px
 			&:first-child
 				margin-top 0
-				@media (max-width 424px)
-					padding 0
 			> div:nth-child(2)
 				h4
 					font 20px alegreya_sansblack

@@ -2,7 +2,6 @@
 var potash = function(){
     if ($('body,html').width() >= 768 ){
         galeria ();
-        console.log(222);
     }
     else{
         $('body,html').off(galeria());
@@ -167,7 +166,7 @@ $(document).ready(function() {
             $("#midireccion").html(midireccion);
         }
         if (id==2){
-            initMap(-5.184439,-80.630773);
+            initMap(-5.180222,-80.655444);
             midireccion = "<b> Mz. X. Lt. 6A, Zona Industrial </b>";
             midireccion+= "Distrito 26 de Octubre";
             midireccion+= "<br />";

@@ -98,41 +98,49 @@ if ($total_paginas == 1)
   <body ng-view>
     <header class="header" ng-controller="headerCrtl">
       <div class="container">
-        <div class="logo-max hidden-md hidden-lg"><a href="http://americas-potash.com/demoV5/en/index.html"><img src="./resources/assets/image/logo-trans.png" id="logo-apM" alt="" width="100%"/></a><a class="line-burguer"></a></div>
+        <div class="logo-max hidden-md hidden-lg">
+          <a href="http://americas-potash.com/demoV5/en/index"><img src="./resources/assets/image/logo-trans.png" id="logo-apM" alt="" width="100%"/></a>
+          <div class="box-burguer">
+            <div id="box-search">
+              <img src="./resources/assets/image/lupa.png" width="40px" alt="">
+            </div>
+            <a class="line-burguer"></a>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-lg-2 col-md-2 logo-header hidden-sm hidden-xs"><a href="http://americas-potash.com/demoV5/en/index.html"><img src="./resources/assets/image/logo-trans.png" id="logo-ap" alt="" width="100%"/></a></div>
+          <div class="col-lg-2 col-md-2 logo-header hidden-sm hidden-xs"><a href="http://americas-potash.com/demoV5/en/index"><img src="./resources/assets/image/logo-trans.png" id="logo-ap" alt="" width="100%"/></a></div>
           <div class="col-lg-9 col-md-9 visible-md visible-lg-inline-block">
             <nav class="menu-header">
               <ul>
-                <li><a href="http://americas-potash.com/demoV5/en/index.html">Home</a></li>
+                <li><a href="http://americas-potash.com/demoV5/en/index">Home</a></li>
                 <li class="subNos"><a href="javascript:void(0)">About Us<span> &#9660;</span></a>
                   <ul class="submenu-header">
-                    <li><a href="http://americas-potash.com/demoV5/en/About_Us.html">Who We Are</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Mission_and_Vision.html">Mission and Vision</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Values.html">Values</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Human_Talent.html">Human Talent</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/About_Us">Who We Are</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Mission_and_Vision">Mission and Vision</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Values">Values</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Human_Talent">Human Talent</a></li>
                   </ul>
                 </li>
                 <li class="subProy"><a href="javascript:void(0)">Projects<span> &#9660;</span></a>
                   <ul class="submenu-header">
-                    <li><a href="http://americas-potash.com/demoV5/en/Phosphates.html">Phosphates</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Brine.html">Brine</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Phosphates">Phosphates</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Brine">Brine</a></li>
                   </ul>
                 </li>
                 <li class="subSost"><a href="javascript:void(0)">Sustainability<span> &#9660;</span></a>
                   <ul class="submenu-header">
-                    <li><a href="http://americas-potash.com/demoV5/en/Sustainability.html">Social Responsability</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Health.html">Health, Safety and Environment</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Sustainability">Social Responsability</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Health">Health, Safety and Environment</a></li>
                   </ul>
                 </li>
-                <li><a href="http://americas-potash.com/demoV5/en/Corporate_Communication.html">Corporate Communication</a></li>
-                <li><a href="http://americas-potash.com/demoV5/en/Contact_Us.html">Contact Us</a></li>
+                <li><a href="http://americas-potash.com/demoV5/en/Corporate_Communication">Corporate Communication</a></li>
+                <li><a href="http://americas-potash.com/demoV5/en/Contact_Us">Contact Us</a></li>
               </ul>
             </nav>
           </div>
           <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 visible-md visible-lg-inline-block">
             <div class="box-search" id="box-search">
-              <div><a href="http://americas-potash.com/demoV5/index.html">Español</a><span> /</span><a class="active" href="http://americas-potash.com/demoV5/en/index.html">English</a></div><img src="./resources/assets/image/lupa.png" width="40px" alt=""/>
+              <div><a href="http://americas-potash.com/demoV5/index">Español</a><span> /</span><a class="active" href="http://americas-potash.com/demoV5/en/index">English</a></div><img src="./resources/assets/image/lupa.png" width="40px" alt=""/>
             </div>
           </div>
         </div>
@@ -141,33 +149,34 @@ if ($total_paginas == 1)
         <div class="container-fluid">
           <div class="row hidden-md hidden-lg">
             <nav class="menu-collapse">
-              <ul class="menu-collapse text-center"><a href="http://americas-potash.com/demoV5/en/index.html">
-                  <li>Inicio</li></a>
-                <li class="sMenuNosotros">About Us
+              <ul class="menu-collapse text-center">
+                <li><a href="http://americas-potash.com/demoV5/en/index">Home</a></li>
+                <li class="sMenuNosotros"><a href="javascript:void(0)">About Us</a>
                   <ul class="submenu-movil">
-                    <li><a href="http://americas-potash.com/demoV5/en/About_Us.html">Who We Are</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Mission_and_Vision.html">Mission</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Values.html">Values</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Human_Talent.html">Human Talent</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/About_Us">Who We Are</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Mission_and_Vision">Mission and Vision</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Values">Values</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Human_Talent">Human Talent</a></li>
                   </ul>
                 </li>
-                <li class="sMenuProy">Projects
+                <li class="sMenuProy"> <a href="javascript:void(0)">Projects</a>
                   <ul class="submenu-movil">
-                    <li><a href="http://americas-potash.com/demoV5/en/Phosphates.html">Phosphates</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Brine.html">Brine</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Phosphates">Phosphates</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Brine">Brine</a></li>
                   </ul>
                 </li>
-                <li class="sMenuSostenibilidad">Sustainability
+                <li class="sMenuSostenibilidad"><a href="javascript:void(0)">Sustainability</a>
                   <ul class="submenu-movil">
-                    <li><a href="http://americas-potash.com/demoV5/en/Sustainability.html">Social Responsability</a></li>
-                    <li><a href="http://americas-potash.com/demoV5/en/Health.html">Health, Safety and Environment</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Sustainability">Social Responsability</a></li>
+                    <li><a href="http://americas-potash.com/demoV5/en/Health">Health, Safety and Environment</a></li>
                   </ul>
-                </li><a href="http://americas-potash.com/demoV5/en/Corporate_Communication.html">
-                  <li>Corporate Communication</li></a><a href="http://americas-potash.com/demoV5/en/Contact_Us.html">
-                  <li>Contact Us</li></a>
-                <ul class="idiomas"><a href="http://americas-potash.com/demoV5/index.html">
-                    <li>Español</li></a><a href="http://americas-potash.com/demoV5/en/index.html">
-                    <li class="activeIdioma">English</li></a></ul>
+                </li>
+                <li><a href="http://americas-potash.com/demoV5/en/Corporate_Communication">Corporate Communication</a></li>
+                <li><a href="http://americas-potash.com/demoV5/en/Contact_Us">Contact Us</a></li>
+                <ul class="idiomas">
+                  <li><a href="http://americas-potash.com/demoV5/en/index">Español</a></li>
+                  <li><a class="activeIdioma" href="http://americas-potash.com/demoV5/en/index">English</a></li>
+                </ul>
               </ul>
             </nav>
           </div>
@@ -233,7 +242,7 @@ if ($total_paginas == 1)
                         <div class="icon-eye"><a href="./resources/assets/documentos/prensa/comunicado_1.pdf" target="_blank">Read more</a></div>
                       </div>
                     </div>
-                    <div class="row text-center hidden-xs hidden-sm"><a href="http://americas-potash.com/demoV5/detalle.html">Read more</a></div>
+                    <div class="row text-center hidden-xs hidden-sm"><a href="http://americas-potash.com/demoV5/detalle">Read more</a></div>
                   </div>
                 </div>
               </div>
@@ -249,15 +258,15 @@ if ($total_paginas == 1)
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 box-footer">
               <div class="row box-logos">
-                <div><a href="http://americas-potash.com/demoV5/en/index.html"><img src="./resources/assets/image/logo-potash-footer.png" alt="" width="100%"></a></div>
+                <div><a href="http://americas-potash.com/demoV5/en/index"><img src="./resources/assets/image/logo-potash-footer.png" alt="" width="100%"></a></div>
                 <div><a href="http://www.growmaxcorp.com/" target="_blank"><img src="./resources/assets/image/logo-growmax-footer.png" alt="" width="100%"></a></div>
               </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 box-footer">
               <div class="row">
                 <div class="footer-enlaces">
-                  <div><a href="http://americas-potash.com/demoV5/en/index.html">Home</a><a href="http://americas-potash.com/demoV5/en/About_Us.html">About Us</a><a href="http://americas-potash.com/demoV5/en/phosphates.html">Projects</a></div>
-                  <div><a href="http://americas-potash.com/demoV5/en/Sustainability.html">Sustainability</a><a href="http://americas-potash.com/demoV5/en/Corporate_Communication.html">Corporate Communication</a><a href="http://americas-potash.com/demoV5/en/Contact_Us.html">Contact Us</a></div>
+                  <div><a href="http://americas-potash.com/demoV5/en/index">Home</a><a href="http://americas-potash.com/demoV5/en/About_Us">About Us</a><a href="http://americas-potash.com/demoV5/en/phosphates">Projects</a></div>
+                  <div><a href="http://americas-potash.com/demoV5/en/Sustainability">Sustainability</a><a href="http://americas-potash.com/demoV5/en/Corporate_Communication">Corporate Communication</a><a href="http://americas-potash.com/demoV5/en/Contact_Us">Contact Us</a></div>
                 </div>
               </div>
             </div>
