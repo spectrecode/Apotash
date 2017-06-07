@@ -5,16 +5,9 @@ section#fosfatos
 		.row
 			.fosfato
 				background-image url("../image/banner-fosfatos.jpg")
-				@media (max-width 991px)
-					background-size cover
-					height 325px
-				@media (max-width 424px)
+				@media (max-width 425px)
 					background-image url("../image/banner-movil3.jpg")
-					height 415px
-				@media (max-width 375px)
-					height 370px
-				@media (max-width 320px)
-					height 315px
+					height 300px
 	.container
 		@media (max-width 767px)
 			display flex
@@ -23,17 +16,21 @@ section#fosfatos
 			margin-bottom 5%
 			box-shadow sombra
 			@media (max-width 767px)
-				margin-top 50px
+				// display none
 				background blanco
 				box-shadow 0 0 0
 			.row
 				h2
 					@media (max-width 767px)
 						font-size 28px
-						color verdeOscuro
-						height 50px
-						text-align center
-						font-family fuente_tituloH2Nos
+						background #006c4b
+						color #fff
+						height 70px
+						width 70%
+						margin 50px 0 40px
+						padding 20px 35px
+						left -15px
+						position relative
 				p
 					font-size 21px
 					width 80%
@@ -46,7 +43,7 @@ section#fosfatos
 						font-size 21px
 					@media (max-width 425px)
 						text-align justify
-						font-size 20px
+						padding 0 20px
 			.fosfatoBox
 				// padding 20px
 				background-color blanco
@@ -74,12 +71,10 @@ section#fosfatos
 								font-size 18px
 							@media (max-width 991px)
 								font-size 16px
-								padding 10px 20px
+								padding 10px
 							@media (max-width 767px)
 								font-size 20px
 								width 100%
-							@media (max-width 424px)
-								font-size 18px
 							h3
 								font-family fuente_itemsSubmenu
 								color verdeOscuro
@@ -88,7 +83,7 @@ section#fosfatos
 								margin-left 0
 								margin-right 0
 								line-height 1
-								text-align center
+								text-align -webkit-center
 								&:after
 									content initial
 								@media (max-width 1199px)
@@ -123,14 +118,8 @@ section#fosfatos
 								height 40px
 							@media (min-width 767px)
 								display none
-		.galeriaRF
-			margin-bottom 20%
-			margin-top 50px
-			.lSAction > a
-				height 0
-				@media (max-width 767px)
-					height 50px
-			@media (max-width 991px)
-				margin-bottom 10%
-			@media (max-width 767px)
-				margin-bottom 0
+			.galeriaRF
+				margin-bottom 20%
+				margin-top 50px
+				.lSAction > a
+						height 0

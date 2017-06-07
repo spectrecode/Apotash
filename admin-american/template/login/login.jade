@@ -1,0 +1,43 @@
+.inner-login
+	.formLogin
+		.inner-form
+			figure
+				img(src="./resources/assets/image/logo.png", alt="Red Prolid")
+			legend
+				h1
+					| Bienvenida a Americas Potash
+				h2
+					| Por favor ingrese sus Credenciales
+			form#login
+				fieldset.row.inner-alert
+					.alert.exito
+						p
+							strong {{msnjlogin}}
+				legend
+					h2
+						| Login
+				fieldset.row
+					input(type="text", name="usuario", id="usuario" ,ng-model="form.usuario", placeholder="Usuario")
+				fieldset.row
+					input(type="password", name="password", id="password", ng-model="form.password", placeholder="Contraseña")
+				fieldest.row
+					img(src="{{captcha}}", alt="Captcha Karl")
+				fieldset.row
+					input(type="text", name="captcha", id="captcha" ,ng-model="form.captcha", placeholder="Ingrese el Captcha")
+				//fieldset.row
+					div(class="g-recaptcha" data-sitekey="6Lc_Vg4UAAAAAFaRnhgoCz1f2clvqonk9kMeDLHH")
+				fieldset.row
+					.inner-flex
+						.inner-link
+							//a(href="javascript:void(0)")
+								| Nuevo usuario
+							a(href="javascript:void(0)")
+								| ¿Olvidaste tu contraseña?
+						button(ng-click="enviarDatos(form)")
+							| INGRESAR
+			fieldset.link
+				a(href="javascript:void(0)")
+					| Nuevo usuario
+				a(href="javascript:void(0)")
+					| ¿Olvidaste tu contraseña?
+include ../footer/footer_login.jade

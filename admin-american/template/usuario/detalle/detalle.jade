@@ -1,0 +1,89 @@
+.inner-contenido(ng-controller="editarUsuarioCrtl")
+	.inner-nave
+		ul
+			li
+				a(href="{{rutaBrench}}")
+					| Usuario
+				span.dividir
+					| >>
+			li
+				a.active(href="javascript:void(0)")
+					| {{nom_accion}}
+	.inner-botones
+		.column
+		.column
+			a.btnaddArt(href="javascript:void(0)", ng-click="procesarForm(form)")
+				i.icon-plus
+				| Guardar cambios
+	.inner-form.form-interno
+		form(name="formuser", id="formuser")
+			fieldset.row.inner-alert
+				.alert.exito
+					p
+			fieldset.row
+				label Tipo de Usuario
+				.inner-select
+					.cajaselect#tipouser
+						span.seleccionado
+							| Tipo de Usuario
+						ul.listaselect
+							li
+								a(href="javascript:void(0)", data-id="0")
+									| Tipo de Usuario
+							li
+								a(href="javascript:void(0)", data-id="1")
+									| Editor
+							li
+								a(href="javascript:void(0)", data-id="2")
+									| Administrador
+						span.trianguloinf
+			fieldset.row
+				label Nombre
+				input(type="text", name="nombre", id="nombre", ng-model="form.nombre", placeholder="Ingrese el Nombre")
+			fieldset.row
+				label Apellido Paterno
+				input(type="text", name="a_paterno", id="a_paterno", ng-model="form.a_paterno", placeholder="Ingrese el Apellido Paterno")
+			fieldset.row
+				label Apellido Materno
+				input(type="text", name="a_materno", id="a_materno", ng-model="form.a_materno", placeholder="Ingrese el Apellido Materno")
+			fieldset.row
+				label ¿Masculino?
+				input(type="checkbox", ng-model="checkboxSexo.value1")
+			fieldset.row
+				label Correo Electrónico
+				input(type="text", name="email", id="email", ng-model="form.email", placeholder="Ingrese el Correo Electrónico")
+			fieldset.row
+				label Celular
+				input(type="text", name="movil", id="movil", ng-model="form.movil", placeholder="Ingrese el Celular")
+			fieldset.row
+				label Teléfono
+				input(type="text", name="telefono", id="telefono", ng-model="form.telefono", placeholder="Ingrese el Teléfono")
+			fieldset.row
+				label Suba su Foto
+				figure
+					img(src="{{rutaImg}}{{form.act_img_portada}}")
+				input(type="file", name="file_portada", id="file_portada", ng-model="form.file_portada")
+			fieldset.row
+				label ¿Acceso?
+				input(type="checkbox", ng-model="checkboxModel.value1")
+			fieldset.row
+				label Usuario
+				input(type="text", name="usuario", id="usuario", ng-model="form.usuario", placeholder="Ingrese el Usuario")
+			fieldset.row
+				label Contraseña
+				input(type="password", name="password", id="password", ng-model="form.password", placeholder="Ingrese el Contraseña")
+			fieldset.row
+				label Repetir Contraseña
+				input(type="password", name="password2", id="password2", ng-model="form.password2", placeholder="Ingrese el Nuevamente Contraseña")
+			fieldset.row.inner-alert
+				.alert.exito
+					p
+	.inner-botones
+		.column
+		.column
+			a.btnaddArt(href="javascript:void(0)", ng-click="procesarForm(form)")
+				i.icon-plus
+				| Guardar cambios
+
+
+

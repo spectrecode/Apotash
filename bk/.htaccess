@@ -1,0 +1,53 @@
+# Activar RewriteEngine
+RewriteEngine on
+
+RewriteRule ^nosotros/?$ nosotros.html
+RewriteRule ^mision/?$ mision.html
+RewriteRule ^valores/?$ valores.html
+RewriteRule ^talento/?$ talento.html
+RewriteRule ^fosfatos/?$ fosfatos.html
+RewriteRule ^salmuera/?$ salmuera.html
+RewriteRule ^sostenibilidad/?$ sostenibilidad.html
+RewriteRule ^salud/?$ salud.html
+RewriteRule ^salud/?$ salud.html
+RewriteRule ^comunicacion-corporativa/?$ comunicacion-corporativa.php
+RewriteRule ^contacto/?$ contacto.html
+RewriteRule ^index/?$ index.php
+RewriteRule ^beca/?$ beca.html
+RewriteRule ^beca-beneficiarios/?$ beca-beneficiarios.html
+RewriteRule ^beca-video/?$ beca-video.html
+RewriteRule ^beca-spot-radial/?$ beca-spot-radial.html
+RewriteRule ^comunicacion-y-dialogo/?$ comunicacion-y-dialogo.html
+RewriteRule ^videos/?$ videos.html
+RewriteRule ^spot-radial/?$ spot-radial.html
+RewriteRule ^oficina-movil/?$ oficina-movil.html
+RewriteRule ^detalle/?$ detalle.html
+RewriteRule ^detalle-1/?$ detalle-1.html
+RewriteRule ^detalle-2/?$ detalle-2.html
+
+RewriteRule ^en/index/?$ en/index.php
+RewriteRule ^en/About_Us/?$ en/About_Us.html
+RewriteRule ^en/Mission_and_Vision/?$ en/Mission_and_Vision.html
+RewriteRule ^en/Values/?$ en/Values.html
+RewriteRule ^en/Human_Talent/?$ en/Human_Talent.html
+RewriteRule ^en/Phosphates/?$ en/Phosphates.html
+RewriteRule ^en/Sustainability/?$ en/Sustainability.html
+RewriteRule ^en/Health/?$ en/Health.html
+RewriteRule ^en/Corporate_Communication/?$ en/Corporate_Communication.html
+RewriteRule ^en/Contact_Us/?$ en/Contact_Us.html
+RewriteRule ^en/beca/?$ en/beca.html
+RewriteRule ^en/Communication_and_Dialogue/?$ en/Communication_and_Dialogue.html
+RewriteRule ^en/beca-beneficiaries/?$ en/beca-beneficiaries.html
+RewriteRule ^en/beca-video/?$ en/beca-video.html
+RewriteRule ^en/beca-radio_spot/?$ en/beca-radio_spot.html
+RewriteRule ^en/Detail/?$ en/Detail.html
+RewriteRule ^en/Detail-1/?$ en/Detail-1.html
+RewriteRule ^en/Detail-2/?$ en/Detail-2.html
+RewriteRule ^en/Brine/?$ en/Brine.html
+RewriteRule ^en/Radio_Spots/?$ en/Radio_Spots.html
+RewriteRule ^en/Mobile_Office/?$ en/Mobile_Office.html
+RewriteRule ^en/videos/?$ en/videos.html
+RewriteRule ^en/busqueda/?$ en/busqueda.html
+
+Rewriterule ^noticias/(.+)/?$ detalle.php?not_url=$1
+Rewriterule ^en/news/(.+)/?$ en/detalle.php?not_url=$1

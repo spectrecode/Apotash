@@ -1,0 +1,74 @@
+.cabecera
+	align-items flex-start
+	background rgba(0,106,169,1)
+	display flex
+	flex-direction row
+	flex-wrap no-wrap
+	justify-content space-between
+	.column
+		padding 15px 0
+		i
+			color blanco
+			font-size 12px
+			margin-right 5px
+		p, a
+			color blanco
+			font-family "open_sansregular"
+			font-size 12px
+		a
+			&:first-child
+				border-right 1px solid blanco
+				padding-right 8px
+			&:last-child
+				padding-left 8px
+		&:first-child
+			border 0
+			overflow auto
+			padding-left 12px
+			width auto
+		&:last-child
+			padding-left 0px
+			padding-right 12px
+			width auto
+header
+	.inner-logo
+		margin auto
+		padding-bottom 40px
+		padding-top 40px
+		width 80%
+	.inner-user
+		border 1px solid rgba(30,30,30,0.5)
+		border-radius 100%
+		margin auto
+		overflow hidden
+		width 80px
+		img
+			transform scale(1.25)
+	.detail-user
+		margin auto
+		padding-bottom 40px
+		padding-top 20px
+		width 90%
+		h2
+			color #424242
+			font-family "rubikregularbold"
+			font-size 14px
+			text-align center
+		p
+			color #929292
+			font-family "rubikregular"
+			font-size 14px
+			text-align center
+	nav
+		a
+			border-bottom 1px solid rgba(65,65,65, 0.35)
+			color #666
+			display block
+			font-family "open_sanssemibold"
+			font-size 12px
+			text-align left
+			transition 0.5s all ease
+			padding 8px
+			&:hover, &.active
+				background #006aa9
+				color blanco

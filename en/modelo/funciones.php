@@ -2,6 +2,10 @@
 class misFunciones {
 	function __construct() {}
 	function __destruct() {}
+	function elminarSession(){
+		if (isset($_SESSION))
+			unset($_SESSION);
+	}
 	function verificarDataPost($nombre=NULL,$_type=NULL){
 		$valor = "";
 		if (isset($_POST[$nombre])){
@@ -51,7 +55,7 @@ class misFunciones {
 		}
 	}
 	function eliminarFoto($nameFile=NULL,$ruta=NULL){
-		if (!empty($nameFile)){
+		if ((!empty($nameFile)) && ($nameFile!="blanco.jpg")){
 			// verificamos si la imagen existe
 			if (file_exists($ruta.$nameFile)){			
 				// procedemos a eliminar la imagen
@@ -84,6 +88,20 @@ class misFunciones {
 		}
 		return $result;
 	}
+	function encriptar2($cadena, $key){
+		$encrypted = "";
+		if (!empty($cadena))
+			$encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $cadena, MCRYPT_MODE_CBC, md5(md5($key))));
+		return $encrypted;
+	}
+
+	function desencriptar2($cadena, $key) {
+		$decrypted = "";
+		if (!empty($cadena))
+			$decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($cadena), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+		return $decrypted;
+	}
+	
 	function borrarVariableSession($nameSession=NULL){
 		unset($_SESSION[$nameSession]);
 	}
@@ -107,7 +125,8 @@ class misFunciones {
 			Está función se encarga de verficar tanto el usuario como pass.
 			En el caso del usuario debe cumplir con un mínimo de 3 y máximo de 20 caracteres
 		*/
-		if (ereg("^[a-zA-Z0-9\-_@]{3,20}$", $dato)) {
+
+		if (ereg("^[a-zA-Z0-9.\-_@]{3,20}$", $dato)) {
 			return true;
 		}else{
 			return false;

@@ -1,0 +1,82 @@
+.inner-contenido(ng-controller="listarNoticiaCrtl")
+	.inner-nave
+		ul
+			li
+				a(href="javascript:void(0)")
+					| Noticia
+				span.dividir
+					| >>
+			li
+				a.active(href="javascript:void(0)")
+					| Listado de Noticias
+	.inner-botones
+		.column
+			input(type="text", ng-model="form.buscarArt", placeholder="Buscar noticia...")
+			a(href="javascript:void(0)", ng-click="buscar(form)")
+				i.icon-search
+				| Buscar
+		.column
+			a.btnaddArt(href="javascript:void(0)", ng-click="agregar()")
+				i.icon-plus
+				| Añadir Noticia
+	.inner-listado
+		table
+			thead
+				tr
+					th.center
+						| Nº
+					th.center
+						| Categoría
+					th.center
+						| Título
+					th.center
+						| F. Publicación
+					//th.center
+						| Descripción
+					th.center
+						| ¿Populares?
+					th.center
+						| ¿Publicado?
+					th.center
+						| F. Creación
+					th.center
+						| Acción
+			tbody
+				tr(ng-repeat="arrinfo in datos")
+					td.center
+						p
+							| {{arrinfo.items}}
+					td.ancho200
+						p
+							| {{arrinfo.namecategoria}}
+					td.ancho200
+						p
+							| {{arrinfo.titulo}}
+					td.center.ancho160
+						p
+							| 06 Junio 2016
+					//td.ancho200
+						p(ng-bind-html="arrinfo.descripsuperior")
+					//td.ancho80
+						input(type="text",ng-keypress="order($event,arrinfo.order,arrinfo.id)", ng-model="arrinfo.order",placeholder ="Orden")
+					td.center
+						a(href="javascript:void(0)", ng-click="cambiarDestacado(arrinfo.destacado,arrinfo.id)")
+							i(class="{{arrinfo.classdestacado}}")
+					td.center
+						a(href="javascript:void(0)", ng-click="cambiarEstado(arrinfo.estado,arrinfo.id)")
+							i(class="{{arrinfo.classestado}}")
+					td.center.ancho160
+						p
+							| {{arrinfo.f_creacion}}
+					td.center.accion
+						a(href="javascript:void(0)", ng-click="editar(arrinfo.id)")
+							i.icon-pencil
+							| Editar
+						a(href="javascript:void(0)", ng-click="eliminar(arrinfo.id)")
+							i.icon-bin
+							| Eliminar
+	.inner-paginado
+		ul
+			li(ng-repeat = "n in range")
+				a(href="javascript:void(0)", ng-click="paginar(n + 1)")
+					| {{n + 1}}

@@ -1,0 +1,114 @@
+header.header(ng-controller="headerCrtl")
+	.container
+		div.logo-max.hidden-md.hidden-lg
+			a(href="http://americas-potash.com")
+				img(src="./resources/assets/image/logo-trans.png",id="logo-apM" alt="",width="100%")
+			.box-burguer
+				#box-search
+					img(src="./resources/assets/image/lupa.png",width="40px", alt="")
+				a.line-burguer
+		.row
+			.col-lg-2.col-md-2.logo-header.hidden-sm.hidden-xs
+				a(href="http://americas-potash.com")
+					img(src="./resources/assets/image/logo-trans.png",id="logo-ap" alt="",width="100%")
+			.col-lg-9.col-md-9.visible-md.visible-lg-inline-block
+				nav.menu-header
+					ul
+						li
+							a(href="http://americas-potash.com") Inicio
+						li.subNos
+							a(href="javascript:void(0)") Nosotros
+								span  &#9660;
+							ul.submenu-header
+								li
+									a(href="http://americas-potash.com/nosotros") ¿Quiénes somos?
+								li
+									a(href="http://americas-potash.com/mision") Misión y Visión
+								li
+									a(href="http://americas-potash.com/valores") Valores
+								li
+									a(href="http://americas-potash.com/talento") Talento Humano 
+						li.subProy
+							a(href="javascript:void(0)") Proyectos
+								span  &#9660;
+							ul.submenu-header
+								li
+									a(href="http://americas-potash.com/fosfatos") Fosfatos
+								li
+									a(href="http://americas-potash.com/salmuera") Salmueras
+						li.subSost
+							a(href="javascript:void(0)") Sostenibilidad
+								span  &#9660;
+							ul.submenu-header
+								li
+									a(href="http://americas-potash.com/sostenibilidad") Responsabilidad Social
+								li
+									a(href="http://americas-potash.com/salud") Salud, Seguridad y Medio Ambiente
+						li
+							a.active(href="http://americas-potash.com/comunicacion-corporativa") Comunicación Corporativa
+						li
+							a(href="http://americas-potash.com/contacto") Contáctenos
+			.col-lg-1.col-md-1.col-sm-1.col-xs-1.visible-md.visible-lg-inline-block
+				.box-search#box-search
+					div
+						a.active(href="http://americas-potash.com") Español
+						span  /
+						a(href="http://americas-potash.com/en") English
+					img(src="./resources/assets/image/lupa.png",width="40px", alt="")
+	.row
+		.container-fluid
+			.row.hidden-md.hidden-lg
+				nav.menu-collapse
+					ul.menu-collapse.text-center
+						li
+							a(href="http://americas-potash.com")
+								| Inicio
+					
+						li.sMenuNosotros
+							a(href="javascript:void(0)")
+								| Nosotros
+							ul.submenu-movil
+								li
+									a(href="http://americas-potash.com/nosotros")
+										| ¿Quiénes somos?
+								li
+									a(href="http://americas-potash.com/mision")
+										| Misión y Visión
+								li
+									a(href="http://americas-potash.com/valores")
+										| Valores
+								li
+									a(href="http://americas-potash.com/talento")
+										| Talento Humano
+						li.sMenuProy 
+							a(href="javascript:void(0)")
+								| Proyectos
+							ul.submenu-movil
+								li
+									a(href="http://americas-potash.com/fosfatos")
+										| Fosfatos
+								li
+									a(href="http://americas-potash.com/salmuera")
+										| Salmuera
+						li.sMenuSostenibilidad
+							a(href="javascript:void(0)")
+								| Sostenibilidad
+							ul.submenu-movil
+								li
+									a(href="http://americas-potash.com/sostenibilidad") Responsabilidad Social
+								li
+									a(href="http://americas-potash.com/salud") Salud, Seguridad y Medio Ambiente
+						li 
+							a(href="http://americas-potash.com/comunicacion-corporativa")
+								| Comunicación Corporativa
+						li
+							a(href="http://americas-potash.com/contacto")
+								| Contáctenos
+						ul.idiomas
+							li
+								a.activeIdioma(href="http://americas-potash.com")
+									| Español
+							li
+								a(href="http://americas-potash.com/en")
+									| English
+			input(type="text",class="style-box-search disp-none",id="busqueda",name="search",placeholder="Buscar...", autofocus)

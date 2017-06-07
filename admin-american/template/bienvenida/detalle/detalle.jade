@@ -1,0 +1,123 @@
+.wrapper(ng-controller="editarNoticiaCrtl")
+	.inner-nave
+		ul
+			li
+				a(href="javascript:void(0)")
+					| Concepto
+				span.dividir
+					| >>
+			li
+				a(href="#/vista/noticia/")
+					| Noticia
+				span.dividir
+					| >>
+			li
+				a.active(href="javascript:void(0)")
+					| {{nom_accion}}
+	.inner-botones
+		.column
+		.column
+			a.btnaddArt(href="javascript:void(0)", ng-click="procesarForm(form)")
+				i.icon-plus
+				| Guardar cambios
+	.inner-form.form-interno
+		form(name="form")
+			.row.inner-alert
+				.alert.exito
+					p
+			.row
+				label Título
+				input(type="text", name="titulo", id="titulo", ng-model="form.titulo", placeholder="Ingrese el Título")
+			.row
+				label 
+					| Url Amigable 
+					span
+						| (Es para mejor el tema de SEO ej. http://per2021.pe/minoticia) 
+				input(type="text", name="url_seo", id="url_seo", ng-model="form.url_seo", placeholder="Escriba la URL Amigable")
+			.row
+				label Frase
+				input(type="text", name="frase", id="frase", ng-model="form.frase", placeholder="Ingrese la Frase")
+			.row
+				label Fecha de Publicación
+				input(type="text", name="f_publicacion", id="f_publicacion", ng-model="form.f_publicacion", placeholder="Ingrese la Fecha de Publicación")
+			.row
+				label 
+					| Order que aparecen las noticias, son números enteros 
+					span
+						| (Ej. 1, 2, 3... etc - de menor a mayor)
+				input(type="text", name="order", id="order", ng-model="form.order", placeholder="Order que aparecen las noticias")
+			.row
+				label Ingrese la Descripción Superior
+				textarea(name="descrip_superior", ckeditor="editorOptions", id="descrip_superior", ng-model="form.descrip_superior", placeholder="Ingrese la Descripción Superior")
+			.row
+				label Ingrese la Descripción Inferior
+				textarea.neditor(name="descrip_inferior", id="descrip_inferior", ckeditor="editorOptions", ng-model="form.descrip_inferior", placeholder="Ingrese la Descripción Inferior")
+			.row
+				label Suba la imagén de Portada
+				figure
+					img(src="{{rutaImg}}{{form.act_img_portada}}")
+				input(type="file", name="file_portada", id="file_portada", ng-model="form.file_portada")
+			.row
+				label Tipo de Multimedia
+				.inner-select
+					.cajaselect
+						span.seleccionado
+							| Tipo de Multimedia
+						ul.listaselect
+							li
+								a(href="javascript:void(0)", data-id="0")
+									| Tipo de Multimedia
+							li
+								a(href="javascript:void(0)", data-id="1")
+									| Imágen
+							li
+								a(href="javascript:void(0)", data-id="2")
+									| Video (Youtube)
+						span.trianguloinf
+			.row#multimedia-1.multimedia
+				label Subir imagén Interna
+				figure
+					img(src="{{rutaImg}}{{form.act_mul_imagen}}")
+				input(type="file", name="mul_fileImagen", id="mul_fileImagen", ng-model="form.mul_fileImagen")
+			.row#multimedia-2.multimedia
+				label 
+					| Coloque el código de Youtube, 
+					span
+						| ej: F0ApAtX9AP8
+				input(type="text", name="mul_video", id="mul_video", ng-model="form.mul_video", placeholder="Ingrese el código de Youtube")
+			.row
+				label ¿Publicado?
+				input(type="checkbox", ng-model="checkboxModel.value1")
+			.row
+				label ¿Destacado? (Indica que está noticia tiene una mayor importancia sobre las demás) 
+				input(type="checkbox", ng-model="checkboxDestacado.value1")
+			.row.inner-alert
+				.alert.exito
+					p
+			.row
+				label Ingrese Tag
+				.inner-botones.row-form
+					.column
+						input(type="text", name="not_tag", id="not_tag", ng-model="not_tag", placeholder="Aquí escriba el tag")
+					.column
+						a.btnaddArt(href="javascript:void(0)", ng-click="agregarTag(form)")
+							i.icon-plus
+							| Añadir
+			.row
+				label Lista de Tags
+				ul.listtag
+					li(ng-repeat = "mitag in listag")
+						p
+							span *
+							| {{mitag.tag_nombre}}
+						a(href="javascript:void(0)",ng-click="eliminarTag(mitag.tag_id)")
+							i.icon-cross
+	.inner-botones
+		.column
+		.column
+			a.btnaddArt(href="javascript:void(0)", ng-click="procesarForm(form)")
+				i.icon-plus
+				| Guardar cambios
+
+
+

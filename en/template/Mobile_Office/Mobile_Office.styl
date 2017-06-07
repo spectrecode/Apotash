@@ -21,13 +21,14 @@ section#oficina
 		@media (max-width 767px)
 			display flex
 			flex-direction column-reverse
-		ul
+		ul.menuSos
 			margin:50px auto
 			display flex
 			justify-content center
 			padding 0
 			@media (max-width 767px)
-				margin 0
+				flex-direction column
+				align-items center
 			a
 				&:hover
 					text-decoration none
@@ -38,7 +39,7 @@ section#oficina
 					width 180px
 					transition all ease-in-out .2s
 					font-size 23px
-					height 65px
+					height 70px
 					line-height 1
 					display flex
 					justify-content center
@@ -58,7 +59,7 @@ section#oficina
 						color blanco
 						@media (max-width 767px)
 							background transparent
-							color verdeOscuro
+							color grisoscuro
 							font-family fuente_active
 					&.activeBeca
 						background verdeOscuro
@@ -66,25 +67,25 @@ section#oficina
 						font-family fuente_active
 						@media (max-width 767px)
 							background transparent
-							color verdeOscuro
-			/.MenuOficina
-				display flex
-				flex-direction column
-				padding 0
-				margin-bottom 0
-				a
-					text-decoration none
-					color grisoscuro
-					li
-						width 100% !important
-						padding 30px
-						background blanco
-						font-size 21px
-						list-style none
-						&:hover
-							font-family fuente_active
-							background blanco
-							color grisoscuro
+							// color verdeOscuro
+			// /.MenuOficina
+			// 	display flex
+			// 	flex-direction column
+			// 	padding 0
+			// 	margin-bottom 0
+			// 	a
+			// 		text-decoration none
+			// 		color grisoscuro
+			// 		li
+			// 			width 100% !important
+			// 			padding 30px
+			// 			background blanco
+			// 			font-size 21px
+			// 			list-style none
+			// 			&:hover
+			// 				font-family fuente_active
+			// 				background blanco
+			// 				color grisoscuro
 		// .oficinaMovil
 		// 	@media (max-width 767px)
 		// 		display none
@@ -103,7 +104,7 @@ section#oficina
 						display flex
 						justify-content center
 						align-items center
-						&.oficinaSUb
+						&.activesos
 							background verdeOscuro
 							color blanco
 							font-family fuente_active
@@ -120,24 +121,40 @@ section#oficina
 							color blanco
 							@media (max-width 767px)
 								color verdeOscuro
-		.contenedorVideo
-			> div
-				display flex
-				margin-bottom 20%
-				// align-items center
+		.galerias
+			@media (max-width 767px)
+				margin 0
+			.contenedorSalud
 				@media (max-width 767px)
-					flex-direction column
-					margin-bottom 0
+					padding 15px
+				> div
+					display flex
+					margin-bottom 20%
+					@media (max-width 767px)
+						flex-direction column
+						margin-bottom 0
 				.box-somos
-					padding 40px 20px
-					background blanco
+					width 55%
 					font-size 20px
-					color grisoscuro
-					height auto
+					color grisOscuro
+					background #fff
+					display flex
+					align-items center
+					padding 0 40px
+					flex-direction column
+					justify-content center
+					left 15px
+					position relative
+					box-shadow: sombra
+					@media (max-width 1199px)
+						line-height 1
+						padding 0 20px
 					@media (max-width 991px)
-						padding 40px 10px
+						padding 0 15px
 					@media (max-width 767px)
 						width 100%
+						left 0px
+						box-shadow 0 0 0
 					h4
 						color verdeOscuro
 						font-family fuente_tituloNoticias
@@ -145,28 +162,30 @@ section#oficina
 						@media (max-width 991px)
 							font-size 18px
 					p
-						font-size 19px
 						@media (max-width 1199px)
-							font-size 16px
-							line-height 1
-					p
+							font-size 18px
 						@media (max-width 991px)
 							font-size 14px
+						@media (max-width 767px)
+							font-size 20px
 				.lSSlideOuter
-					position relative
-					width 100%
-					margin-left 0
-					@media (max-width 767px)
-						width 100%
-					.sliderUno
-						margin 0 auto
-						@media (max-width 767px)
-							margin 0
-				.imgOficina
 					width 45%
+					position relative
+					box-shadow: sombra
+					ul.sliderUno
+						display flex
+						margin 0
+						li
+							cursor pointer
 					@media (max-width 767px)
 						width 100%
-					> div
-						padding-left 0
+						margin auto
+						padding 15px
+						padding-bottom 0
+						box-shadow 0 0 0
+					.lSPager.lSpg
 						@media (max-width 767px)
-							padding-left 15px
+							width 95.5%
+						@media (max-width 424px)
+							width 100%
+				

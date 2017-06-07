@@ -1,0 +1,35 @@
+section#beca
+	@media (max-width 767px)
+		background blanco
+	.container-fluid
+		.row
+			.bannerPrincipal.sostenibilidad
+				background-image url("../image/banner-creciendo.jpg")
+				@media (max-width 991px)
+					background-position 0px -4px
+					background-repeat no-repeat
+					background-size cover
+					height 325px
+				@media (max-width 424px)
+					background-image url("../image/banner-movilStn.jpg")
+					height 403px
+				@media (max-width 375px)
+					height 370px
+				@media (max-width 320px)
+					height 315px
+				
+	.container
+		@media (max-width 767px)
+			display flex
+			flex-direction column-reverse
+		.programaBeca
+			.row.galerias
+				.lSAction
+					// > a
+					// 	top 40%
+					a.lSPrev
+						&:before
+							color azul
+					a.lSNext
+						&:before
+							color azul

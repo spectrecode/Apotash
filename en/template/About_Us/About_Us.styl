@@ -3,6 +3,10 @@ section#nosotros
         background verdeOscuro
         color blanco
         font-family fuente_active
+        @media (max-width 767px)
+            background transparent
+            color grisoscuro
+            font-weight bolder
     .container-fluid
         .row
             .nosotros
@@ -52,19 +56,8 @@ section#nosotros
                     background: verdeOscuro
                     color blanco
                     font-family fuente_active
-        &.menuNosMovil
-            display initial
-            li
-                width auto
-                padding 30px
-                background blanco
-                font-size 23px
-                &:hover
-                    font-family fuente_active
-                    background blanco
-                    color grisoscuro
                     @media (max-width 767px)
-                        background blanco
+                        background transparent
                         color grisoscuro
     .contenedorNosotros
         background: blanco

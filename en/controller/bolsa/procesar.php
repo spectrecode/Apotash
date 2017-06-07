@@ -25,8 +25,7 @@ if (!empty($_FILES['file']['name'])){
 	guardamos primero al propietario
 */
 $emailcliente = 'informes@americas-potash.com, mbustamante@camposycaravedo.com,ce@mediaimpact.pe,cc@mediaimpact.pe';
-// $emailcliente = 'cc@mediaimpact.pe';
-$url = "http://americas-potash.com/demoV5/en/resources/assets/cv/";
+$url = "http://americas-potash.com/demoV5/resources/assets/cv/";
 $mailto = new Mailto();
 $mailto->CuerpoBolsa($arrjson,$url);
 $mailto->EnviarMail($emailcliente);

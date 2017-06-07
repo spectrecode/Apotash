@@ -1,0 +1,19 @@
+header#menuLeft(ng-controller="menuPrincipalCrtl")
+	.inner-logo
+		img(src="./resources/assets/image/logo.png", alt="")
+	.inner-user
+		img(src="./resources/assets/image/usuario/{{photoUser}}", alt="")
+	.detail-user
+		h2
+			| {{nombreUser}}
+		p
+			| {{perfilUser}} 
+	nav
+		a(href="#/vista/principal")
+			| Inicio
+		a(href="#/usuario")
+			| Usuarios
+		a.active(href="#/noticia")
+			| Noticias
+		//a(href="#/bibliografia")
+			| Biografía

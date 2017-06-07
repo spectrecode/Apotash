@@ -1,0 +1,10 @@
+.cabecera(ng-controller="miusuarioCrtl")
+	.column
+		p
+			i.icon-calendar
+			| {{fechaactual}}
+	.column
+		a(href="javascript:void(0)", ng-click="editarmiUser()")
+			| Editar usuario
+		a(href="#", ng-click="salirAdmin()")
+			| Salir

@@ -189,6 +189,9 @@ section#fosfatos,#salmuera
 			display flex
 			justify-content center
 			padding 0
+			@media (max-width: 767px)
+				flex-direction column
+				align-items center
 			a
 				&:hover
 					text-decoration none
@@ -208,27 +211,17 @@ section#fosfatos,#salmuera
 						color blanco
 						font-family fuente_active
 						position relative
+						@media (max-width: 767px)
+							background transparent
+							color grisoscuro
+							font-weight bolder
 					&:hover
 						background: verdeOscuro
 						color blanco
 						font-family fuente_active
-			/.submenuFM
-				display flex
-				flex-direction column
-				padding 0
-				margin-bottom 0
-				a
-					&:hover
-						text-decoration none
-					li
-						padding 30px
-						width 100%
-						background blanco
-						color grisoscuro
-						font-size 21px
-						list-style none
-						&:hover
-							font-family fuente_active
+						@media (max-width: 767px)
+							background transparent
+							color grisoscuro
 // slide galerias
 .galerias
 	margin-bottom 20%
@@ -266,6 +259,7 @@ section#beca
 							position relative
 					> p
 						font-size 19px
+						text-align justify
 					h2.titulo-prog
 						color azul
 						background transparent
@@ -354,10 +348,10 @@ section#beca
 			display flex
 			justify-content center
 			padding 0
-			@media (min-width 768px)
-				margin 50px auto
+			margin 50px auto
 			@media (max-width 767px)
-				display none
+				flex-direction column
+				align-items center
 			a
 				&:hover
 					text-decoration none
@@ -368,7 +362,7 @@ section#beca
 					width 180px
 					transition all ease-in-out .2s
 					font-size 23px
-					height 65px
+					height 70px
 					display flex
 					line-height 1
 					justify-content center
@@ -391,6 +385,10 @@ section#beca
 						display flex
 						justify-content center
 						align-items center
+						@media (max-width 767px)
+							background transparent
+							font-weight bolder
+							color grisoscuro
 			/.menuMovSos
 				display flex
 				flex-direction column

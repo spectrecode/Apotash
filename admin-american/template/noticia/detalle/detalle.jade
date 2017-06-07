@@ -1,0 +1,239 @@
+.inner-contenido(ng-controller="editarNoticiaCrtl")
+	.inner-nave
+		ul
+			li
+				a(href="#/noticia/")
+					| Noticia
+				span.dividir
+					| >>
+			li
+				a.active(href="javascript:void(0)")
+					| {{nom_accion}}
+	.opciones-idioma
+		a.active(href="javascript:void(0)", ng-click="mostrarIdioma(1)", id="btn-espanol")
+			| Español
+		a(href="javascript:void(0)", ng-click="mostrarIdioma(2)", id="btn-ingles")
+			| Inglés
+	.inner-idioma#inner-espanol(style="display:block")
+		.inner-botones
+			.column
+			.column
+				a.btnaddArt(href="javascript:void(0)", ng-click="procesarForm(form)")
+					i.icon-plus
+					| Guardar cambios
+		.inner-form.form-interno
+			form(name="form")
+				fieldset.row.inner-alert
+					.alert.exito
+						p
+				fieldset.row
+					label Título (máxmio de caracteres 65)
+					input(type="text", name="titulo", id="titulo", ng-model="form.titulo", placeholder="Ingrese el Título")
+				fieldset.row
+					label Sumilla
+					input(type="text", name="frase", id="frase", ng-model="form.frase", placeholder="Escriba la sumilla")
+				fieldset.row
+					label 
+						| Url Amigable 
+						span
+							| (Es para mejor el tema de SEO ej. http://karlmaslo.pe/minoticia) 
+					input(type="text", name="url_seo", id="url_seo", ng-model="form.url_seo", placeholder="Escriba la URL Amigable")
+				fieldset.row
+					label Fecha de Publicación
+					input(type="text", name="f_publicacion", id="f_publicacion", ng-model="form.f_publicacion", placeholder="Ingrese la Fecha de Publicación")
+				fieldset.row
+					label Ingrese la Descripción Corta (máxmio de caracteres 160)
+					textarea(name="descrip_superior", ckeditor="editorOptions", id="descrip_superior", ng-model="form.descrip_superior", placeholder="Ingrese la Descripción Corta")
+				fieldset.row
+					label Ingrese la Descripción
+					textarea.neditor(name="descrip_inferior", id="descrip_inferior", ckeditor="editorOptions", ng-model="form.descrip_inferior", placeholder="Ingrese la Descripción")
+				fieldset.row
+					label Suba la imagén de Portada
+					figure
+						img(src="{{rutaImg}}{{form.act_img_portada}}")
+					input(type="file", name="file_portada", id="file_portada", ng-model="form.file_portada")
+				//fieldset.row
+					label Tipo de Multimedia
+					.inner-select
+						.cajaselect#tipomultimedia
+							span.seleccionado
+								| Tipo de Multimedia
+							ul.listaselect
+								li
+									a(href="javascript:void(0)", data-id="0")
+										| Tipo de Multimedia
+								li
+									a(href="javascript:void(0)", data-id="1")
+										| Imágen
+								li
+									a(href="javascript:void(0)", data-id="2")
+										| Video - Iframe (Vimeo)
+							span.trianguloinf
+				//fieldset.row#multimedia-1.multimedia
+					label Subir imagén Interna
+					figure
+						img(src="{{rutaImg}}{{form.act_mul_imagen}}")
+					input(type="file", name="mul_fileImagen", id="mul_fileImagen", ng-model="form.mul_fileImagen")
+				//fieldset.row#multimedia-2.multimedia
+					label 
+						| Coloque el iframe de vimeo, 
+						span
+							| ej: https://player.vimeo.com/video/217080865?color=FFF&title=0&byline=0&portrait=0
+					input(type="text", name="mul_video", id="mul_video", ng-model="form.mul_video", placeholder="Ingrese el código de Youtube")
+				fieldset.row
+					label ¿Destacado? 
+					input(type="checkbox", ng-model="checkboxDestacado.value1")
+				fieldset.row
+					label ¿Publicado?
+					input(type="checkbox", ng-model="checkboxModel.value1")
+				fieldset.row
+					label Galeria de Imágenes
+					input(type="file", name="galeria", id="galeria", ng-model="form.galeria")
+					a(href="javascript:void(0)", ng-click="procesarForm(form)")
+				fieldset.row
+					label Listado de imagenes
+					.inner-listado
+						table
+							thead
+								tr
+									th.center
+										| Nº
+									th.center
+										| Imagen
+									th.center
+										| Eliminar
+							tbody
+								tr(ng-repeat="datos in listgal")
+									td.center
+										p
+											| {{datos.count}}
+									td.center
+										img(src="./resources/assets/image/noticias/galeria/{{datos.imagen}}", alt="", style="width:150px")
+									td.center.accion
+										a(href="javascript:void(0)", ng-click="eliminar(datos.id)")
+											i.icon-bin
+											| Eliminar
+				fieldset.row.inner-alert
+					.alert.exito
+						p
+		.inner-botones
+			.column
+			.column
+				a.btnaddArt(href="javascript:void(0)", ng-click="procesarForm(form)")
+					i.icon-plus
+					| Guardar cambios
+
+
+
+
+	.inner-idioma#inner-ingles
+		.inner-botones
+			.column
+			.column
+				a.btnaddArt(href="javascript:void(0)", ng-click="procesarForm_en(form_en)")
+					i.icon-plus
+					| Save
+		.inner-form.form-interno
+			form(name="form")
+				fieldset.row.inner-alert
+					.alert.exito
+						p
+				fieldset.row
+					label Title (Max of characters 65)
+					input(type="text", name="titulo_en", id="titulo_en", ng-model="form_en.titulo_en", placeholder="Ingrese el Título")
+				fieldset.row
+					label Sumilla
+					input(type="text", name="frase_en", id="frase_en", ng-model="form_en.frase_en", placeholder="Escriba la sumilla")
+				fieldset.row
+					label 
+						| Friendly Url 
+						span
+							| (Es para mejor el tema de SEO ej. http://karlmaslo.pe/minoticia) 
+					input(type="text", name="url_seo_en", id="url_seo_en", ng-model="form_en.url_seo_en", placeholder="Escriba la URL Amigable")
+				fieldset.row
+					label Publication Date
+					input(type="text", name="f_publicacion_en", id="f_publicacion_en", ng-model="form_en.f_publicacion_en", placeholder="Ingrese la Fecha de Publicación")
+				fieldset.row
+					label Enter the Short Description (max characters 160)
+					textarea(name="descrip_superior_en", ckeditor="editorOptions", id="descrip_superior_en", ng-model="form_en.descrip_superior_en", placeholder="Ingrese la Descripción Corta")
+				fieldset.row
+					label Enter Description
+					textarea.neditor(name="descrip_inferior_en", id="descrip_inferior_en", ckeditor="editorOptions", ng-model="form_en.descrip_inferior_en", placeholder="Ingrese la Descripción")
+				fieldset.row
+					label Upload the image of Cover
+					figure
+						img(src="{{rutaImg}}{{form_en.act_img_portada_en}}")
+					input(type="file", name="file_portada_en", id="file_portada_en", ng-model="form_en.file_portada_en")
+				//fieldset.row
+					label Type of Multimedia
+					.inner-select
+						.cajaselect#tipomultimedia2
+							span.seleccionado
+								| Type of Multimedia
+							ul.listaselect
+								li
+									a(href="javascript:void(0)", data-id="0")
+										| Type of Multimedia
+								li
+									a(href="javascript:void(0)", data-id="1")
+										| Image
+								li
+									a(href="javascript:void(0)", data-id="2")
+										| Video - Iframe (Vimeo) 
+							span.trianguloinf
+				//fieldset.row#multimedia3-1.multimedia3
+					label Upload image Internal
+					figure
+						img(src="{{rutaImg}}{{form.act_mul_imagen_en}}")
+					input(type="file", name="mul_fileImagen_en", id="mul_fileImagen_en", ng-model="form.mul_fileImagen_en")
+				//fieldset.row#multimedia3-2.multimedia3
+					label 
+						| Place vimeo iframe, 
+						span
+							| ej: https://player.vimeo.com/video/217080865?color=FFF&title=0&byline=0&portrait=0
+					input(type="text", name="mul_video_en", id="mul_video_en", ng-model="form.mul_video_en", placeholder="Ingrese el código de Youtube")
+				//fieldset.row
+					label Outstanding?
+					input(type="checkbox", ng-model="checkboxDestacado_en.value1")
+				//fieldset.row
+					label Published?
+					input(type="checkbox", ng-model="checkboxModel_en.value1")
+				fieldset.row
+					label Image gallery
+					input(type="file", name="galeria", id="galeria", ng-model="form_en.galeria")
+					a(href="javascript:void(0)", ng-click="procesarForm(form_en)")
+				fieldset.row
+					label List of images
+					.inner-listado
+						table
+							thead
+								tr
+									th.center
+										| Nº
+									th.center
+										| Image
+									th.center
+										| Deleted
+							tbody
+								tr(ng-repeat="datos in listgal")
+									td.center
+										p
+											| {{datos.count}}
+									td.center
+										img(src="./resources/assets/image/noticias/galeria/{{datos.imagen}}", alt="", style="width:150px")
+									td.center.accion
+										a(href="javascript:void(0)", ng-click="eliminar(datos.id)")
+											i.icon-bin
+											| Deleted
+				fieldset.row.inner-alert
+					.alert.exito
+						p
+		.inner-botones
+			.column
+			.column
+				a.btnaddArt(href="javascript:void(0)", ng-click="procesarForm_en(form_en)")
+					i.icon-plus
+					| Save
+
+
+

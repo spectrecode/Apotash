@@ -1,0 +1,239 @@
+
+<div class="inner-panel">
+  <div class="column">
+    <header id="menuLeft" ng-controller="menuPrincipalCrtl">
+      <div class="inner-logo"><img src="./resources/assets/image/logo.png" alt=""/></div>
+      <div class="inner-user"><img src="./resources/assets/image/usuario/{{photoUser}}" alt=""/></div>
+      <div class="detail-user">
+        <h2>{{nombreUser}}</h2>
+        <p>{{perfilUser}} </p>
+      </div>
+      <nav><a href="#/vista/principal">Inicio</a><a href="#/usuario">Usuarios</a><a href="#/noticia" class="active">Noticias</a>
+        <!--a(href="#/bibliografia")| Biografía
+        -->
+      </nav>
+    </header>
+  </div>
+  <div class="column">
+    <div ng-controller="miusuarioCrtl" class="cabecera">
+      <div class="column">
+        <p><i class="icon-calendar"></i>{{fechaactual}}</p>
+      </div>
+      <div class="column"><a href="javascript:void(0)" ng-click="editarmiUser()">Editar usuario</a><a href="#" ng-click="salirAdmin()">Salir</a></div>
+    </div>
+    <div ng-controller="editarNoticiaCrtl" class="inner-contenido">
+      <div class="inner-nave">
+        <ul>
+          <li><a href="#/noticia/">Noticia</a><span class="dividir">>></span></li>
+          <li><a href="javascript:void(0)" class="active">{{nom_accion}}</a></li>
+        </ul>
+      </div>
+      <div class="opciones-idioma"><a href="javascript:void(0)" ng-click="mostrarIdioma(1)" id="btn-espanol" class="active">Español</a><a href="javascript:void(0)" ng-click="mostrarIdioma(2)" id="btn-ingles">Inglés</a></div>
+      <div id="inner-espanol" style="display:block" class="inner-idioma">
+        <div class="inner-botones">
+          <div class="column"></div>
+          <div class="column"><a href="javascript:void(0)" ng-click="procesarForm(form)" class="btnaddArt"><i class="icon-plus"></i>Guardar cambios</a></div>
+        </div>
+        <div class="inner-form form-interno">
+          <form name="form">
+            <fieldset class="row inner-alert">
+              <div class="alert exito">
+                <p></p>
+              </div>
+            </fieldset>
+            <fieldset class="row">
+              <label>Título (máxmio de caracteres 65)</label>
+              <input type="text" name="titulo" id="titulo" ng-model="form.titulo" placeholder="Ingrese el Título"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>Sumilla</label>
+              <input type="text" name="frase" id="frase" ng-model="form.frase" placeholder="Escriba la sumilla"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>
+                 
+                Url Amigable <span>(Es para mejor el tema de SEO ej. http://karlmaslo.pe/minoticia) </span>
+              </label>
+              <input type="text" name="url_seo" id="url_seo" ng-model="form.url_seo" placeholder="Escriba la URL Amigable"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>Fecha de Publicación</label>
+              <input type="text" name="f_publicacion" id="f_publicacion" ng-model="form.f_publicacion" placeholder="Ingrese la Fecha de Publicación"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>Ingrese la Descripción Corta (máxmio de caracteres 160)</label>
+              <textarea name="descrip_superior" ckeditor="editorOptions" id="descrip_superior" ng-model="form.descrip_superior" placeholder="Ingrese la Descripción Corta"></textarea>
+            </fieldset>
+            <fieldset class="row">
+              <label>Ingrese la Descripción</label>
+              <textarea name="descrip_inferior" id="descrip_inferior" ckeditor="editorOptions" ng-model="form.descrip_inferior" placeholder="Ingrese la Descripción" class="neditor"></textarea>
+            </fieldset>
+            <fieldset class="row">
+              <label>Suba la imagén de Portada</label>
+              <figure><img src="{{rutaImg}}{{form.act_img_portada}}"/></figure>
+              <input type="file" name="file_portada" id="file_portada" ng-model="form.file_portada"/>
+            </fieldset>
+            <!--fieldset.row
+            label Tipo de Multimedia
+            .inner-select
+            	.cajaselect#tipomultimedia
+            		span.seleccionado
+            			| Tipo de Multimedia
+            		ul.listaselect
+            			li
+            				a(href="javascript:void(0)", data-id="0")
+            					| Tipo de Multimedia
+            			li
+            				a(href="javascript:void(0)", data-id="1")
+            					| Imágen
+            			li
+            				a(href="javascript:void(0)", data-id="2")
+            					| Video - Iframe (Vimeo)
+            		span.trianguloinf
+            -->
+            <!--fieldset.row#multimedia-1.multimedia
+            label Subir imagén Interna
+            figure
+            	img(src="{{rutaImg}}{{form.act_mul_imagen}}")
+            input(type="file", name="mul_fileImagen", id="mul_fileImagen", ng-model="form.mul_fileImagen")
+            -->
+            <!--fieldset.row#multimedia-2.multimedia
+            label 
+            	| Coloque el iframe de vimeo, 
+            	span
+            		| ej: https://player.vimeo.com/video/217080865?color=FFF&title=0&byline=0&portrait=0
+            input(type="text", name="mul_video", id="mul_video", ng-model="form.mul_video", placeholder="Ingrese el código de Youtube")
+            -->
+            <!--fieldset.row
+            label ¿Destacado? 
+            input(type="checkbox", ng-model="checkboxDestacado.value1")
+            -->
+            <fieldset class="row">
+              <label>¿Publicado?</label>
+              <input type="checkbox" ng-model="checkboxModel.value1"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>Galeria de Imágenes</label>
+              <input type="file" name="galeria" id="galeria" ng-model="form.galeria"/><a href="javascript:void(0)" ng-click="procesarForm(form)"></a>
+            </fieldset>
+            <fieldset class="row">
+              <label>Listado de imagenes</label>
+              <div class="inner-listado">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="center">Nº</th>
+                      <th class="center">Imagen</th>
+                      <th class="center">Eliminar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="datos in listgal">
+                      <td class="center">
+                        <p>{{datos.count}}</p>
+                      </td>
+                      <td class="center"><img src="./resources/assets/image/noticias/galeria/{{datos.imagen}}" alt="" style="width:150px"/></td>
+                      <td class="center accion"><a href="javascript:void(0)" ng-click="eliminar(datos.id)"><i class="icon-bin"></i>Eliminar</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </fieldset>
+            <fieldset class="row inner-alert">
+              <div class="alert exito">
+                <p></p>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="inner-botones">
+          <div class="column"></div>
+          <div class="column"><a href="javascript:void(0)" ng-click="procesarForm(form)" class="btnaddArt"><i class="icon-plus"></i>Guardar cambios</a></div>
+        </div>
+      </div>
+      <div id="inner-ingles" class="inner-idioma">
+        <div class="inner-botones">
+          <div class="column"></div>
+          <div class="column"><a href="javascript:void(0)" ng-click="procesarForm_en(form_en)" class="btnaddArt"><i class="icon-plus"></i>Save</a></div>
+        </div>
+        <div class="inner-form form-interno">
+          <form name="form">
+            <fieldset class="row inner-alert">
+              <div class="alert exito">
+                <p></p>
+              </div>
+            </fieldset>
+            <fieldset class="row">
+              <label>Title (Max. 65 characters)</label>
+              <input type="text" name="titulo_en" id="titulo_en" ng-model="form_en.titulo_en" placeholder="Enter a title"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>Summary</label>
+              <input type="text" name="frase_en" id="frase_en" ng-model="form_en.frase_en" placeholder="Write a short summary"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>
+                 
+                Friendly URL<span>Create a friendly URL (To improve SEO ej. http://karlmaslo.pe/mynews)</span>
+              </label>
+              <input type="text" name="url_seo_en" id="url_seo_en" ng-model="form_en.url_seo_en" placeholder="Friendly URL"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>Publication Date</label>
+              <input type="text" name="f_publicacion_en" id="f_publicacion_en" ng-model="form_en.f_publicacion_en" placeholder="Enter publication date"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>Short description (Max. 160 characters)</label>
+              <textarea name="descrip_superior_en" ckeditor="editorOptions" id="descrip_superior_en" ng-model="form_en.descrip_superior_en" placeholder="Write a brief description"></textarea>
+            </fieldset>
+            <fieldset class="row">
+              <label>Description</label>
+              <textarea name="descrip_inferior_en" id="descrip_inferior_en" ckeditor="editorOptions" ng-model="form_en.descrip_inferior_en" placeholder="Description" class="neditor"></textarea>
+            </fieldset>
+            <fieldset class="row">
+              <label>Cover Image</label>
+              <figure><img src="{{rutaImg}}{{form_en.act_img_portada_en}}"/></figure>
+              <input type="file" name="file_portada_en" id="file_portada_en" ng-model="form_en.file_portada_en"/>
+            </fieldset>
+            <fieldset class="row">
+              <label>Add a gallery</label>
+              <input type="file" name="galeria" id="galeria" ng-model="form_en.galeria"/><a href="javascript:void(0)" ng-click="procesarForm(form_en)"></a>
+            </fieldset>
+            <fieldset class="row">
+              <label>Images</label>
+              <div class="inner-listado">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="center">Nº</th>
+                      <th class="center">Image</th>
+                      <th class="center">Deleted</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="datos in listgal">
+                      <td class="center">
+                        <p>{{datos.count}}</p>
+                      </td>
+                      <td class="center"><img src="./resources/assets/image/noticias/galeria/{{datos.imagen}}" alt="" style="width:150px"/></td>
+                      <td class="center accion"><a href="javascript:void(0)" ng-click="eliminar(datos.id)"><i class="icon-bin"></i>Deleted</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </fieldset>
+            <fieldset class="row inner-alert">
+              <div class="alert exito">
+                <p></p>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="inner-botones">
+          <div class="column"></div>
+          <div class="column"><a href="javascript:void(0)" ng-click="procesarForm_en(form_en)" class="btnaddArt"><i class="icon-plus"></i>Save</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

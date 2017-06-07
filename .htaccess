@@ -1,5 +1,9 @@
 # Activar RewriteEngine
 RewriteEngine on
+# Cambiar la url con alias www a la url sin alias www 
+RewriteCond %{HTTP_HOST} ^www.americas-potash.com [NC]
+RewriteRule ^(.*)$ http://americas-potash.com/$1 [L,R=301]
+
 
 RewriteRule ^nosotros/?$ nosotros.html
 RewriteRule ^mision/?$ mision.html
@@ -10,9 +14,9 @@ RewriteRule ^salmuera/?$ salmuera.html
 RewriteRule ^sostenibilidad/?$ sostenibilidad.html
 RewriteRule ^salud/?$ salud.html
 RewriteRule ^salud/?$ salud.html
-RewriteRule ^comunicacion-corporativa/?$ comunicacion-corporativa.html
+RewriteRule ^comunicacion-corporativa/?$ comunicacion-corporativa.php
 RewriteRule ^contacto/?$ contacto.html
-RewriteRule ^index/?$ index.html
+RewriteRule ^index/?$ index.php
 RewriteRule ^beca/?$ beca.html
 RewriteRule ^beca-beneficiarios/?$ beca-beneficiarios.html
 RewriteRule ^beca-video/?$ beca-video.html
@@ -25,7 +29,7 @@ RewriteRule ^detalle/?$ detalle.html
 RewriteRule ^detalle-1/?$ detalle-1.html
 RewriteRule ^detalle-2/?$ detalle-2.html
 
-RewriteRule ^en/index/?$ en/index.html
+RewriteRule ^en/index/?$ en/index.php
 RewriteRule ^en/About_Us/?$ en/About_Us.html
 RewriteRule ^en/Mission_and_Vision/?$ en/Mission_and_Vision.html
 RewriteRule ^en/Values/?$ en/Values.html
@@ -48,3 +52,6 @@ RewriteRule ^en/Radio_Spots/?$ en/Radio_Spots.html
 RewriteRule ^en/Mobile_Office/?$ en/Mobile_Office.html
 RewriteRule ^en/videos/?$ en/videos.html
 RewriteRule ^en/busqueda/?$ en/busqueda.html
+
+Rewriterule ^noticias/(.+)/?$ detalle.php?not_url=$1
+Rewriterule ^en/news/(.+)/?$ en/detalle.php?not_url=$1

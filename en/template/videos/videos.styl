@@ -30,7 +30,8 @@ section#videos
 			@media (max-width 991px)
 				padding 0
 			@media (max-width 767px)
-				margin 30px auto
+				flex-direction column
+				align-items center
 			a
 				&:hover
 					text-decoration none
@@ -69,26 +70,7 @@ section#videos
 						width 180px
 						@media (max-width 767px)
 							background transparent
-							color verdeOscuro
-			/.menuMovVid
-				flex-direction column
-				padding 0
-				a
-					&:hover
-						text-decoration none
-					li
-						width auto
-						padding 30px
-						background blanco
-						list-style none
-						color grisoscuro
-						font-size 25px
-						&:hover
-							font-family fuente_active
-							background blanco
 							color grisoscuro
-						&.movVideoBtn
-							background blanco
 		.Videos
 			// @media (max-width 767px)
 			// 	display none
@@ -115,6 +97,9 @@ section#videos
 								color grisoscuro
 						@media (max-width 767px)
 							width 200px
+				.activesos
+					@media (max-width 767px)
+						color verdeOscuro
 		.contenedorVideo
 			> div
 				display flex

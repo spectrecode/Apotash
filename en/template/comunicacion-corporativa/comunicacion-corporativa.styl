@@ -1,0 +1,347 @@
+#comunicacion-corporativa
+	padding-bottom 10%
+	.container-fluid
+		.row
+			.bannerPrincipal.comuncCorp
+				background-image url("../image/FGB_2008.png")
+				@media (max-width 425px)
+					background-image url("../image/banner-movilCo.jpg")
+					background-size cover
+					height 300px
+				.letrero-banner
+					h2
+						color blanco
+					@media (min-width 426px)
+						display none
+	.container
+		.noticias-comunicacion
+			@media (max-width 425px)
+				padding 20px 30px
+			> div:last-child
+				@media (max-width 425px)
+					display flex
+					flex-direction column
+					justify-content center
+					align-items center
+			h2
+				color verdeOscuro
+			h3
+				color #999999
+				font 30px fuente_tituloH3
+				margin-left 0
+				margin-right 0
+				@media (max-width 425px)
+					&:after
+						content ""
+						border-bottom 1.5px solid gris
+						position absolute
+						right 0px
+						width 70%
+						bottom 10px
+			h2.titulo
+				font-size 35px
+	#publicaciones
+		> div:nth-child(2)
+			@media (max-width 767px)
+				display none
+		> div:nth-child(3)
+			@media (max-width 767px)
+				display none
+		.inner-noticia
+			background blanco
+			border-right 3px solid #CED71F
+			box-shadow sombra
+			margin-top 20px
+			// @media only screen and (min-width 768px) and (max-width 991px)
+			// 	height 230px
+			@media (max-width 767px)
+				border-right none
+				box-shadow 0 0 0
+			&:first-child
+				margin-top 0
+			> div:nth-child(2)
+				h4
+					font 20px alegreya_sansblack
+					color #006C4B
+					@media (max-width 1199px)
+						line-height 1
+					@media (max-width 991px)
+						font-size 16px
+					@media (max-width 767px)
+						padding 0 40px 20px
+						line-height 1
+						position relative
+						color grisoscuro
+						font-family inherit
+						text-align center
+						&:after
+							content ""
+							width 200px
+							position absolute
+							border-bottom 3px solid #ced71f
+							bottom 0
+							left 0
+							right 0
+							margin auto
+				p
+					font 19px alegreya_sansregular
+					color #5D5D5D
+					@media (max-width 1199px)
+						line-height 1
+					@media (max-width 991px)
+						font-size 15px
+				.seguirL
+					a
+						font 18px alegreya_sansregular
+						color #006C4B
+						text-decoration none
+						@media (max-width 991px)
+							font-size 15px
+					img
+						display inline-block
+						margin-left 5px
+						vertical-align bottom
+				p,.seguirL
+					@media (max-width 767px)
+						display none
+		.noticiasCo
+			padding 40px 0
+			li
+				border-bottom 5px solid amarilloLimon
+				&:hover .caja-hover-not
+					display: block
+					@media (max-width: 767px)
+						display:none
+				.caja-hover-not
+					background: rgba(8, 16, 0, 0.65)
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					display: none
+					animation: hoverNot .2s
+					animation-fill-mode: both
+					.titular
+						color: blanco
+						font-family: fuente_tituloNoticias
+						height: 100%
+						display: flex
+						font-size: 26px
+						justify-content: center
+						text-shadow: 2.5px 1.5px 1px negro
+						padding: 28% 8%
+						line-height: 1.1
+						@media (max-width: 991px)
+							font-size: 25px
+					.noticia
+						width: 100%
+						height: 26%
+						background: #fff
+						bottom: 0
+						position: absolute
+						color: #000
+						display: flex
+						flex-direction: row
+						align-items: center
+						justify-content: space-around
+						padding: 10px
+						a
+							text-decoration: none
+							color: #616161
+							position: relative
+							padding-left: 5%
+							border-left: 2px solid #808080
+							i
+								font-size: 28px
+								@media (max-width: 991px)
+									font-size: 21px
+							span
+								font-size: 14px
+								display: block
+								font-family: fuente_descripcion
+								@media (max-width: 991px)
+									line-height: 0.8
+						p
+							margin: 0
+							line-height: 1
+							font-size 17px
+				img
+					transition: all .2s
+				.descrip-img-noticias
+					width: 100%
+					background: #fff
+					padding: 15px
+					border-bottom: 3px solid gold
+					line-height: 0.9
+					font-size: 25px
+					height 150px
+					display: flex
+					justify-content: center
+					flex-direction: column
+					a
+						text-decoration none
+						color negro
+						&:hover
+							color negro
+							text-decoration none
+					p
+						@media (max-width: 767px)
+							font-size: 20px
+						@media (max-width: 375px)
+							font-size: 18px
+	#publicaciones+.row
+		@media (max-width 767px)
+			display none
+	.inner-logo
+		text-align center
+	.inner-img
+		padding-left 0
+	.inner-logo
+		img
+			width 100%
+	.verM
+		padding-left 0
+		padding-right 0
+		a
+			font 18px alegreya_sansregular
+			color #006C4B
+			text-decoration none
+			background blanco
+			padding 10px 0
+			display block
+			margin-top 20px
+			box-shadow sombra
+			&:hover
+				background #006C4B
+				transition 0.3s all ease
+				color blanco
+	// .icon-brochureM
+		
+	.container-brochure, .container-prensa
+		background blanco
+		padding-bottom 50px
+		box-shadow sombra
+		@media (max-width 767px)
+			box-shadow 0 0 0
+		&:last-child
+			padding-bottom 15px
+		.titulo-brochure
+			background #006C4B
+			h2
+				margin-top 0
+				font 40px alegreya_sansbold
+				color blanco
+				text-align center
+				margin-bottom 0
+		.brochure
+			margin 20px
+			box-shadow sombra
+			@media (max-width 767px)
+				box-shadow 0 0 0
+				margin 0
+			h2
+				font 16px alegreya_sansblack
+				text-align center
+				margin-top 10px
+				@media(max-width 1199px)
+					line-height 1
+					font-size 15px
+				@media(max-width 767px)
+					font-size 22px
+				@media(max-width 425px)
+					font-size 18px
+			p
+				font-size 14px
+				@media (max-width 1199px)
+					line-height 1
+				@media(max-width 767px)
+					font-size 20px
+					line-height inherit
+				@media(max-width 425px)
+					font-size 18px
+			.inner-brochure
+				padding-left 0
+				@media (max-width 1199px)
+					padding-right 0
+				@media (max-width 991px)
+					padding 0
+				img
+					width 92%
+					@media (max-width 991px)
+						width 100%
+			> div:nth-child(2)
+				@media (max-width 1199px)
+					padding-left 0
+				@media (max-width 991px)
+					padding 0 15px
+					text-align justify
+			// // h2
+			// // 	text-align center
+			// // 	margin-top 0
+			// // 	font 16px alegreya_sansblack
+			// p
+			// 	font 15px alegreya_sansregular
+			// 	color #666666
+			.icon-brochure
+				@media (max-width 991px)
+					text-align center
+				@media (max-width 767px)
+					display none
+				.icon-download3
+					color #006C4B
+					margin-left 10px
+					@media (max-width 1199px)
+						margin-left initial
+					a
+						font 13px alegreya_sansmedium
+						color #006C4B
+						margin-left 5px
+						text-decoration none
+				.icon-eye
+					color #006C4B
+					margin-top 5px
+					margin-left 10px
+					@media (max-width 1199px)
+						margin-top initial
+						margin-left initial
+					a
+						font 13px alegreya_sansmedium
+						color #006C4B
+						margin-left 5px
+						text-decoration none
+					p
+						font 14px alegreya_sansregular
+			.icon-brochureM
+				width 100%
+				display flex
+				position relative
+				bottom 1px
+				@media (min-width 767px)
+					display none
+				.icon-download3, .icon-eye
+					width 50%
+					height 50px
+					display flex
+					justify-content center
+					align-items center
+					color blanco
+					a
+						color blanco
+				.icon-download3
+					background verdeOscuro
+				.icon-eye
+					background grisoscuro
+		a
+			font 16px alegreya_sansmedium
+			color #006C4B
+			margin-left 5px
+			text-decoration none
+	.container-prensa
+		.brochure:nth-child(3)
+			@media (max-width 767px)
+				display none
+	#noticias
+		display none
+		margin-top 20px
+	
+	

@@ -1,0 +1,227 @@
+/***
+	Autor 	: Carlos Espinoza
+	Email 	: c.augusto.espinoza@gmail.com
+***/
+
+/***
+	Descripcion: Prefijos
+***/
+
+/***
+	Descripcion: Se definen los colores que se usaran durante
+	todo el desarrollo del site
+***/
+anaranjado      = #E87126
+azul 			= #142B5E
+blanco 			= #fff
+negro 			= #000
+rojo 			= #DD0000
+verde     		= #008b32
+gris            = #808080
+grisoscuro      = #666
+grisclaro       = #929292
+celeste 		= #00AFCB
+amarrillo       = #F7B800
+morado 			= #a078b0
+rosado 			= #FF335C
+/***
+	Descripcion: Se definen las fuentes que se usaran durante
+	todo el desarrollo del site
+***/
+
+fuente_texto 		= "open_sansregular"
+fuente_titulo 		= "open_sansbold"
+fuente_subtitulo 	= "open_sanslight"
+fuente_link 		= ""
+fuente_boton 		= ""
+fuente_menu 		= ""
+
+/***
+	Descripcion: Se definen las funciones mixtas
+	que emplearemos 
+***/
+
+body
+	font-size 16px
+
+a
+	color azul
+	font-size 12px
+	font-family fuente_link
+	text-decoration none
+	&:hover
+		text-decoration none
+button
+	color azul
+	font-size 12px
+	font-family fuente_boton
+	text-decoration none
+	&:hover
+		text-decoration none
+p, h1,h2,h3,h4
+	color azul
+	font-size 14px
+	font-family fuente_texto
+h1
+	font-family fuente_titulo
+h2,h3,h4
+	font-family fuente_subtitulo
+.inner-alert
+	display none
+	.alert
+		border-radius 4px
+		padding 15px
+		&.error
+			background #f2dede
+			border-color #ebccd1
+			p
+				color #b94a48
+		&.exito
+			background #dff0d8
+			border-color #d6e9c6
+			p
+				color #468847
+.icon-checkmark, .icon-cross
+	color #00ff2f
+	font-size 20px
+.icon-cross
+	color #f00
+.inner-panel
+	align-items strech
+	display flex
+	flex-direction row
+	flex-wrap no-wrap
+	justify-content flex-start
+	.column
+		&:first-child
+			border-right 1px solid rgba(0,106,169,0.75)
+			overflow hidden
+			width 280px
+		&:last-child
+			width 100%
+.inner-contenido
+	margin auto
+	padding 40px 10px 40px 10px
+	.inner-nave
+		background #f5f5f5
+		border-radius 4px
+		padding 8px 15px
+		text-shadow 0 1px rgba(255,255,255,0.5)
+		ul
+			li
+				display inline-block
+				vertical-align middle
+				a
+					font-family "open_sanssemibold"
+					font-size 12px
+					color #333
+					&:hover
+						color #006aa9
+					&.active
+						color #333
+						font-family open_sansbold
+				span
+					font-family "open_sanssemibold"
+					font-size 10px
+					margin-left 5px
+	.inner-botones
+		align-items flex-start
+		display flex
+		flex-direction row
+		flex-wrap no-wrap
+		justify-content space-between
+		padding 40px 0
+		&.row-form
+			padding 10px 0 5px
+			.column
+				&:first-child
+					width 100%
+					input[type="text"]
+						width 100%
+		.column
+			a
+				border none
+				background #3a7999
+				box-sizing border-box
+				border-radius 5px
+				color #f2f2f2
+				display inline-block
+				padding 5px 20px
+				font-size 14px
+				font-family "open_sansregular"
+				margin-left 15px
+				letter-spacing -0.025em
+				position relative
+				transition all 500ms ease
+				border-radius 4px
+				i
+					font-size 12px
+					padding-right 6px
+				&.btnaddArt
+					background #008ccb
+				&:before
+					content ''
+					position absolute
+					top 0px
+					left 0px
+					width 0px
+					height 42px
+					background rgba(255,255,255,0.3)
+					border-radius 5px
+					transition all 2s ease
+				&:hover:before
+					width 100%
+			&:first-child
+				display inline-block
+				border 0
+				overflow initial
+				vertical-align top
+				width 400px
+				input[type="text"]
+					color #424242
+					font-size 14px
+					padding-left 10px
+					width 200px
+			&:last-child
+				width auto
+	.inner-paginado
+		padding 20px 0 0 0
+		ul
+			align-items flex-start
+			display flex
+			flex-direction row
+			flex-wrap no-wrap
+			justify-content center
+			li
+				background #5bc0de
+				border-left 1px solid #ccc
+				border-top 1px solid #ccc
+				border-bottom 1px solid #ccc
+				&:last-child
+					border-right 1px solid #ccc
+				a
+					color blanco
+					font-family "open_sanssemibold"
+					font-size 12px
+					line-height 26px
+					padding 0 10px
+
+
+.inner-idioma
+	display none
+.opciones-idioma
+	border-bottom 1px solid rgba(0,0,0,0.3)
+	a
+		background #006aa9
+		color blanco
+		display block
+		display inline-block
+		height 35px
+		line-height 2.95em
+		text-align center
+		vertical-align top
+		margin 30px 7px 0 0 
+		width 150px
+		&.active
+			background verde
+							

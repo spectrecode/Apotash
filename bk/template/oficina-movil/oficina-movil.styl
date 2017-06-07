@@ -1,0 +1,191 @@
+section#oficina
+	@media (max-width 767px)
+		background blanco
+	.container-fluid
+		.row
+			.bannerPrincipal.sostenibilidad
+				background-image url("../image/banner-creciendo.jpg")
+				@media (max-width 991px)
+					background-position 0px -4px
+					background-repeat no-repeat
+					height 325px
+					background-size cover
+				@media (max-width 424px)
+					background-image url("../image/banner-movilStn.jpg")
+					height 403px
+				@media (max-width 375px)
+					height 370px
+				@media (max-width 320px)
+					height 315px
+	.container
+		@media (max-width 767px)
+			display flex
+			flex-direction column-reverse
+		ul.menuSos
+			margin:50px auto
+			display flex
+			justify-content center
+			padding 0
+			@media (max-width 767px)
+				flex-direction column
+				align-items center
+			a
+				&:hover
+					text-decoration none
+				li
+					cursor pointer
+					color grisoscuro
+					list-style none
+					width 180px
+					transition all ease-in-out .2s
+					font-size 23px
+					height 65px
+					line-height 1
+					display flex
+					justify-content center
+					align-items center
+					&:hover
+						background: verdeOscuro
+						color blanco
+						font-family fuente_active
+						display flex
+						align-items center
+						justify-content center
+						@media (max-width 767px)
+							background blanco
+							color grisoscuro
+					&.activesos
+						background verdeOscuro
+						color blanco
+						@media (max-width 767px)
+							background transparent
+							color grisoscuro
+							font-family fuente_active
+					&.activeBeca
+						background verdeOscuro
+						color blanco
+						font-family fuente_active
+						@media (max-width 767px)
+							background transparent
+			// 				color verdeOscuro
+			// /.MenuOficina
+			// 	display flex
+			// 	flex-direction column
+			// 	padding 0
+			// 	margin-bottom 0
+			// 	a
+			// 		text-decoration none
+			// 		color grisoscuro
+			// 		li
+			// 			width 100% !important
+			// 			padding 30px
+			// 			background blanco
+			// 			font-size 21px
+			// 			list-style none
+			// 			&:hover
+			// 				font-family fuente_active
+			// 				background blanco
+			// 				color grisoscuro
+		// .oficinaMovil
+		// 	@media (max-width 767px)
+		// 		display none
+		.subComunic
+			border-top 3px solid verdeOscuro
+			@media (max-width 767px)
+				border none
+			ul.menuSos
+				@media (max-width 767px)
+					flex-direction column
+					align-items center
+				a
+					li
+						height 65
+						font-size 20px
+						display flex
+						justify-content center
+						align-items center
+						&.oficinaSUb
+							background verdeOscuro
+							color blanco
+							font-family fuente_active
+							@media (max-width 767px)
+								background transparent
+								color verdeOscuro
+						@media (max-width 767px)
+							width 200px
+							padding 0
+							display flex
+							justify-content center
+							align-items center
+						&:hover
+							color blanco
+							@media (max-width 767px)
+								color verdeOscuro
+		.galerias
+			@media (max-width 767px)
+				margin 0
+			.contenedorSalud
+				@media (max-width 767px)
+					padding 15px
+				> div
+					display flex
+					margin-bottom 20%
+					@media (max-width 767px)
+						flex-direction column
+						margin-bottom 0
+				.box-somos
+					width 55%
+					font-size 20px
+					color grisOscuro
+					background #fff
+					display flex
+					align-items center
+					padding 0 40px
+					flex-direction column
+					justify-content center
+					left 15px
+					position relative
+					box-shadow: sombra
+					@media (max-width 1199px)
+						line-height 1
+						padding 0 20px
+					@media (max-width 991px)
+						padding 0 15px
+					@media (max-width 767px)
+						width 100%
+						left 0px
+						box-shadow 0 0 0
+					h4
+						color verdeOscuro
+						font-family fuente_tituloNoticias
+						font-size 22px
+						@media (max-width 991px)
+							font-size 18px
+					p
+						@media (max-width 1199px)
+							font-size 18px
+						@media (max-width 991px)
+							font-size 14px
+						@media (max-width 767px)
+							font-size 20px
+				.lSSlideOuter
+					width 45%
+					position relative
+					box-shadow: sombra
+					ul.sliderUno
+						display flex
+						margin 0
+						li
+							cursor pointer
+					@media (max-width 767px)
+						width 100%
+						margin auto
+						padding 15px
+						padding-bottom 0
+						box-shadow 0 0 0
+					.lSPager.lSpg
+						@media (max-width 767px)
+							width 95.5%
+						@media (max-width 424px)
+							width 100%
+				

@@ -1,0 +1,312 @@
+/***
+	Estilos Generalas para botones, link formularios en general
+***/
+select
+	font-family "open_sansregular"
+	font-size 14px
+	padding 4px
+	width 100%
+label
+	&.error
+		display none !important
+.inner-form
+	&.form-interno
+		form
+			fieldset
+				&.row
+					padding-bottom 20px
+					ul
+						&.listtag
+							padding-top 20px
+							li
+								align-items flex-start
+								display flex
+								flex-direction row
+								flex-wrap no-wrap
+								justify-content space-between
+								padding-bottom 10px
+								&:last-child
+									padding-bottom 0px
+								p
+									span
+										font-family "Source Sans Pro"
+										padding-right 10px
+								a
+									background rgba(255,0,0,0.35)
+									border-radius 20px
+									display block
+									height 22px
+									text-align center
+									line-height 1.85em
+									width 50px
+									i
+										&.icon-cross
+											font-size 10px
+					&:last-child
+						padding-bottom 0
+					figure
+						padding 10px 0
+						img
+							width 180px
+					input[type="text"]
+						padding-left 5px
+						font-family "open_sansregular"
+						font-size 12px
+						&.error
+							border 1px solid red
+					input[type="password"]
+						&.error
+							border 1px solid red
+					label
+						background #f5f5f5
+						border-radius 5px
+						display block
+						font-family "open_sanssemibold"
+						font-size 12px
+						padding 6px
+						margin-bottom 10px
+						&.fondooscuro
+							background #2d2c2c
+							color #fff
+						span
+							font-family "open_sansitalic"
+							font-size 12px
+
+input[type="file"]
+	font-family "Source Sans Pro"
+	font-size 11px
+input[type="text"],input[type="password"]
+	background transparent
+	border-bottom 1px
+	border-top 0px
+	border-right 0px
+	border-left 0px
+	border-color rgba(100,100,100.0.45)
+	border-style solid
+	color gris
+	font-family "Source Sans Pro"
+	font-size 14px
+	font-weight 300
+	padding-bottom 4px
+	padding-top 4px
+	padding-left 0px
+	width 100%
+	&:focus
+		background transparent
+		outline 0px
+		box-shadow none
+	&:-webkit-autofill
+		-webkit-text-fill-color negro
+		-webkit-box-shadow 0 0 0px 1000px transparent insets
+textarea
+	border 1px solid rgba(100,100,100.0.45)
+	padding-top 5px
+	padding-left 5px
+	font-size 12px
+	height 80px
+	width 100%
+button
+	background #006aa9
+	border-radius 25px
+	box-shadow 0 6px 12px 0px rgba(0,106,169,0.5)
+	border 0
+	color blanco
+	font-family "Source Sans Pro"
+	font-size 17px
+	font-weight 900
+	transition 0.25s all ease
+	height 37px
+	width 188px
+	&:hover
+		background #034d79
+		
+.inner-select
+	height 35px
+	width 377px
+	.cajaselect
+		background none repeat scroll 0 0 blanco
+		border 1px solid #9b9b9b
+		border-radius 0
+		cursor pointer
+		margin-top 3px
+		padding 5px 10px
+		position relative
+		z-index 1
+	ul.listaselect 
+		background none repeat scroll 0 0 #fff
+		border 1px solid #dedede
+		display none
+		left -1px
+		margin-left 0
+		margin-top 31px
+		padding-left 0
+		position absolute
+		text-indent 15px
+		top 0
+		width 100%
+		li 
+			border-bottom 1px solid #efefef
+			cursor pointer
+			display block
+			line-height 15px
+			list-style outside none none
+			margin 0
+			padding 1.1em 0.3em
+			text-align left
+			&.sub_option
+				background rgba(234,234,234,0.35)
+				padding-left 38px
+			&:hover
+				background rgba(0,106,169,0.85)
+				a
+					color blanco
+			a
+				color #333
+				font-family "open_sanssemibold"
+				font-size 12px
+				text-decoration none
+				text-align left
+			&:hover
+				color #999797
+				text-decoration none
+	ul.SelectProductos 
+		li
+			&:last-child
+				border-bottom medium none
+	.seleccionado
+		color #4a4a4a
+		display block
+		font-size 14px
+		font-family "open_sansregular"
+		line-height 1.5em
+		text-indent 10px
+		text-align left
+	.trianguloinf
+		border-left 9px solid rgba(0, 0, 0, 0)
+		border-right 9px solid rgba(0, 0, 0, 0)
+		border-top 13px solid rgba(0, 0, 0, 0.25)
+		height 0
+		position absolute
+		right 10px
+		top 10px
+		width 0
+	.triangulosup
+		border-bottom 13px solid rgba(0, 0, 0, 0.25)
+		border-left 9px solid rgba(0, 0, 0, 0)
+		border-right 9px solid rgba(0, 0, 0, 0)
+		height 0
+		position absolute
+		right 10px
+		top 10px
+		width 0
+table
+	background #f5f5f5
+	border-collapse separate
+	box-shadow inset 0 1px 0 #fff
+	font-size 12px
+	line-height 24px
+	margin 0px auto
+	text-align left
+	width 100%
+	&.listado
+		margin 1em 0
+		width 100%
+		overflow hidden
+		background #FFF
+		color #024457
+		border-radius 10px
+		border 0px solid #167F92
+		tr
+			border 1px solid #D9E4E6
+			&:nth-child(2n+1)
+				background-color #EAF3F3
+			th
+				border 1px solid #FFF
+				background-color #167F92
+				color #FFF
+				padding 1em
+				margin .5em 1em
+				&:first-child
+					display table-cell
+					text-align center 
+				p
+					color #fff
+			td, th
+				padding 1em
+				text-align center
+	th
+		background linear-gradient(#777, #444)
+		border-left 1px solid #555
+		border-right 1px solid #777
+		border-top 1px solid #555
+		border-bottom 1px solid #333
+		box-shadow inset 0 1px 0 #999
+		color #fff
+		font-weight bold
+		padding 10px 15px
+		position relative
+		text-shadow 0 1px 0 #000
+		&.center
+				text-align center
+		&:after
+			background linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08))
+			content ''
+			display block
+			height 25%
+			left 0
+			margin 1px 0 0 0
+			position absolute
+			top 25%
+			width 100%
+		&:first-child
+			border-left 1px solid #777
+			box-shadow inset 1px 1px 0 #999
+		&:last-child
+			box-shadow inset -1px 1px 0 #999
+	  	td
+			border-right 1px solid #fff
+			border-left 1px solid #e8e8e8
+			border-top 1px solid #fff
+			border-bottom 1px solid #e8e8e8
+			padding 10px 15px
+			position relative
+			transition all 300ms
+			&:first-child
+				box-shadow inset 1px 0 0 #fff
+			&:last-child
+				border-right 1px solid #e8e8e8
+				box-shadow inset -1px 0 0 #fff
+	tr
+		background #fffdfd
+		&:nth-child(odd)
+			td
+				background #f1f1f1 
+	tbody
+		tr
+			td
+				&.accion
+					padding-left 10px
+					padding-right 10px
+					a
+						display block
+						font-size 14px
+						font-family "open_sansregular"
+						text-align left
+						margin auto
+						width 80px
+						i
+							padding-right 6px
+				input[type="text"]
+					border 1px solid rgba(100,100,100,0.45)
+					padding 5px
+					text-align center
+				p
+					font-size 12px
+				&.ancho200
+					width 200px
+				&.ancho160
+					width 160px
+				&.ancho80
+					width 80px
+				&.center
+					text-align center

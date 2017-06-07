@@ -21,14 +21,15 @@ section#comunicacion
 		@media (max-width 767px)
 			display flex
 			flex-direction column-reverse
-		ul
+		ul.menuSos
 			margin:50px auto
 			display flex
 			justify-content center
 			@media (max-width 991px)
 				padding 0
 			@media (max-width 767px)
-				margin 30px auto
+				flex-direction column
+				align-items center
 			a
 				&:hover
 					text-decoration none
@@ -68,42 +69,27 @@ section#comunicacion
 						width 180px
 						@media (max-width 767px)
 							background transparent
-							color verdeOscuro
-			/.menuMovSa
-				flex-direction column
-				padding 0
-				a
-					&:hover
-						text-decoration none
-					li
-						width auto
-						padding 30px
-						background blanco
-						font-size 23px
-						list-style none
-						color grisoscuro
-						&:hover
-							font-family fuente_active
-							background blanco
 							color grisoscuro
-						&.actComun
-							background blanco
-		.subComunic
-			border-top 3px solid verdeOscuro
-			@media (max-width 767px)
-				border none
-			ul
+		.sSalud
+			.subComunic
+				border-top 3px solid verdeOscuro
 				@media (max-width 767px)
-					flex-direction column
-					align-items center
-				a
-					li
-						height 65px
-						font-size 20px
-						&:hover
-							@media (max-width 767px)
-								color verdeOscuro
-								width 180px
+					border none
+				ul.menuSos
+					@media (max-width 767px)
+						flex-direction column
+						align-items center
+					a
+						li
+							height 65px
+							font-size 20px
+							// &:hover
+							// 	@media (max-width 767px)
+							// 		color verdeOscuro
+							// 		width 180px
+					.activesos
+						@media (max-width 767px)
+							color verdeOscuro
 		p.dialogo
 			padding 40px
 			background blanco
@@ -116,6 +102,7 @@ section#comunicacion
 				line-height 1
 		.boletines
 			ul
+				margin-top 50px
 				display: flex
 				justify-content: space-around
 				li
@@ -156,6 +143,7 @@ section#comunicacion
 						position initial
 						ul.boletinSos
 							display flex
+							margin-top 50px
 							.boletin
 								margin 10% 0 12%
 								line-height: 1.2

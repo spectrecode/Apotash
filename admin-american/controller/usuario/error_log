@@ -1,0 +1,2 @@
+[18-May-2017 17:37:15 America/Lima] PHP Deprecated:  Function ereg_replace() is deprecated in /home/americaspotash/public_html/demoV5/admin-american/modelo/funciones.php on line 38
+[19-May-2017 16:08:42 America/Lima] PHP Notice:  Undefined index: COD_USER in /home/americaspotash/public_html/demoV5/admin-american/controller/usuario/salir.php on line 8

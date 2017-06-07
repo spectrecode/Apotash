@@ -1,0 +1,169 @@
+section#comunicacion
+	@media (max-width 767px)
+		background blanco
+	.container-fluid
+		.row
+			.bannerPrincipal.sostenibilidad
+				background-image url("../image/banner-creciendo.jpg")
+				@media (max-width 991px)
+					background-position 0px -4px
+					background-repeat no-repeat
+					background-size cover
+					height 325px
+				@media (max-width 424px)
+					background-image url("../image/banner-movilStn.jpg")
+					height 403px
+				@media (max-width 375px)
+					height 365px
+				@media (max-width 320px)
+					height 315px
+	.container
+		@media (max-width 767px)
+			display flex
+			flex-direction column-reverse
+		ul.menuSos
+			margin:50px auto
+			display flex
+			justify-content center
+			@media (max-width 991px)
+				padding 0
+			@media (max-width 767px)
+				flex-direction column
+				align-items center
+			a
+				&:hover
+					text-decoration none
+				li
+					cursor pointer
+					color grisoscuro
+					list-style none
+					width 180px
+					display flex
+					justify-content center
+					align-items center
+					transition all ease-in-out .2s
+					font-size 23px
+					height 65px
+					line-height 1
+					@media (max-width 991px)
+						width 180px
+					@media (max-width 767px)
+						background blanco
+						color grisoscuro
+						width 100%
+					&:hover
+						background: verdeOscuro
+						color blanco
+						font-family fuente_active
+						display flex
+						align-items center
+						justify-content center
+						@media (max-width 767px)
+							background blanco
+							color grisoscuro
+							width 100%
+					&.activesos
+						background verdeOscuro
+						color blanco
+						font-family fuente_active
+						width 180px
+						@media (max-width 767px)
+							background transparent
+							color grisoscuro
+		.sSalud
+			.subComunic
+				border-top 3px solid verdeOscuro
+				@media (max-width 767px)
+					border none
+				ul.menuSos
+					@media (max-width 767px)
+						flex-direction column
+						align-items center
+					a
+						li
+							height 65px
+							font-size 20px
+					// 		&:hover
+					// 			@media (max-width 767px)
+					// 				color verdeOscuro
+					// 				width 180px
+					.activesos
+						@media (max-width 767px)
+							color verdeOscuro
+		p.dialogo
+			padding 40px
+			background blanco
+			box-shadow sombra
+			text-align justify
+			font-size 19px
+			@media (max-width 1199px)
+				font-size 16px
+			@media (max-width 767px)
+				line-height 1
+		.boletines
+			ul
+				margin-top 50px
+				display: flex
+				justify-content: space-around
+				li
+					list-style: none
+					img
+						box-shadow: 0px 17px 18px -11px #636363
+					.boletin
+						margin 10% 0 12%
+						line-height: 1.2
+						color: verdeOscuro
+						font-family fuente_gruesa
+						font-size 20px
+					// div
+					// 	margin: 15px 30px
+					// 	transition:background-color 0.5s, transform .5s
+					a 
+						text-decoration: none
+						color: verdeOscuro
+						transition:all 0.5s, transform .5s
+						cursor pointer
+						&:hover
+							padding: 15px
+							background: verdeOscuro
+							color: blanco
+							transition:background-color 0.5s, transform .5s
+			// &:last-child
+			// 	margin-bottom 20%
+		.sSalud
+			// @media (max-width 767px)
+			// 	display none
+			@media (min-width 767px)
+				margin-bottom 20%
+			.sliderBoletin
+				width 60%
+				margin auto
+				.col-xs-12
+					.lSSlideWrapper
+						position initial
+						ul.boletinSos
+							display flex
+							margin-top 50px
+							.boletin
+								margin 10% 0 12%
+								line-height: 1.2
+								color: blanco
+								background verdeOscuro
+								font-family fuente_gruesa
+								font-size 20px
+								padding 15px
+							a 
+								text-decoration: none
+								color: verdeOscuro
+								transition:all 0.5s, transform .5s
+								cursor pointer
+								&:hover
+									padding: 15px
+									background: blanco
+									color: verdeOscuro
+									transition:background-color 0.5s, transform .5s
+			.lSAction
+				a.lSPrev
+					left -15px
+				a.lSNext
+					right -15px

@@ -1,0 +1,88 @@
+section#nosotros
+    .container-fluid
+        .row
+            .bannerPrincipal.valoresNos
+                background-image url("../image/banner2.jpg")
+                @media(max-width 991px)
+                    background-position 0px -4px
+                    background-repeat no-repeat
+                    height 325px
+                    background-size cover
+                @media(max-width 424px)
+                    background-image url("../image/banner-movil2.jpg")
+                    height 415px
+                @media (max-width 375px)
+                    height 370px
+                @media (max-width 320px)
+                    height 315px
+    .valores
+        margin-bottom 20%
+        @media(max-width 767px)
+            box-shadow 0 0 0
+            // display none
+            margin-bottom 0
+            padding-top 50px
+            // padding-bottom 20px
+            background blanco
+        .row
+            display flex
+            align-items center
+            background blanco
+            margin 20px auto
+            box-shadow: sombra
+            @media (max-width 767px)
+                box-shadow 0 0 0
+                flex-direction column
+                padding 15px
+                margin-bottom 0
+                padding-bottom 0
+            h2
+                font-family fuente_tituloH2Nos
+                color verdeOscuro
+                font-size 30px
+                margin-top 0
+                @media (max-width 991px)
+                    font-size 25px
+            h2.tituloValorMovil
+                @media(max-width 767px)
+                    height 50px
+                    color verdeOscuro
+                    text-align center
+                    font-family fuente_tituloH2Nos
+            div
+                font-size 20px
+            p
+                @media only screen and (min-width 768px) and (max-width 991px)
+                    line-height 1
+                @media (max-width 991px)
+                    font-size 16px
+            .logoMovil
+                display flex
+                justify-content space-between
+                align-items center
+                img
+                    width 60px
+                @media(max-width 767px)
+                    margin-bottom 20px
+            .col-lg-2
+                display flex
+                justify-content flex-end
+                align-items center
+                width 13.666667%
+                img
+                    width 110px
+            > div:nth-child(3)
+                padding-right 0
+                @media(max-width 767px)
+                    padding-right 15px
+                @media only screen and (min-width 426px) and (max-width 767px)
+                    text-align -webkit-center
+                img
+                    @media only screen and (min-width 426px) and (max-width 767px)
+                        width 70%
+                @media(max-width 425px)
+                    margin-top 20px
+                &:first-child
+                    .col-lg-2:first-child
+                        height 160px
+                        align-items flex-start

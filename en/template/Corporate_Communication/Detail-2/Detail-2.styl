@@ -111,6 +111,7 @@
 		.brochure
 			margin 20px
 			box-shadow sombra
+			position relative
 			@media (max-width 767px)
 				box-shadow 0 0 0
 				margin 0
@@ -145,6 +146,13 @@
 					@media (max-width 991px)
 						width 100%
 			> div:nth-child(2)
+				@media (min-width 992px)
+					height 100px
+					position absolute
+					top 0
+					bottom 0
+					margin auto
+					right 0
 				@media (max-width 1199px)
 					padding-left 0
 				@media (max-width 991px)

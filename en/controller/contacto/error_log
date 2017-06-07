@@ -1,0 +1,54 @@
+[29-Mar-2017 20:42:05 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:05 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:05 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:42:05 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:05 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:05 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:42:06 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:06 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:06 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:42:06 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:06 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:06 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:42:06 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:06 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:06 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:42:06 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:06 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:42:06 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:44:51 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:44:51 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:44:51 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:45:05 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:45:05 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:45:05 America/Lima] PHP Notice:  Undefined index: nombre in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 11
+[29-Mar-2017 20:45:05 America/Lima] PHP Notice:  Undefined index: adress in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 12
+[29-Mar-2017 20:45:05 America/Lima] PHP Notice:  Undefined index: mail in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 13
+[29-Mar-2017 20:45:05 America/Lima] PHP Notice:  Undefined index: telf in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 14
+[29-Mar-2017 20:45:05 America/Lima] PHP Notice:  Undefined index: comment in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 15
+[29-Mar-2017 20:45:05 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:45:10 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:45:10 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: nombre in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 11
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: adress in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 12
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: mail in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 13
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: telf in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 14
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: comment in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 15
+[29-Mar-2017 20:45:10 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:45:10 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:45:10 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: nombre in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 11
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: adress in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 12
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: mail in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 13
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: telf in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 14
+[29-Mar-2017 20:45:10 America/Lima] PHP Notice:  Undefined index: comment in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 15
+[29-Mar-2017 20:45:10 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[29-Mar-2017 20:45:11 America/Lima] PHP Warning:  include(../../models/mail.php): failed to open stream: No such file or directory in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:45:11 America/Lima] PHP Warning:  include(): Failed opening '../../models/mail.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 4
+[29-Mar-2017 20:45:11 America/Lima] PHP Notice:  Undefined index: nombre in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 11
+[29-Mar-2017 20:45:11 America/Lima] PHP Notice:  Undefined index: adress in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 12
+[29-Mar-2017 20:45:11 America/Lima] PHP Notice:  Undefined index: mail in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 13
+[29-Mar-2017 20:45:11 America/Lima] PHP Notice:  Undefined index: telf in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 14
+[29-Mar-2017 20:45:11 America/Lima] PHP Notice:  Undefined index: comment in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 15
+[29-Mar-2017 20:45:11 America/Lima] PHP Fatal error:  Class 'Mailto' not found in /home/americaspotash/public_html/demoV5/controller/contacto/enviar.php on line 20
+[30-Mar-2017 11:37:11 America/Lima] PHP Parse error:  syntax error, unexpected ''" target="_blanck">Ver C.V.<a' (T_CONSTANT_ENCAPSED_STRING) in /home/americaspotash/public_html/demoV5/modelo/mail.php on line 160

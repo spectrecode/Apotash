@@ -1,0 +1,76 @@
+.inner-contenido(ng-controller="listarUsuarioCrtl")
+	.inner-nave
+		ul
+			li
+				a(href="javascript:void(0)")
+					| Usuario
+				span.dividir
+					| >>
+			li
+				a.active(href="javascript:void(0)")
+					| Listado de Usuarios
+	.inner-botones
+		.column
+			input(type="text", ng-model="form.buscarArt", placeholder="Buscar nombre...")
+			a(href="javascript:void(0)", ng-click="buscar(form)")
+				i.icon-search
+				| Buscar
+		.column
+			a.btnaddArt(href="javascript:void(0)", ng-click="agregar()")
+				i.icon-plus
+				| Añadir Usuario
+	.inner-listado
+		table
+			thead
+				tr
+					th.center
+						| Nº
+					th.center
+						| Nombre
+					th.center
+						| Apellido
+					th.center
+						| Perfil
+					th.center
+						| Usuario
+					th.center
+						| Acceso ?
+					th.center
+						| F. Creación
+					th.center
+						| Acción
+			tbody
+				tr(ng-repeat="arrinfo in datos")
+					td.center
+						p
+							| {{arrinfo.items}}
+					td.ancho200
+						p
+							| {{arrinfo.nombre}}
+					td.ancho200
+						p
+							| {{arrinfo.app_paterno}}
+					td.center.ancho160
+						p
+							| {{arrinfo.name_tipouser}}
+					td.center
+						p
+							| {{arrinfo.user}}
+					td.center
+						a(href="javascript:void(0)", ng-click="cambiarEstado(arrinfo.estado,arrinfo.id)")
+							i(class="{{arrinfo.classestado}}")
+					td.center
+						p
+							| {{arrinfo.f_creacion}}
+					td.center.accion
+						a(href="javascript:void(0)", ng-click="editar(arrinfo.id)")
+							i.icon-pencil
+							| Editar
+						a(href="javascript:void(0)", ng-click="eliminar(arrinfo.id)")
+							i.icon-bin
+							| Eliminar
+	.inner-paginado
+		ul
+			li(ng-repeat = "n in range")
+				a(href="javascript:void(0)", ng-click="paginar(n + 1)")
+					| {{n + 1}}
